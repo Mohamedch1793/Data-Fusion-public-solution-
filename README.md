@@ -4,6 +4,9 @@
 
 - **Kaggle Notebook:** [Public Solution Data Fusion](https://www.kaggle.com/code/dambek/public-solution-data-fusion)
 - **Web App:** [CyberShelf Analytics Site](https://data-fusion-web-app.vercel.app/)
+- **Solution.md:** [solution.md](./solution.md)
+
+
 
 ## Кратко про решение
 
@@ -53,4 +56,3 @@
 
 Полное техническое описание архитектуры, этапов обучения, EDA и экспорта находится в файле:
 
-[solution.md](./solution.md)
