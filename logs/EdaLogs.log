@@ -1,0 +1,20 @@
+[STEP] Load enriched datasets
+train: (750000, 401)
+test: (250000, 360)
+targets: 41
+main_cluster_col: cluster_4
+[STEP] Build tables
+[STEP] Compute feature importance datasets
+[STEP] Save plots
+[STEP] Build numeric distribution datasets
+[STEP] Save extra distribution plots
+[STEP] Export website datasets
+train_site after filter: (118048, 402)
+test_site after filter: (78603, 361)
+
+DONE
+OUT_DIR: /kaggle/working/cybershelf_analysis_site
+PLOTS_DIR: /kaggle/working/cybershelf_analysis_site/plots
+TABLES_DIR: /kaggle/working/cybershelf_analysis_site/tables
+EXPORT_DIR: /kaggle/working/cybershelf_analysis_site/site_export
+

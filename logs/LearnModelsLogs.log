@@ -1,0 +1,2991 @@
+6.2s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.2s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.2s 3 0.00s - to python to disable frozen modules.
+6.2s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.8s 7 0.00s - to python to disable frozen modules.
+6.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+11.7s 9 [STEP] Load compact dataset
+17.5s 10 train: (750000, 377)
+17.5s 11 test: (250000, 336)
+17.5s 12 targets: 41
+17.5s 13 targets to train: 41
+17.5s 14 [STEP] Build PCA + cluster features
+54.3s 15 [STEP] KMeans k=4
+54.8s 16 [STEP] KMeans k=8
+67.2s 17 [STEP] Feature blocks ready
+67.2s 18 base features: 335
+67.2s 19 aux features: 359
+74.6s 20 [STEP] Build StratifiedKFold
+74.9s 21 
+74.9s 22 ==========================================================================================
+74.9s 23 [TARGET] target_1_1
+74.9s 24 ==========================================================================================
+74.9s 25 
+74.9s 26 --- fold 1/5 ---
+148.0s 27 Default metric period is 5 because AUC is/are not implemented for GPU
+148.0s 28 
+148.0s 29 Default metric period is 5 because AUC is/are not implemented for GPU
+174.6s 30 0:	test: 0.8564191	best: 0.8564191 (0)	total: 6.4s	remaining: 27m 38s
+182.3s 31 100:	test: 0.9061099	best: 0.9061099 (100)	total: 14.1s	remaining: 22.2s
+190.0s 32 200:	test: 0.9104061	best: 0.9104061 (200)	total: 21.8s	remaining: 6.4s
+194.5s 33 259:	test: 0.9113941	best: 0.9113941 (259)	total: 26.3s	remaining: 0us
+194.5s 34 bestTest = 0.9113941193
+194.5s 35 bestIteration = 259
+227.8s 36 fold aucs: xgb=0.907928, cat=0.911394, xgb_aux=0.906510
+227.8s 37 
+227.8s 38 --- fold 2/5 ---
+300.2s 39 Default metric period is 5 because AUC is/are not implemented for GPU
+300.2s 40 
+300.2s 41 Default metric period is 5 because AUC is/are not implemented for GPU
+302.6s 42 0:	test: 0.8576496	best: 0.8576496 (0)	total: 87.3ms	remaining: 22.6s
+310.7s 43 100:	test: 0.9074107	best: 0.9074107 (100)	total: 8.15s	remaining: 12.8s
+318.7s 44 200:	test: 0.9117481	best: 0.9117481 (200)	total: 16.2s	remaining: 4.75s
+323.4s 45 259:	test: 0.9129620	best: 0.9129803 (258)	total: 20.9s	remaining: 0us
+323.4s 46 bestTest = 0.9129802585
+323.4s 47 bestIteration = 258
+323.4s 48 Shrink model to first 259 iterations.
+357.5s 49 fold aucs: xgb=0.911308, cat=0.912980, xgb_aux=0.910771
+357.5s 50 
+357.5s 51 --- fold 3/5 ---
+431.5s 52 Default metric period is 5 because AUC is/are not implemented for GPU
+431.5s 53 
+431.5s 54 Default metric period is 5 because AUC is/are not implemented for GPU
+434.2s 55 0:	test: 0.8534470	best: 0.8534470 (0)	total: 88.7ms	remaining: 23s
+442.5s 56 100:	test: 0.8988377	best: 0.8988377 (100)	total: 8.42s	remaining: 13.3s
+450.7s 57 200:	test: 0.9028858	best: 0.9028858 (200)	total: 16.7s	remaining: 4.89s
+455.6s 58 259:	test: 0.9037508	best: 0.9039046 (252)	total: 21.5s	remaining: 0us
+455.6s 59 bestTest = 0.9039046466
+455.6s 60 bestIteration = 252
+455.6s 61 Shrink model to first 253 iterations.
+488.3s 62 fold aucs: xgb=0.899137, cat=0.903905, xgb_aux=0.897509
+488.3s 63 
+488.3s 64 --- fold 4/5 ---
+559.2s 65 Default metric period is 5 because AUC is/are not implemented for GPU
+559.2s 66 
+559.2s 67 Default metric period is 5 because AUC is/are not implemented for GPU
+561.4s 68 0:	test: 0.8511128	best: 0.8511128 (0)	total: 73.8ms	remaining: 19.1s
+568.8s 69 100:	test: 0.9001937	best: 0.9001937 (100)	total: 7.48s	remaining: 11.8s
+576.1s 70 200:	test: 0.9043417	best: 0.9043417 (200)	total: 14.8s	remaining: 4.36s
+580.5s 71 259:	test: 0.9054695	best: 0.9054695 (259)	total: 19.2s	remaining: 0us
+580.5s 72 bestTest = 0.9054695368
+580.5s 73 bestIteration = 259
+613.0s 74 fold aucs: xgb=0.904586, cat=0.905470, xgb_aux=0.904774
+613.0s 75 
+613.0s 76 --- fold 5/5 ---
+684.3s 77 Default metric period is 5 because AUC is/are not implemented for GPU
+684.3s 78 
+684.3s 79 Default metric period is 5 because AUC is/are not implemented for GPU
+687.0s 80 0:	test: 0.8540105	best: 0.8540105 (0)	total: 89.5ms	remaining: 23.2s
+695.5s 81 100:	test: 0.8995440	best: 0.8995440 (100)	total: 8.62s	remaining: 13.6s
+704.0s 82 200:	test: 0.9042999	best: 0.9043442 (198)	total: 17.1s	remaining: 5.01s
+708.9s 83 259:	test: 0.9052022	best: 0.9052455 (249)	total: 22s	remaining: 0us
+708.9s 84 bestTest = 0.9052454829
+708.9s 85 bestIteration = 249
+708.9s 86 Shrink model to first 250 iterations.
+742.1s 87 fold aucs: xgb=0.900024, cat=0.905245, xgb_aux=0.900699
+743.7s 88 
+743.7s 89 OOF AUCs:
+743.7s 90 XGB base   : 0.904548
+743.7s 91 CAT base   : 0.907742
+743.7s 92 XGB aux    : 0.903995
+743.7s 93 BLEND raw  : 0.910539
+743.7s 94 BLEND rank : 0.909787
+743.7s 95 Weights    : xgb=0.323, cat=0.360, xgb_aux=0.317
+743.7s 96 
+743.7s 97 ==========================================================================================
+743.7s 98 [TARGET] target_1_2
+743.7s 99 ==========================================================================================
+743.7s 100 
+743.7s 101 --- fold 1/5 ---
+816.8s 102 Default metric period is 5 because AUC is/are not implemented for GPU
+816.8s 103 
+816.8s 104 Default metric period is 5 because AUC is/are not implemented for GPU
+819.6s 105 0:	test: 0.7354289	best: 0.7354289 (0)	total: 89.8ms	remaining: 23.3s
+828.3s 106 100:	test: 0.8029895	best: 0.8029895 (100)	total: 8.76s	remaining: 13.8s
+836.9s 107 200:	test: 0.8046293	best: 0.8065633 (188)	total: 17.4s	remaining: 5.1s
+841.0s 108 bestTest = 0.8065633178
+841.0s 109 bestIteration = 188
+841.0s 110 Shrink model to first 189 iterations.
+875.1s 111 fold aucs: xgb=0.772882, cat=0.806563, xgb_aux=0.776401
+875.1s 112 
+875.1s 113 --- fold 2/5 ---
+944.6s 114 Default metric period is 5 because AUC is/are not implemented for GPU
+944.6s 115 
+944.6s 116 Default metric period is 5 because AUC is/are not implemented for GPU
+946.5s 117 0:	test: 0.7497596	best: 0.7497596 (0)	total: 70.7ms	remaining: 18.3s
+953.3s 118 100:	test: 0.8145316	best: 0.8147363 (98)	total: 6.85s	remaining: 10.8s
+960.1s 119 200:	test: 0.8184111	best: 0.8190105 (197)	total: 13.6s	remaining: 3.99s
+964.1s 120 259:	test: 0.8216587	best: 0.8216587 (259)	total: 17.6s	remaining: 0us
+964.1s 121 bestTest = 0.8216587007
+964.1s 122 bestIteration = 259
+996.4s 123 fold aucs: xgb=0.813414, cat=0.821659, xgb_aux=0.809109
+996.4s 124 
+996.4s 125 --- fold 3/5 ---
+1068.4s 126 Default metric period is 5 because AUC is/are not implemented for GPU
+1068.4s 127 
+1068.4s 128 Default metric period is 5 because AUC is/are not implemented for GPU
+1070.7s 129 0:	test: 0.7349680	best: 0.7349680 (0)	total: 79.8ms	remaining: 20.7s
+1078.6s 130 100:	test: 0.8016390	best: 0.8016390 (100)	total: 7.97s	remaining: 12.6s
+1086.4s 131 200:	test: 0.8042112	best: 0.8042125 (198)	total: 15.8s	remaining: 4.63s
+1091.0s 132 259:	test: 0.8045072	best: 0.8058505 (249)	total: 20.3s	remaining: 0us
+1091.0s 133 bestTest = 0.805850476
+1091.0s 134 bestIteration = 249
+1091.0s 135 Shrink model to first 250 iterations.
+1125.4s 136 fold aucs: xgb=0.781067, cat=0.805850, xgb_aux=0.792636
+1125.4s 137 
+1125.4s 138 --- fold 4/5 ---
+1197.8s 139 Default metric period is 5 because AUC is/are not implemented for GPU
+1197.8s 140 
+1197.8s 141 Default metric period is 5 because AUC is/are not implemented for GPU
+1200.2s 142 0:	test: 0.7645755	best: 0.7645755 (0)	total: 84.2ms	remaining: 21.8s
+1208.1s 143 100:	test: 0.8281963	best: 0.8282259 (99)	total: 7.97s	remaining: 12.5s
+1215.9s 144 200:	test: 0.8329127	best: 0.8333240 (197)	total: 15.8s	remaining: 4.65s
+1220.4s 145 bestTest = 0.8333240449
+1220.4s 146 bestIteration = 197
+1220.4s 147 Shrink model to first 198 iterations.
+1254.4s 148 fold aucs: xgb=0.815100, cat=0.833324, xgb_aux=0.816503
+1254.4s 149 
+1254.4s 150 --- fold 5/5 ---
+1327.5s 151 Default metric period is 5 because AUC is/are not implemented for GPU
+1327.5s 152 
+1327.5s 153 Default metric period is 5 because AUC is/are not implemented for GPU
+1330.4s 154 0:	test: 0.7471310	best: 0.7471310 (0)	total: 91.5ms	remaining: 23.7s
+1339.4s 155 100:	test: 0.8063174	best: 0.8082434 (51)	total: 9.1s	remaining: 14.3s
+1348.1s 156 bestTest = 0.8102397919
+1348.1s 157 bestIteration = 137
+1348.1s 158 Shrink model to first 138 iterations.
+1381.2s 159 fold aucs: xgb=0.778295, cat=0.810240, xgb_aux=0.779449
+1382.7s 160 
+1382.7s 161 OOF AUCs:
+1382.7s 162 XGB base   : 0.791027
+1382.7s 163 CAT base   : 0.814556
+1382.7s 164 XGB aux    : 0.793950
+1382.7s 165 BLEND raw  : 0.814928
+1382.7s 166 BLEND rank : 0.813740
+1382.7s 167 Weights    : xgb=0.233, cat=0.510, xgb_aux=0.257
+1382.7s 168 
+1382.7s 169 ==========================================================================================
+1382.7s 170 [TARGET] target_1_3
+1382.7s 171 ==========================================================================================
+1382.7s 172 
+1382.7s 173 --- fold 1/5 ---
+1458.9s 174 Default metric period is 5 because AUC is/are not implemented for GPU
+1458.9s 175 
+1458.9s 176 Default metric period is 5 because AUC is/are not implemented for GPU
+1462.1s 177 0:	test: 0.8081198	best: 0.8081198 (0)	total: 98.4ms	remaining: 25.5s
+1471.3s 178 100:	test: 0.8565705	best: 0.8565705 (100)	total: 9.34s	remaining: 14.7s
+1480.5s 179 200:	test: 0.8606667	best: 0.8606667 (200)	total: 18.5s	remaining: 5.43s
+1485.9s 180 259:	test: 0.8617077	best: 0.8617223 (258)	total: 23.9s	remaining: 0us
+1485.9s 181 bestTest = 0.8617222607
+1485.9s 182 bestIteration = 258
+1485.9s 183 Shrink model to first 259 iterations.
+1521.0s 184 fold aucs: xgb=0.861515, cat=0.861722, xgb_aux=0.861531
+1521.0s 185 
+1521.0s 186 --- fold 2/5 ---
+1597.9s 187 Default metric period is 5 because AUC is/are not implemented for GPU
+1597.9s 188 
+1597.9s 189 Default metric period is 5 because AUC is/are not implemented for GPU
+1600.9s 190 0:	test: 0.8065317	best: 0.8065317 (0)	total: 93.8ms	remaining: 24.3s
+1609.8s 191 100:	test: 0.8546010	best: 0.8546010 (100)	total: 9.02s	remaining: 14.2s
+1618.7s 192 200:	test: 0.8587342	best: 0.8587342 (200)	total: 17.9s	remaining: 5.26s
+1624.0s 193 259:	test: 0.8601790	best: 0.8601790 (259)	total: 23.2s	remaining: 0us
+1624.0s 194 bestTest = 0.8601790369
+1624.0s 195 bestIteration = 259
+1658.1s 196 fold aucs: xgb=0.861476, cat=0.860179, xgb_aux=0.862476
+1658.1s 197 
+1658.1s 198 --- fold 3/5 ---
+1734.2s 199 Default metric period is 5 because AUC is/are not implemented for GPU
+1734.2s 200 
+1734.2s 201 Default metric period is 5 because AUC is/are not implemented for GPU
+1737.4s 202 0:	test: 0.8076132	best: 0.8076132 (0)	total: 99.9ms	remaining: 25.9s
+1746.8s 203 100:	test: 0.8565623	best: 0.8565623 (100)	total: 9.48s	remaining: 14.9s
+1756.1s 204 200:	test: 0.8618851	best: 0.8618851 (200)	total: 18.8s	remaining: 5.51s
+1761.7s 205 259:	test: 0.8632078	best: 0.8632078 (259)	total: 24.3s	remaining: 0us
+1761.7s 206 bestTest = 0.8632077873
+1761.7s 207 bestIteration = 259
+1795.4s 208 fold aucs: xgb=0.867696, cat=0.863208, xgb_aux=0.867036
+1795.4s 209 
+1795.4s 210 --- fold 4/5 ---
+1873.2s 211 Default metric period is 5 because AUC is/are not implemented for GPU
+1873.2s 212 
+1873.2s 213 Default metric period is 5 because AUC is/are not implemented for GPU
+1876.9s 214 0:	test: 0.8048290	best: 0.8048290 (0)	total: 114ms	remaining: 29.6s
+1887.5s 215 100:	test: 0.8568459	best: 0.8568459 (100)	total: 10.8s	remaining: 17s
+1898.1s 216 200:	test: 0.8620410	best: 0.8620415 (199)	total: 21.3s	remaining: 6.26s
+1904.3s 217 259:	test: 0.8635523	best: 0.8635523 (259)	total: 27.6s	remaining: 0us
+1904.3s 218 bestTest = 0.8635523319
+1904.3s 219 bestIteration = 259
+1938.0s 220 fold aucs: xgb=0.869852, cat=0.863552, xgb_aux=0.868772
+1938.0s 221 
+1938.0s 222 --- fold 5/5 ---
+2012.7s 223 Default metric period is 5 because AUC is/are not implemented for GPU
+2012.7s 224 
+2012.7s 225 Default metric period is 5 because AUC is/are not implemented for GPU
+2015.8s 226 0:	test: 0.8119183	best: 0.8119183 (0)	total: 98.3ms	remaining: 25.5s
+2025.2s 227 100:	test: 0.8599189	best: 0.8599189 (100)	total: 9.48s	remaining: 14.9s
+2034.6s 228 200:	test: 0.8644896	best: 0.8644896 (200)	total: 18.9s	remaining: 5.54s
+2040.1s 229 259:	test: 0.8658265	best: 0.8658265 (259)	total: 24.4s	remaining: 0us
+2040.1s 230 bestTest = 0.8658264875
+2040.1s 231 bestIteration = 259
+2072.9s 232 fold aucs: xgb=0.868812, cat=0.865826, xgb_aux=0.867376
+2074.4s 233 
+2074.4s 234 OOF AUCs:
+2074.4s 235 XGB base   : 0.865861
+2074.4s 236 CAT base   : 0.862895
+2074.4s 237 XGB aux    : 0.865420
+2074.4s 238 BLEND raw  : 0.868384
+2074.4s 239 BLEND rank : 0.868161
+2074.4s 240 Weights    : xgb=0.346, cat=0.313, xgb_aux=0.341
+2074.4s 241 
+2074.4s 242 ==========================================================================================
+2074.4s 243 [TARGET] target_1_4
+2074.4s 244 ==========================================================================================
+2074.4s 245 
+2074.4s 246 --- fold 1/5 ---
+2150.2s 247 Default metric period is 5 because AUC is/are not implemented for GPU
+2150.2s 248 
+2150.2s 249 Default metric period is 5 because AUC is/are not implemented for GPU
+2153.6s 250 0:	test: 0.7618013	best: 0.7618013 (0)	total: 106ms	remaining: 27.3s
+2163.7s 251 100:	test: 0.8174188	best: 0.8174188 (100)	total: 10.1s	remaining: 15.9s
+2173.7s 252 200:	test: 0.8240721	best: 0.8240721 (200)	total: 20.2s	remaining: 5.92s
+2179.6s 253 259:	test: 0.8255709	best: 0.8255709 (259)	total: 26.1s	remaining: 0us
+2179.6s 254 bestTest = 0.8255708814
+2179.6s 255 bestIteration = 259
+2214.0s 256 fold aucs: xgb=0.826796, cat=0.825571, xgb_aux=0.827315
+2214.0s 257 
+2214.0s 258 --- fold 2/5 ---
+2289.0s 259 Default metric period is 5 because AUC is/are not implemented for GPU
+2289.0s 260 
+2289.0s 261 Default metric period is 5 because AUC is/are not implemented for GPU
+2292.3s 262 0:	test: 0.7458038	best: 0.7458038 (0)	total: 100ms	remaining: 26s
+2301.9s 263 100:	test: 0.8060800	best: 0.8060800 (100)	total: 9.69s	remaining: 15.3s
+2311.5s 264 200:	test: 0.8139657	best: 0.8139663 (199)	total: 19.3s	remaining: 5.67s
+2317.2s 265 259:	test: 0.8159716	best: 0.8159797 (258)	total: 25s	remaining: 0us
+2317.2s 266 bestTest = 0.815979749
+2317.2s 267 bestIteration = 258
+2317.2s 268 Shrink model to first 259 iterations.
+2352.2s 269 fold aucs: xgb=0.823867, cat=0.815980, xgb_aux=0.820955
+2352.2s 270 
+2352.2s 271 --- fold 3/5 ---
+2425.2s 272 Default metric period is 5 because AUC is/are not implemented for GPU
+2425.2s 273 
+2425.2s 274 Default metric period is 5 because AUC is/are not implemented for GPU
+2428.1s 275 0:	test: 0.7567288	best: 0.7567288 (0)	total: 92.6ms	remaining: 24s
+2436.9s 276 100:	test: 0.8162544	best: 0.8162544 (100)	total: 8.93s	remaining: 14.1s
+2445.7s 277 200:	test: 0.8233118	best: 0.8233118 (200)	total: 17.8s	remaining: 5.21s
+2450.9s 278 259:	test: 0.8247536	best: 0.8247536 (259)	total: 23s	remaining: 0us
+2450.9s 279 bestTest = 0.8247536421
+2450.9s 280 bestIteration = 259
+2483.5s 281 fold aucs: xgb=0.825152, cat=0.824754, xgb_aux=0.824358
+2483.5s 282 
+2483.5s 283 --- fold 4/5 ---
+2557.8s 284 Default metric period is 5 because AUC is/are not implemented for GPU
+2557.8s 285 
+2557.8s 286 Default metric period is 5 because AUC is/are not implemented for GPU
+2561.0s 287 0:	test: 0.7478913	best: 0.7478913 (0)	total: 97.9ms	remaining: 25.3s
+2570.2s 288 100:	test: 0.8145567	best: 0.8145567 (100)	total: 9.31s	remaining: 14.7s
+2579.3s 289 200:	test: 0.8224387	best: 0.8224387 (200)	total: 18.5s	remaining: 5.42s
+2584.8s 290 259:	test: 0.8247933	best: 0.8247933 (259)	total: 23.9s	remaining: 0us
+2584.8s 291 bestTest = 0.8247933388
+2584.8s 292 bestIteration = 259
+2619.1s 293 fold aucs: xgb=0.828645, cat=0.824793, xgb_aux=0.827219
+2619.1s 294 
+2619.1s 295 --- fold 5/5 ---
+2693.7s 296 Default metric period is 5 because AUC is/are not implemented for GPU
+2693.7s 297 
+2693.7s 298 Default metric period is 5 because AUC is/are not implemented for GPU
+2696.6s 299 0:	test: 0.7567764	best: 0.7567764 (0)	total: 91.7ms	remaining: 23.8s
+2705.9s 300 100:	test: 0.8183891	best: 0.8183891 (100)	total: 9.3s	remaining: 14.6s
+2715.1s 301 200:	test: 0.8251845	best: 0.8251845 (200)	total: 18.5s	remaining: 5.44s
+2720.6s 302 259:	test: 0.8276299	best: 0.8276486 (258)	total: 24s	remaining: 0us
+2720.6s 303 bestTest = 0.8276485801
+2720.6s 304 bestIteration = 258
+2720.6s 305 Shrink model to first 259 iterations.
+2753.2s 306 fold aucs: xgb=0.830790, cat=0.827649, xgb_aux=0.830200
+2754.7s 307 
+2754.7s 308 OOF AUCs:
+2754.7s 309 XGB base   : 0.827060
+2754.7s 310 CAT base   : 0.823787
+2754.7s 311 XGB aux    : 0.826024
+2754.7s 312 BLEND raw  : 0.830216
+2754.7s 313 BLEND rank : 0.829849
+2754.7s 314 Weights    : xgb=0.349, cat=0.313, xgb_aux=0.337
+2754.7s 315 
+2754.7s 316 ==========================================================================================
+2754.7s 317 [TARGET] target_1_5
+2754.7s 318 ==========================================================================================
+2754.7s 319 
+2754.7s 320 --- fold 1/5 ---
+2827.4s 321 Default metric period is 5 because AUC is/are not implemented for GPU
+2827.4s 322 
+2827.4s 323 Default metric period is 5 because AUC is/are not implemented for GPU
+2830.2s 324 0:	test: 0.8235220	best: 0.8235220 (0)	total: 92.2ms	remaining: 23.9s
+2838.8s 325 100:	test: 0.8804191	best: 0.8810682 (91)	total: 8.66s	remaining: 13.6s
+2843.1s 326 bestTest = 0.8810682297
+2843.1s 327 bestIteration = 91
+2843.1s 328 Shrink model to first 92 iterations.
+2876.7s 329 fold aucs: xgb=0.876127, cat=0.881068, xgb_aux=0.877387
+2876.7s 330 
+2876.7s 331 --- fold 2/5 ---
+2951.2s 332 Default metric period is 5 because AUC is/are not implemented for GPU
+2951.2s 333 
+2951.2s 334 Default metric period is 5 because AUC is/are not implemented for GPU
+2954.3s 335 0:	test: 0.8108410	best: 0.8108410 (0)	total: 96.2ms	remaining: 24.9s
+2963.7s 336 100:	test: 0.8677581	best: 0.8688529 (98)	total: 9.49s	remaining: 14.9s
+2973.1s 337 200:	test: 0.8679946	best: 0.8700886 (181)	total: 18.9s	remaining: 5.54s
+2977.0s 338 bestTest = 0.8700886071
+2977.0s 339 bestIteration = 181
+2977.0s 340 Shrink model to first 182 iterations.
+3010.3s 341 fold aucs: xgb=0.861370, cat=0.870089, xgb_aux=0.867863
+3010.3s 342 
+3010.3s 343 --- fold 3/5 ---
+3081.9s 344 Default metric period is 5 because AUC is/are not implemented for GPU
+3081.9s 345 
+3081.9s 346 Default metric period is 5 because AUC is/are not implemented for GPU
+3084.1s 347 0:	test: 0.8014531	best: 0.8014531 (0)	total: 77.9ms	remaining: 20.2s
+3091.3s 348 100:	test: 0.8773145	best: 0.8773145 (100)	total: 7.25s	remaining: 11.4s
+3097.8s 349 bestTest = 0.8793658316
+3097.8s 350 bestIteration = 131
+3097.8s 351 Shrink model to first 132 iterations.
+3130.5s 352 fold aucs: xgb=0.854306, cat=0.879366, xgb_aux=0.867411
+3130.5s 353 
+3130.5s 354 --- fold 4/5 ---
+3202.3s 355 Default metric period is 5 because AUC is/are not implemented for GPU
+3202.3s 356 
+3202.3s 357 Default metric period is 5 because AUC is/are not implemented for GPU
+3204.9s 358 0:	test: 0.7975213	best: 0.7975213 (0)	total: 80.3ms	remaining: 20.8s
+3212.9s 359 100:	test: 0.8690062	best: 0.8700128 (93)	total: 8.09s	remaining: 12.7s
+3220.8s 360 200:	test: 0.8694085	best: 0.8706126 (161)	total: 16s	remaining: 4.71s
+3222.5s 361 bestTest = 0.8706126213
+3222.5s 362 bestIteration = 161
+3222.5s 363 Shrink model to first 162 iterations.
+3255.7s 364 fold aucs: xgb=0.862057, cat=0.870613, xgb_aux=0.855328
+3255.7s 365 
+3255.7s 366 --- fold 5/5 ---
+3329.1s 367 Default metric period is 5 because AUC is/are not implemented for GPU
+3329.1s 368 
+3329.1s 369 Default metric period is 5 because AUC is/are not implemented for GPU
+3332.2s 370 0:	test: 0.7844968	best: 0.7844968 (0)	total: 101ms	remaining: 26.2s
+3341.6s 371 100:	test: 0.8580445	best: 0.8584698 (97)	total: 9.56s	remaining: 15.1s
+3351.1s 372 200:	test: 0.8585610	best: 0.8593193 (199)	total: 19s	remaining: 5.57s
+3356.7s 373 259:	test: 0.8574766	best: 0.8593193 (199)	total: 24.6s	remaining: 0us
+3356.7s 374 bestTest = 0.8593193293
+3356.7s 375 bestIteration = 199
+3356.7s 376 Shrink model to first 200 iterations.
+3389.9s 377 fold aucs: xgb=0.851891, cat=0.859319, xgb_aux=0.857827
+3391.4s 378 
+3391.4s 379 OOF AUCs:
+3391.4s 380 XGB base   : 0.860164
+3391.4s 381 CAT base   : 0.870177
+3391.4s 382 XGB aux    : 0.864278
+3391.4s 383 BLEND raw  : 0.876552
+3391.4s 384 BLEND rank : 0.875930
+3391.4s 385 Weights    : xgb=0.282, cat=0.394, xgb_aux=0.324
+3391.4s 386 
+3391.4s 387 ==========================================================================================
+3391.4s 388 [TARGET] target_2_1
+3391.4s 389 ==========================================================================================
+3391.4s 390 
+3391.4s 391 --- fold 1/5 ---
+3463.8s 392 Default metric period is 5 because AUC is/are not implemented for GPU
+3463.8s 393 
+3463.8s 394 Default metric period is 5 because AUC is/are not implemented for GPU
+3466.6s 395 0:	test: 0.7820119	best: 0.7820119 (0)	total: 90.6ms	remaining: 23.5s
+3475.1s 396 100:	test: 0.8168529	best: 0.8168529 (100)	total: 8.64s	remaining: 13.6s
+3483.5s 397 200:	test: 0.8211279	best: 0.8211279 (200)	total: 17s	remaining: 5s
+3488.5s 398 259:	test: 0.8213835	best: 0.8217690 (220)	total: 22s	remaining: 0us
+3488.5s 399 bestTest = 0.8217690289
+3488.5s 400 bestIteration = 220
+3488.5s 401 Shrink model to first 221 iterations.
+3521.3s 402 fold aucs: xgb=0.801699, cat=0.821769, xgb_aux=0.800183
+3521.3s 403 
+3521.3s 404 --- fold 2/5 ---
+3594.1s 405 Default metric period is 5 because AUC is/are not implemented for GPU
+3594.1s 406 
+3594.1s 407 Default metric period is 5 because AUC is/are not implemented for GPU
+3596.5s 408 0:	test: 0.7784458	best: 0.7784458 (0)	total: 81.4ms	remaining: 21.1s
+3604.5s 409 100:	test: 0.8157770	best: 0.8157770 (100)	total: 8.14s	remaining: 12.8s
+3612.6s 410 200:	test: 0.8178430	best: 0.8179520 (198)	total: 16.2s	remaining: 4.74s
+3617.3s 411 259:	test: 0.8190565	best: 0.8190565 (259)	total: 20.9s	remaining: 0us
+3617.3s 412 bestTest = 0.8190564811
+3617.3s 413 bestIteration = 259
+3649.5s 414 fold aucs: xgb=0.800729, cat=0.819056, xgb_aux=0.807119
+3649.5s 415 
+3649.5s 416 --- fold 3/5 ---
+3721.8s 417 Default metric period is 5 because AUC is/are not implemented for GPU
+3721.8s 418 
+3721.8s 419 Default metric period is 5 because AUC is/are not implemented for GPU
+3724.3s 420 0:	test: 0.7833393	best: 0.7833393 (0)	total: 87.4ms	remaining: 22.6s
+3732.5s 421 100:	test: 0.8161438	best: 0.8161438 (100)	total: 8.27s	remaining: 13s
+3740.6s 422 200:	test: 0.8203797	best: 0.8205115 (192)	total: 16.4s	remaining: 4.81s
+3745.4s 423 259:	test: 0.8203557	best: 0.8205641 (254)	total: 21.2s	remaining: 0us
+3745.4s 424 bestTest = 0.8205640912
+3745.4s 425 bestIteration = 254
+3745.4s 426 Shrink model to first 255 iterations.
+3778.1s 427 fold aucs: xgb=0.808075, cat=0.820564, xgb_aux=0.806215
+3778.1s 428 
+3778.1s 429 --- fold 4/5 ---
+3851.5s 430 Default metric period is 5 because AUC is/are not implemented for GPU
+3851.5s 431 
+3851.5s 432 Default metric period is 5 because AUC is/are not implemented for GPU
+3854.5s 433 0:	test: 0.7817824	best: 0.7817824 (0)	total: 93.9ms	remaining: 24.3s
+3863.8s 434 100:	test: 0.8174058	best: 0.8174058 (100)	total: 9.32s	remaining: 14.7s
+3872.9s 435 200:	test: 0.8180639	best: 0.8185741 (170)	total: 18.4s	remaining: 5.4s
+3875.6s 436 bestTest = 0.8185740709
+3875.6s 437 bestIteration = 170
+3875.6s 438 Shrink model to first 171 iterations.
+3908.4s 439 fold aucs: xgb=0.802840, cat=0.818574, xgb_aux=0.799937
+3908.4s 440 
+3908.4s 441 --- fold 5/5 ---
+3979.8s 442 Default metric period is 5 because AUC is/are not implemented for GPU
+3979.8s 443 
+3979.8s 444 Default metric period is 5 because AUC is/are not implemented for GPU
+3982.2s 445 0:	test: 0.7739457	best: 0.7739457 (0)	total: 81.7ms	remaining: 21.2s
+3990.0s 446 100:	test: 0.8073568	best: 0.8073568 (100)	total: 7.86s	remaining: 12.4s
+3997.8s 447 200:	test: 0.8100699	best: 0.8101450 (195)	total: 15.6s	remaining: 4.58s
+4002.3s 448 259:	test: 0.8100249	best: 0.8103222 (239)	total: 20.1s	remaining: 0us
+4002.3s 449 bestTest = 0.8103222251
+4002.3s 450 bestIteration = 239
+4002.3s 451 Shrink model to first 240 iterations.
+4034.5s 452 fold aucs: xgb=0.797282, cat=0.810322, xgb_aux=0.794964
+4035.9s 453 
+4035.9s 454 OOF AUCs:
+4035.9s 455 XGB base   : 0.802075
+4035.9s 456 CAT base   : 0.817993
+4035.9s 457 XGB aux    : 0.801682
+4035.9s 458 BLEND raw  : 0.818011
+4035.9s 459 BLEND rank : 0.817221
+4035.9s 460 Weights    : xgb=0.271, cat=0.461, xgb_aux=0.268
+4035.9s 461 
+4035.9s 462 ==========================================================================================
+4035.9s 463 [TARGET] target_2_2
+4035.9s 464 ==========================================================================================
+4035.9s 465 
+4035.9s 466 --- fold 1/5 ---
+4110.8s 467 Default metric period is 5 because AUC is/are not implemented for GPU
+4110.8s 468 
+4110.8s 469 Default metric period is 5 because AUC is/are not implemented for GPU
+4113.6s 470 0:	test: 0.8815743	best: 0.8815743 (0)	total: 88.2ms	remaining: 22.8s
+4122.4s 471 100:	test: 0.9220134	best: 0.9220134 (100)	total: 8.88s	remaining: 14s
+4131.2s 472 200:	test: 0.9249127	best: 0.9249127 (200)	total: 17.7s	remaining: 5.19s
+4136.4s 473 259:	test: 0.9256426	best: 0.9256426 (259)	total: 22.9s	remaining: 0us
+4136.4s 474 bestTest = 0.9256426096
+4136.4s 475 bestIteration = 259
+4169.2s 476 fold aucs: xgb=0.928040, cat=0.925643, xgb_aux=0.927231
+4169.2s 477 
+4169.2s 478 --- fold 2/5 ---
+4242.9s 479 Default metric period is 5 because AUC is/are not implemented for GPU
+4242.9s 480 
+4242.9s 481 Default metric period is 5 because AUC is/are not implemented for GPU
+4245.9s 482 0:	test: 0.8820548	best: 0.8820548 (0)	total: 95.2ms	remaining: 24.7s
+4255.1s 483 100:	test: 0.9225056	best: 0.9225056 (100)	total: 9.29s	remaining: 14.6s
+4264.1s 484 200:	test: 0.9263012	best: 0.9263012 (200)	total: 18.3s	remaining: 5.38s
+4269.5s 485 259:	test: 0.9272827	best: 0.9272827 (259)	total: 23.7s	remaining: 0us
+4269.5s 486 bestTest = 0.9272827208
+4269.5s 487 bestIteration = 259
+4302.7s 488 fold aucs: xgb=0.931392, cat=0.927283, xgb_aux=0.931325
+4302.7s 489 
+4302.7s 490 --- fold 3/5 ---
+4376.4s 491 Default metric period is 5 because AUC is/are not implemented for GPU
+4376.4s 492 
+4376.4s 493 Default metric period is 5 because AUC is/are not implemented for GPU
+4379.5s 494 0:	test: 0.8801809	best: 0.8801809 (0)	total: 97.8ms	remaining: 25.3s
+4388.8s 495 100:	test: 0.9216205	best: 0.9216205 (100)	total: 9.38s	remaining: 14.8s
+4398.0s 496 200:	test: 0.9245884	best: 0.9245884 (200)	total: 18.6s	remaining: 5.46s
+4403.5s 497 259:	test: 0.9253071	best: 0.9253126 (257)	total: 24.1s	remaining: 0us
+4403.5s 498 bestTest = 0.9253126383
+4403.5s 499 bestIteration = 257
+4403.5s 500 Shrink model to first 258 iterations.
+4437.0s 501 fold aucs: xgb=0.927465, cat=0.925313, xgb_aux=0.926721
+4437.0s 502 
+4437.0s 503 --- fold 4/5 ---
+4509.9s 504 Default metric period is 5 because AUC is/are not implemented for GPU
+4509.9s 505 
+4509.9s 506 Default metric period is 5 because AUC is/are not implemented for GPU
+4513.0s 507 0:	test: 0.8664424	best: 0.8664424 (0)	total: 97.5ms	remaining: 25.3s
+4522.4s 508 100:	test: 0.9204866	best: 0.9204866 (100)	total: 9.48s	remaining: 14.9s
+4531.8s 509 200:	test: 0.9246116	best: 0.9246116 (200)	total: 18.9s	remaining: 5.54s
+4537.3s 510 259:	test: 0.9254872	best: 0.9255196 (256)	total: 24.3s	remaining: 0us
+4537.3s 511 bestTest = 0.9255196154
+4537.3s 512 bestIteration = 256
+4537.3s 513 Shrink model to first 257 iterations.
+4570.2s 514 fold aucs: xgb=0.929916, cat=0.925520, xgb_aux=0.929330
+4570.2s 515 
+4570.2s 516 --- fold 5/5 ---
+4642.0s 517 Default metric period is 5 because AUC is/are not implemented for GPU
+4642.0s 518 
+4642.0s 519 Default metric period is 5 because AUC is/are not implemented for GPU
+4644.8s 520 0:	test: 0.8801409	best: 0.8801409 (0)	total: 89.1ms	remaining: 23.1s
+4653.7s 521 100:	test: 0.9218962	best: 0.9218962 (100)	total: 8.94s	remaining: 14.1s
+4662.5s 522 200:	test: 0.9250793	best: 0.9250793 (200)	total: 17.7s	remaining: 5.2s
+4667.7s 523 259:	test: 0.9258537	best: 0.9258589 (256)	total: 22.9s	remaining: 0us
+4667.7s 524 bestTest = 0.9258588552
+4667.7s 525 bestIteration = 256
+4667.7s 526 Shrink model to first 257 iterations.
+4701.0s 527 fold aucs: xgb=0.929162, cat=0.925859, xgb_aux=0.928743
+4702.5s 528 
+4702.5s 529 OOF AUCs:
+4702.5s 530 XGB base   : 0.929157
+4702.5s 531 CAT base   : 0.925905
+4702.5s 532 XGB aux    : 0.928636
+4702.5s 533 BLEND raw  : 0.930244
+4702.5s 534 BLEND rank : 0.930033
+4702.5s 535 Weights    : xgb=0.347, cat=0.312, xgb_aux=0.341
+4702.5s 536 
+4702.5s 537 ==========================================================================================
+4702.5s 538 [TARGET] target_2_3
+4702.5s 539 ==========================================================================================
+4702.5s 540 
+4702.5s 541 --- fold 1/5 ---
+4772.0s 542 Default metric period is 5 because AUC is/are not implemented for GPU
+4772.0s 543 
+4772.0s 544 Default metric period is 5 because AUC is/are not implemented for GPU
+4773.8s 545 0:	test: 0.7264993	best: 0.7264993 (0)	total: 72.3ms	remaining: 18.7s
+4778.7s 546 bestTest = 0.7667227089
+4778.7s 547 bestIteration = 12
+4778.7s 548 Shrink model to first 13 iterations.
+4809.9s 549 fold aucs: xgb=0.743642, cat=0.766723, xgb_aux=0.731864
+4809.9s 550 
+4809.9s 551 --- fold 2/5 ---
+4881.4s 552 Default metric period is 5 because AUC is/are not implemented for GPU
+4881.4s 553 
+4881.4s 554 Default metric period is 5 because AUC is/are not implemented for GPU
+4883.6s 555 0:	test: 0.7644763	best: 0.7644763 (0)	total: 73.8ms	remaining: 19.1s
+4890.7s 556 100:	test: 0.8072367	best: 0.8072367 (100)	total: 7.26s	remaining: 11.4s
+4896.8s 557 bestTest = 0.8097577989
+4896.8s 558 bestIteration = 124
+4896.8s 559 Shrink model to first 125 iterations.
+4929.0s 560 fold aucs: xgb=0.744236, cat=0.809758, xgb_aux=0.752624
+4929.0s 561 
+4929.0s 562 --- fold 3/5 ---
+5000.9s 563 Default metric period is 5 because AUC is/are not implemented for GPU
+5000.9s 564 
+5000.9s 565 Default metric period is 5 because AUC is/are not implemented for GPU
+5003.6s 566 0:	test: 0.7798207	best: 0.7798207 (0)	total: 91.3ms	remaining: 23.6s
+5012.2s 567 100:	test: 0.8026919	best: 0.8043359 (93)	total: 8.63s	remaining: 13.6s
+5016.6s 568 bestTest = 0.8043358624
+5016.6s 569 bestIteration = 93
+5016.6s 570 Shrink model to first 94 iterations.
+5049.9s 571 fold aucs: xgb=0.775102, cat=0.804336, xgb_aux=0.762546
+5049.9s 572 
+5049.9s 573 --- fold 4/5 ---
+5118.8s 574 Default metric period is 5 because AUC is/are not implemented for GPU
+5118.8s 575 
+5118.8s 576 Default metric period is 5 because AUC is/are not implemented for GPU
+5121.0s 577 0:	test: 0.7741700	best: 0.7741700 (0)	total: 76.3ms	remaining: 19.8s
+5127.1s 578 bestTest = 0.806445539
+5127.1s 579 bestIteration = 22
+5127.1s 580 Shrink model to first 23 iterations.
+5159.2s 581 fold aucs: xgb=0.730855, cat=0.806446, xgb_aux=0.739020
+5159.2s 582 
+5159.2s 583 --- fold 5/5 ---
+5230.3s 584 Default metric period is 5 because AUC is/are not implemented for GPU
+5230.3s 585 
+5230.3s 586 Default metric period is 5 because AUC is/are not implemented for GPU
+5232.7s 587 0:	test: 0.7823130	best: 0.7823130 (0)	total: 80.5ms	remaining: 20.8s
+5240.5s 588 100:	test: 0.8308202	best: 0.8336197 (83)	total: 7.88s	remaining: 12.4s
+5243.9s 589 bestTest = 0.8336197138
+5243.9s 590 bestIteration = 83
+5243.9s 591 Shrink model to first 84 iterations.
+5278.4s 592 fold aucs: xgb=0.748040, cat=0.833620, xgb_aux=0.750625
+5279.8s 593 
+5279.8s 594 OOF AUCs:
+5279.8s 595 XGB base   : 0.748218
+5279.8s 596 CAT base   : 0.798477
+5279.8s 597 XGB aux    : 0.747014
+5279.8s 598 BLEND raw  : 0.803323
+5279.8s 599 BLEND rank : 0.802692
+5279.8s 600 Weights    : xgb=0.137, cat=0.731, xgb_aux=0.132
+5279.8s 601 
+5279.8s 602 ==========================================================================================
+5279.8s 603 [TARGET] target_2_4
+5279.8s 604 ==========================================================================================
+5279.8s 605 
+5279.8s 606 --- fold 1/5 ---
+5349.8s 607 Default metric period is 5 because AUC is/are not implemented for GPU
+5349.8s 608 
+5349.8s 609 Default metric period is 5 because AUC is/are not implemented for GPU
+5351.8s 610 0:	test: 0.6615815	best: 0.6615815 (0)	total: 73ms	remaining: 18.9s
+5358.7s 611 100:	test: 0.7160125	best: 0.7160125 (100)	total: 7s	remaining: 11s
+5365.6s 612 200:	test: 0.7220907	best: 0.7221670 (199)	total: 13.9s	remaining: 4.08s
+5369.7s 613 259:	test: 0.7230389	best: 0.7231275 (256)	total: 18s	remaining: 0us
+5369.7s 614 bestTest = 0.7231275439
+5369.7s 615 bestIteration = 256
+5369.7s 616 Shrink model to first 257 iterations.
+5401.1s 617 fold aucs: xgb=0.716679, cat=0.723127, xgb_aux=0.717643
+5401.1s 618 
+5401.1s 619 --- fold 2/5 ---
+5470.7s 620 Default metric period is 5 because AUC is/are not implemented for GPU
+5470.7s 621 
+5470.7s 622 Default metric period is 5 because AUC is/are not implemented for GPU
+5472.9s 623 0:	test: 0.6811071	best: 0.6811071 (0)	total: 72.5ms	remaining: 18.8s
+5480.1s 624 100:	test: 0.7389829	best: 0.7389829 (100)	total: 7.28s	remaining: 11.5s
+5487.2s 625 200:	test: 0.7421951	best: 0.7423066 (198)	total: 14.4s	remaining: 4.23s
+5491.5s 626 259:	test: 0.7437945	best: 0.7439532 (243)	total: 18.7s	remaining: 0us
+5491.5s 627 bestTest = 0.7439531684
+5491.5s 628 bestIteration = 243
+5491.5s 629 Shrink model to first 244 iterations.
+5523.7s 630 fold aucs: xgb=0.723432, cat=0.743953, xgb_aux=0.728361
+5523.7s 631 
+5523.7s 632 --- fold 3/5 ---
+5593.3s 633 Default metric period is 5 because AUC is/are not implemented for GPU
+5593.3s 634 
+5593.3s 635 Default metric period is 5 because AUC is/are not implemented for GPU
+5595.0s 636 0:	test: 0.6810945	best: 0.6810945 (0)	total: 66.6ms	remaining: 17.3s
+5601.3s 637 100:	test: 0.7317071	best: 0.7317071 (100)	total: 6.33s	remaining: 9.97s
+5607.6s 638 200:	test: 0.7369249	best: 0.7370765 (180)	total: 12.6s	remaining: 3.7s
+5611.3s 639 259:	test: 0.7375701	best: 0.7375701 (259)	total: 16.3s	remaining: 0us
+5611.3s 640 bestTest = 0.737570107
+5611.3s 641 bestIteration = 259
+5642.5s 642 fold aucs: xgb=0.706379, cat=0.737570, xgb_aux=0.709899
+5642.5s 643 
+5642.5s 644 --- fold 4/5 ---
+5712.3s 645 Default metric period is 5 because AUC is/are not implemented for GPU
+5712.3s 646 
+5712.3s 647 Default metric period is 5 because AUC is/are not implemented for GPU
+5714.6s 648 0:	test: 0.6723801	best: 0.6723801 (0)	total: 74.7ms	remaining: 19.3s
+5722.0s 649 100:	test: 0.7376460	best: 0.7376460 (100)	total: 7.52s	remaining: 11.8s
+5729.5s 650 200:	test: 0.7412742	best: 0.7415064 (199)	total: 15s	remaining: 4.4s
+5733.9s 651 259:	test: 0.7436769	best: 0.7436946 (258)	total: 19.4s	remaining: 0us
+5733.9s 652 bestTest = 0.7436945736
+5733.9s 653 bestIteration = 258
+5733.9s 654 Shrink model to first 259 iterations.
+5766.6s 655 fold aucs: xgb=0.725256, cat=0.743695, xgb_aux=0.723260
+5766.6s 656 
+5766.6s 657 --- fold 5/5 ---
+5836.7s 658 Default metric period is 5 because AUC is/are not implemented for GPU
+5836.7s 659 
+5836.7s 660 Default metric period is 5 because AUC is/are not implemented for GPU
+5838.7s 661 0:	test: 0.6757817	best: 0.6757817 (0)	total: 73.3ms	remaining: 19s
+5845.6s 662 100:	test: 0.7398292	best: 0.7399313 (99)	total: 7s	remaining: 11s
+5852.5s 663 200:	test: 0.7414567	best: 0.7428092 (177)	total: 13.9s	remaining: 4.09s
+5855.1s 664 bestTest = 0.742809236
+5855.1s 665 bestIteration = 177
+5855.1s 666 Shrink model to first 178 iterations.
+5888.3s 667 fold aucs: xgb=0.719377, cat=0.742809, xgb_aux=0.723944
+5889.8s 668 
+5889.8s 669 OOF AUCs:
+5889.8s 670 XGB base   : 0.718156
+5889.8s 671 CAT base   : 0.737953
+5889.8s 672 XGB aux    : 0.720600
+5889.8s 673 BLEND raw  : 0.739343
+5889.8s 674 BLEND rank : 0.738242
+5889.8s 675 Weights    : xgb=0.249, cat=0.481, xgb_aux=0.270
+5889.8s 676 
+5889.8s 677 ==========================================================================================
+5889.8s 678 [TARGET] target_2_5
+5889.8s 679 ==========================================================================================
+5889.8s 680 
+5889.8s 681 --- fold 1/5 ---
+5962.2s 682 Default metric period is 5 because AUC is/are not implemented for GPU
+5962.2s 683 
+5962.2s 684 Default metric period is 5 because AUC is/are not implemented for GPU
+5964.4s 685 0:	test: 0.6468523	best: 0.6468523 (0)	total: 74.4ms	remaining: 19.3s
+5971.9s 686 100:	test: 0.7185188	best: 0.7185217 (96)	total: 7.56s	remaining: 11.9s
+5979.4s 687 200:	test: 0.7244074	best: 0.7301827 (163)	total: 15.1s	remaining: 4.42s
+5981.2s 688 bestTest = 0.7301827371
+5981.2s 689 bestIteration = 163
+5981.2s 690 Shrink model to first 164 iterations.
+6013.6s 691 fold aucs: xgb=0.709028, cat=0.730183, xgb_aux=0.709434
+6013.6s 692 
+6013.6s 693 --- fold 2/5 ---
+6085.0s 694 Default metric period is 5 because AUC is/are not implemented for GPU
+6085.0s 695 
+6085.0s 696 Default metric period is 5 because AUC is/are not implemented for GPU
+6087.1s 697 0:	test: 0.6912876	best: 0.6912876 (0)	total: 76.4ms	remaining: 19.8s
+6094.3s 698 100:	test: 0.7604893	best: 0.7641827 (94)	total: 7.32s	remaining: 11.5s
+6101.5s 699 200:	test: 0.7626165	best: 0.7655023 (152)	total: 14.5s	remaining: 4.26s
+6102.4s 700 bestTest = 0.7655023336
+6102.4s 701 bestIteration = 152
+6102.4s 702 Shrink model to first 153 iterations.
+6135.1s 703 fold aucs: xgb=0.732305, cat=0.765502, xgb_aux=0.736884
+6135.1s 704 
+6135.1s 705 --- fold 3/5 ---
+6206.4s 706 Default metric period is 5 because AUC is/are not implemented for GPU
+6206.4s 707 
+6206.4s 708 Default metric period is 5 because AUC is/are not implemented for GPU
+6208.6s 709 0:	test: 0.6808009	best: 0.6808009 (0)	total: 75.6ms	remaining: 19.6s
+6216.0s 710 100:	test: 0.7351336	best: 0.7438839 (43)	total: 7.53s	remaining: 11.8s
+6216.3s 711 bestTest = 0.7438839078
+6216.3s 712 bestIteration = 43
+6216.3s 713 Shrink model to first 44 iterations.
+6248.6s 714 fold aucs: xgb=0.682703, cat=0.743884, xgb_aux=0.691693
+6248.6s 715 
+6248.6s 716 --- fold 4/5 ---
+6320.6s 717 Default metric period is 5 because AUC is/are not implemented for GPU
+6320.6s 718 
+6320.6s 719 Default metric period is 5 because AUC is/are not implemented for GPU
+6323.1s 720 0:	test: 0.6795086	best: 0.6795086 (0)	total: 85.3ms	remaining: 22.1s
+6331.3s 721 100:	test: 0.7661959	best: 0.7711709 (80)	total: 8.23s	remaining: 13s
+6339.1s 722 bestTest = 0.7751203477
+6339.1s 723 bestIteration = 136
+6339.1s 724 Shrink model to first 137 iterations.
+6372.4s 725 fold aucs: xgb=0.722633, cat=0.775120, xgb_aux=0.737210
+6372.4s 726 
+6372.4s 727 --- fold 5/5 ---
+6442.2s 728 Default metric period is 5 because AUC is/are not implemented for GPU
+6442.2s 729 
+6442.2s 730 Default metric period is 5 because AUC is/are not implemented for GPU
+6444.4s 731 0:	test: 0.6698203	best: 0.6698203 (0)	total: 73.5ms	remaining: 19s
+6451.8s 732 100:	test: 0.7527075	best: 0.7554175 (79)	total: 7.44s	remaining: 11.7s
+6454.7s 733 bestTest = 0.7554174662
+6454.7s 734 bestIteration = 79
+6454.7s 735 Shrink model to first 80 iterations.
+6486.5s 736 fold aucs: xgb=0.726812, cat=0.755418, xgb_aux=0.729343
+6487.9s 737 
+6487.9s 738 OOF AUCs:
+6487.9s 739 XGB base   : 0.714359
+6487.9s 740 CAT base   : 0.750075
+6487.9s 741 XGB aux    : 0.720551
+6487.9s 742 BLEND raw  : 0.757968
+6487.9s 743 BLEND rank : 0.756468
+6487.9s 744 Weights    : xgb=0.181, cat=0.596, xgb_aux=0.223
+6487.9s 745 
+6487.9s 746 ==========================================================================================
+6487.9s 747 [TARGET] target_2_6
+6487.9s 748 ==========================================================================================
+6487.9s 749 
+6487.9s 750 --- fold 1/5 ---
+6560.0s 751 Default metric period is 5 because AUC is/are not implemented for GPU
+6560.0s 752 
+6560.0s 753 Default metric period is 5 because AUC is/are not implemented for GPU
+6562.7s 754 0:	test: 0.6268767	best: 0.6268767 (0)	total: 94.6ms	remaining: 24.5s
+6571.2s 755 100:	test: 0.7192023	best: 0.7192023 (100)	total: 8.66s	remaining: 13.6s
+6579.8s 756 200:	test: 0.7264355	best: 0.7270487 (185)	total: 17.2s	remaining: 5.05s
+6584.8s 757 259:	test: 0.7286860	best: 0.7289875 (253)	total: 22.2s	remaining: 0us
+6584.8s 758 bestTest = 0.7289875448
+6584.8s 759 bestIteration = 253
+6584.8s 760 Shrink model to first 254 iterations.
+6616.5s 761 fold aucs: xgb=0.710928, cat=0.728988, xgb_aux=0.706127
+6616.5s 762 
+6616.5s 763 --- fold 2/5 ---
+6689.3s 764 Default metric period is 5 because AUC is/are not implemented for GPU
+6689.3s 765 
+6689.3s 766 Default metric period is 5 because AUC is/are not implemented for GPU
+6692.2s 767 0:	test: 0.6564594	best: 0.6564594 (0)	total: 90ms	remaining: 23.3s
+6701.0s 768 100:	test: 0.7536527	best: 0.7541652 (97)	total: 8.94s	remaining: 14.1s
+6709.9s 769 200:	test: 0.7575797	best: 0.7584408 (166)	total: 17.8s	remaining: 5.23s
+6712.2s 770 bestTest = 0.7584408224
+6712.2s 771 bestIteration = 166
+6712.2s 772 Shrink model to first 167 iterations.
+6743.9s 773 fold aucs: xgb=0.711078, cat=0.758441, xgb_aux=0.721883
+6743.9s 774 
+6743.9s 775 --- fold 3/5 ---
+6815.9s 776 Default metric period is 5 because AUC is/are not implemented for GPU
+6815.9s 777 
+6815.9s 778 Default metric period is 5 because AUC is/are not implemented for GPU
+6818.5s 779 0:	test: 0.6579999	best: 0.6579999 (0)	total: 87.6ms	remaining: 22.7s
+6826.9s 780 100:	test: 0.7340101	best: 0.7344907 (98)	total: 8.45s	remaining: 13.3s
+6835.3s 781 200:	test: 0.7340571	best: 0.7356578 (164)	total: 16.8s	remaining: 4.93s
+6837.3s 782 bestTest = 0.7356578112
+6837.3s 783 bestIteration = 164
+6837.3s 784 Shrink model to first 165 iterations.
+6869.6s 785 fold aucs: xgb=0.703038, cat=0.735658, xgb_aux=0.701202
+6869.6s 786 
+6869.6s 787 --- fold 4/5 ---
+6941.7s 788 Default metric period is 5 because AUC is/are not implemented for GPU
+6941.7s 789 
+6941.7s 790 Default metric period is 5 because AUC is/are not implemented for GPU
+6944.4s 791 0:	test: 0.6394731	best: 0.6394731 (0)	total: 82.2ms	remaining: 21.3s
+6952.6s 792 100:	test: 0.7321381	best: 0.7328144 (87)	total: 8.36s	remaining: 13.2s
+6961.0s 793 200:	test: 0.7323563	best: 0.7353535 (169)	total: 16.7s	remaining: 4.9s
+6963.4s 794 bestTest = 0.7353534698
+6963.4s 795 bestIteration = 169
+6963.4s 796 Shrink model to first 170 iterations.
+6996.7s 797 fold aucs: xgb=0.703520, cat=0.735353, xgb_aux=0.698875
+6996.7s 798 
+6996.7s 799 --- fold 5/5 ---
+7068.0s 800 Default metric period is 5 because AUC is/are not implemented for GPU
+7068.0s 801 
+7068.0s 802 Default metric period is 5 because AUC is/are not implemented for GPU
+7071.0s 803 0:	test: 0.6362049	best: 0.6362049 (0)	total: 95.3ms	remaining: 24.7s
+7080.2s 804 100:	test: 0.7225900	best: 0.7226014 (99)	total: 9.29s	remaining: 14.6s
+7089.4s 805 200:	test: 0.7241706	best: 0.7245973 (198)	total: 18.5s	remaining: 5.42s
+7094.9s 806 259:	test: 0.7249983	best: 0.7249983 (259)	total: 23.9s	remaining: 0us
+7094.9s 807 bestTest = 0.7249982953
+7094.9s 808 bestIteration = 259
+7127.1s 809 fold aucs: xgb=0.693448, cat=0.724998, xgb_aux=0.690893
+7128.6s 810 
+7128.6s 811 OOF AUCs:
+7128.6s 812 XGB base   : 0.704059
+7128.6s 813 CAT base   : 0.734498
+7128.6s 814 XGB aux    : 0.703457
+7128.6s 815 BLEND raw  : 0.737816
+7128.6s 816 BLEND rank : 0.735494
+7128.6s 817 Weights    : xgb=0.211, cat=0.582, xgb_aux=0.207
+7128.6s 818 
+7128.6s 819 ==========================================================================================
+7128.6s 820 [TARGET] target_2_7
+7128.6s 821 ==========================================================================================
+7128.6s 822 
+7128.6s 823 --- fold 1/5 ---
+7201.3s 824 Default metric period is 5 because AUC is/are not implemented for GPU
+7201.3s 825 
+7201.3s 826 Default metric period is 5 because AUC is/are not implemented for GPU
+7203.0s 827 0:	test: 0.7916149	best: 0.7916149 (0)	total: 60.4ms	remaining: 15.6s
+7209.0s 828 100:	test: 0.7990736	best: 0.8162534 (41)	total: 6.09s	remaining: 9.59s
+7209.0s 829 bestTest = 0.8162534237
+7209.0s 830 bestIteration = 41
+7209.0s 831 Shrink model to first 42 iterations.
+7244.1s 832 fold aucs: xgb=0.784534, cat=0.816253, xgb_aux=0.770588
+7244.1s 833 
+7244.1s 834 --- fold 2/5 ---
+7317.0s 835 Default metric period is 5 because AUC is/are not implemented for GPU
+7317.0s 836 
+7317.0s 837 Default metric period is 5 because AUC is/are not implemented for GPU
+7319.3s 838 0:	test: 0.8084724	best: 0.8084724 (0)	total: 80.1ms	remaining: 20.8s
+7326.8s 839 100:	test: 0.8485295	best: 0.8684804 (52)	total: 7.57s	remaining: 11.9s
+7327.8s 840 bestTest = 0.8684804142
+7327.8s 841 bestIteration = 52
+7327.8s 842 Shrink model to first 53 iterations.
+7361.5s 843 fold aucs: xgb=0.838327, cat=0.868480, xgb_aux=0.830705
+7361.5s 844 
+7361.5s 845 --- fold 3/5 ---
+7431.8s 846 Default metric period is 5 because AUC is/are not implemented for GPU
+7431.8s 847 
+7431.8s 848 Default metric period is 5 because AUC is/are not implemented for GPU
+7433.1s 849 0:	test: 0.7408744	best: 0.7408744 (0)	total: 54.2ms	remaining: 14s
+7438.3s 850 100:	test: 0.8041344	best: 0.8221025 (43)	total: 5.25s	remaining: 8.27s
+7438.3s 851 bestTest = 0.8221025467
+7438.3s 852 bestIteration = 43
+7438.3s 853 Shrink model to first 44 iterations.
+7472.0s 854 fold aucs: xgb=0.761326, cat=0.822103, xgb_aux=0.783447
+7472.0s 855 
+7472.0s 856 --- fold 4/5 ---
+7543.7s 857 Default metric period is 5 because AUC is/are not implemented for GPU
+7543.7s 858 
+7543.7s 859 Default metric period is 5 because AUC is/are not implemented for GPU
+7545.6s 860 0:	test: 0.7194577	best: 0.7194577 (0)	total: 72.1ms	remaining: 18.7s
+7552.4s 861 100:	test: 0.7713574	best: 0.8071182 (47)	total: 6.82s	remaining: 10.7s
+7552.9s 862 bestTest = 0.807118237
+7552.9s 863 bestIteration = 47
+7552.9s 864 Shrink model to first 48 iterations.
+7586.4s 865 fold aucs: xgb=0.824806, cat=0.807118, xgb_aux=0.807749
+7586.4s 866 
+7586.4s 867 --- fold 5/5 ---
+7658.0s 868 Default metric period is 5 because AUC is/are not implemented for GPU
+7658.0s 869 
+7658.0s 870 Default metric period is 5 because AUC is/are not implemented for GPU
+7659.7s 871 0:	test: 0.8022350	best: 0.8022350 (0)	total: 62.1ms	remaining: 16.1s
+7664.8s 872 bestTest = 0.8507487178
+7664.8s 873 bestIteration = 22
+7664.8s 874 Shrink model to first 23 iterations.
+7698.6s 875 fold aucs: xgb=0.805245, cat=0.850749, xgb_aux=0.807598
+7700.1s 876 
+7700.1s 877 OOF AUCs:
+7700.1s 878 XGB base   : 0.802582
+7700.1s 879 CAT base   : 0.825462
+7700.1s 880 XGB aux    : 0.800861
+7700.1s 881 BLEND raw  : 0.826397
+7700.1s 882 BLEND rank : 0.838709
+7700.1s 883 Weights    : xgb=0.245, cat=0.524, xgb_aux=0.231
+7700.1s 884 
+7700.1s 885 ==========================================================================================
+7700.1s 886 [TARGET] target_2_8
+7700.1s 887 ==========================================================================================
+7700.1s 888 
+7700.1s 889 --- fold 1/5 ---
+7779.8s 890 Default metric period is 5 because AUC is/are not implemented for GPU
+7779.8s 891 
+7779.8s 892 Default metric period is 5 because AUC is/are not implemented for GPU
+7783.2s 893 0:	test: 0.8986199	best: 0.8986199 (0)	total: 96.6ms	remaining: 25s
+7791.3s 894 bestTest = 0.9719818234
+7791.3s 895 bestIteration = 24
+7791.3s 896 Shrink model to first 25 iterations.
+7821.5s 897 fold aucs: xgb=0.930228, cat=0.971982, xgb_aux=0.929782
+7821.5s 898 
+7821.5s 899 --- fold 2/5 ---
+7902.2s 900 Default metric period is 5 because AUC is/are not implemented for GPU
+7902.2s 901 
+7902.2s 902 Default metric period is 5 because AUC is/are not implemented for GPU
+7905.9s 903 0:	test: 0.9302705	best: 0.9302705 (0)	total: 111ms	remaining: 28.8s
+7916.4s 904 bestTest = 0.9762786627
+7916.4s 905 bestIteration = 38
+7916.4s 906 Shrink model to first 39 iterations.
+7947.5s 907 fold aucs: xgb=0.978702, cat=0.976279, xgb_aux=0.969052
+7947.5s 908 
+7947.5s 909 --- fold 3/5 ---
+8028.2s 910 Default metric period is 5 because AUC is/are not implemented for GPU
+8028.2s 911 
+8028.2s 912 Default metric period is 5 because AUC is/are not implemented for GPU
+8031.6s 913 0:	test: 0.9605437	best: 0.9605437 (0)	total: 102ms	remaining: 26.4s
+8041.6s 914 100:	test: 0.9858222	best: 0.9872344 (73)	total: 10.1s	remaining: 16s
+8045.0s 915 bestTest = 0.987234354
+8045.0s 916 bestIteration = 73
+8045.0s 917 Shrink model to first 74 iterations.
+8074.1s 918 fold aucs: xgb=0.969206, cat=0.987234, xgb_aux=0.967014
+8074.1s 919 
+8074.1s 920 --- fold 4/5 ---
+8153.8s 921 Default metric period is 5 because AUC is/are not implemented for GPU
+8153.8s 922 
+8153.8s 923 Default metric period is 5 because AUC is/are not implemented for GPU
+8157.4s 924 0:	test: 0.9128748	best: 0.9128748 (0)	total: 113ms	remaining: 29.3s
+8168.1s 925 100:	test: 0.9629534	best: 0.9743818 (54)	total: 10.8s	remaining: 16.9s
+8169.6s 926 bestTest = 0.9743818045
+8169.6s 927 bestIteration = 54
+8169.6s 928 Shrink model to first 55 iterations.
+8201.1s 929 fold aucs: xgb=0.972403, cat=0.974382, xgb_aux=0.970697
+8201.1s 930 
+8201.1s 931 --- fold 5/5 ---
+8280.2s 932 Default metric period is 5 because AUC is/are not implemented for GPU
+8280.2s 933 
+8280.2s 934 Default metric period is 5 because AUC is/are not implemented for GPU
+8283.6s 935 0:	test: 0.9206367	best: 0.9206367 (0)	total: 97.1ms	remaining: 25.1s
+8293.4s 936 100:	test: 0.9482214	best: 0.9597579 (61)	total: 9.93s	remaining: 15.6s
+8295.5s 937 bestTest = 0.9597578645
+8295.5s 938 bestIteration = 61
+8295.5s 939 Shrink model to first 62 iterations.
+8325.2s 940 fold aucs: xgb=0.876353, cat=0.959758, xgb_aux=0.877879
+8326.7s 941 
+8326.7s 942 OOF AUCs:
+8326.7s 943 XGB base   : 0.948323
+8326.7s 944 CAT base   : 0.970804
+8326.7s 945 XGB aux    : 0.945495
+8326.7s 946 BLEND raw  : 0.970870
+8326.7s 947 BLEND rank : 0.970885
+8326.7s 948 Weights    : xgb=0.248, cat=0.526, xgb_aux=0.226
+8326.7s 949 
+8326.7s 950 ==========================================================================================
+8326.7s 951 [TARGET] target_3_1
+8326.7s 952 ==========================================================================================
+8326.7s 953 
+8326.7s 954 --- fold 1/5 ---
+8399.4s 955 Default metric period is 5 because AUC is/are not implemented for GPU
+8399.4s 956 
+8399.4s 957 Default metric period is 5 because AUC is/are not implemented for GPU
+8401.8s 958 0:	test: 0.6266247	best: 0.6266247 (0)	total: 84.9ms	remaining: 22s
+8409.8s 959 100:	test: 0.6685107	best: 0.6685107 (100)	total: 8s	remaining: 12.6s
+8417.7s 960 200:	test: 0.6762505	best: 0.6762505 (200)	total: 16s	remaining: 4.68s
+8422.4s 961 259:	test: 0.6783971	best: 0.6783971 (259)	total: 20.6s	remaining: 0us
+8422.4s 962 bestTest = 0.6783970594
+8422.4s 963 bestIteration = 259
+8455.0s 964 fold aucs: xgb=0.686924, cat=0.678397, xgb_aux=0.685860
+8455.0s 965 
+8455.0s 966 --- fold 2/5 ---
+8527.7s 967 Default metric period is 5 because AUC is/are not implemented for GPU
+8527.7s 968 
+8527.7s 969 Default metric period is 5 because AUC is/are not implemented for GPU
+8529.7s 970 0:	test: 0.6303972	best: 0.6303972 (0)	total: 71.7ms	remaining: 18.6s
+8536.7s 971 100:	test: 0.6701513	best: 0.6701513 (100)	total: 7.1s	remaining: 11.2s
+8543.9s 972 200:	test: 0.6774221	best: 0.6774221 (200)	total: 14.2s	remaining: 4.17s
+8548.0s 973 259:	test: 0.6797153	best: 0.6797153 (259)	total: 18.4s	remaining: 0us
+8548.0s 974 bestTest = 0.6797152758
+8548.0s 975 bestIteration = 259
+8581.0s 976 fold aucs: xgb=0.685726, cat=0.679715, xgb_aux=0.685256
+8581.0s 977 
+8581.0s 978 --- fold 3/5 ---
+8653.7s 979 Default metric period is 5 because AUC is/are not implemented for GPU
+8653.7s 980 
+8653.7s 981 Default metric period is 5 because AUC is/are not implemented for GPU
+8655.8s 982 0:	test: 0.6262206	best: 0.6262206 (0)	total: 76.6ms	remaining: 19.8s
+8663.1s 983 100:	test: 0.6670392	best: 0.6670392 (100)	total: 7.37s	remaining: 11.6s
+8670.4s 984 200:	test: 0.6754588	best: 0.6754588 (200)	total: 14.6s	remaining: 4.3s
+8674.7s 985 259:	test: 0.6779491	best: 0.6779491 (259)	total: 18.9s	remaining: 0us
+8674.7s 986 bestTest = 0.6779491007
+8674.7s 987 bestIteration = 259
+8707.5s 988 fold aucs: xgb=0.685973, cat=0.677949, xgb_aux=0.684840
+8707.5s 989 
+8707.5s 990 --- fold 4/5 ---
+8778.6s 991 Default metric period is 5 because AUC is/are not implemented for GPU
+8778.6s 992 
+8778.6s 993 Default metric period is 5 because AUC is/are not implemented for GPU
+8780.7s 994 0:	test: 0.6264953	best: 0.6264953 (0)	total: 73.6ms	remaining: 19.1s
+8788.0s 995 100:	test: 0.6715882	best: 0.6715882 (100)	total: 7.33s	remaining: 11.5s
+8795.2s 996 200:	test: 0.6803255	best: 0.6803255 (200)	total: 14.5s	remaining: 4.26s
+8799.5s 997 259:	test: 0.6828734	best: 0.6828734 (259)	total: 18.8s	remaining: 0us
+8799.5s 998 bestTest = 0.6828733683
+8799.5s 999 bestIteration = 259
+8833.2s 1000 fold aucs: xgb=0.689674, cat=0.682873, xgb_aux=0.688795
+8833.2s 1001 
+8833.2s 1002 --- fold 5/5 ---
+8905.1s 1003 Default metric period is 5 because AUC is/are not implemented for GPU
+8905.1s 1004 
+8905.1s 1005 Default metric period is 5 because AUC is/are not implemented for GPU
+8907.6s 1006 0:	test: 0.6299142	best: 0.6299142 (0)	total: 84.1ms	remaining: 21.8s
+8915.5s 1007 100:	test: 0.6729169	best: 0.6729169 (100)	total: 7.98s	remaining: 12.6s
+8923.3s 1008 200:	test: 0.6810468	best: 0.6810468 (200)	total: 15.8s	remaining: 4.63s
+8927.9s 1009 259:	test: 0.6834888	best: 0.6834888 (259)	total: 20.4s	remaining: 0us
+8927.9s 1010 bestTest = 0.6834888458
+8927.9s 1011 bestIteration = 259
+8960.0s 1012 fold aucs: xgb=0.692388, cat=0.683489, xgb_aux=0.690118
+8961.6s 1013 
+8961.6s 1014 OOF AUCs:
+8961.6s 1015 XGB base   : 0.688122
+8961.6s 1016 CAT base   : 0.680478
+8961.6s 1017 XGB aux    : 0.686961
+8961.6s 1018 BLEND raw  : 0.689087
+8961.6s 1019 BLEND rank : 0.688923
+8961.6s 1020 Weights    : xgb=0.365, cat=0.283, xgb_aux=0.351
+8961.6s 1021 
+8961.6s 1022 ==========================================================================================
+8961.6s 1023 [TARGET] target_3_2
+8961.6s 1024 ==========================================================================================
+8961.6s 1025 
+8961.6s 1026 --- fold 1/5 ---
+9037.6s 1027 Default metric period is 5 because AUC is/are not implemented for GPU
+9037.6s 1028 
+9037.6s 1029 Default metric period is 5 because AUC is/are not implemented for GPU
+9041.1s 1030 0:	test: 0.8804383	best: 0.8804383 (0)	total: 105ms	remaining: 27.1s
+9051.4s 1031 100:	test: 0.9008499	best: 0.9008499 (100)	total: 10.4s	remaining: 16.4s
+9061.6s 1032 200:	test: 0.9037029	best: 0.9037029 (200)	total: 20.6s	remaining: 6.06s
+9067.8s 1033 259:	test: 0.9044595	best: 0.9044595 (259)	total: 26.7s	remaining: 0us
+9067.8s 1034 bestTest = 0.9044595361
+9067.8s 1035 bestIteration = 259
+9100.8s 1036 fold aucs: xgb=0.908471, cat=0.904459, xgb_aux=0.908067
+9100.8s 1037 
+9100.8s 1038 --- fold 2/5 ---
+9174.6s 1039 Default metric period is 5 because AUC is/are not implemented for GPU
+9174.6s 1040 
+9174.6s 1041 Default metric period is 5 because AUC is/are not implemented for GPU
+9177.2s 1042 0:	test: 0.8769411	best: 0.8769411 (0)	total: 90.3ms	remaining: 23.4s
+9185.7s 1043 100:	test: 0.8998910	best: 0.8998910 (100)	total: 8.54s	remaining: 13.4s
+9194.1s 1044 200:	test: 0.9024753	best: 0.9024753 (200)	total: 16.9s	remaining: 4.97s
+9199.0s 1045 259:	test: 0.9032286	best: 0.9032286 (259)	total: 21.9s	remaining: 0us
+9199.0s 1046 bestTest = 0.9032285511
+9199.0s 1047 bestIteration = 259
+9234.0s 1048 fold aucs: xgb=0.906678, cat=0.903229, xgb_aux=0.906027
+9234.0s 1049 
+9234.0s 1050 --- fold 3/5 ---
+9309.2s 1051 Default metric period is 5 because AUC is/are not implemented for GPU
+9309.2s 1052 
+9309.2s 1053 Default metric period is 5 because AUC is/are not implemented for GPU
+9312.7s 1054 0:	test: 0.8794645	best: 0.8794645 (0)	total: 107ms	remaining: 27.8s
+9322.8s 1055 100:	test: 0.9007128	best: 0.9007128 (100)	total: 10.2s	remaining: 16.1s
+9332.8s 1056 200:	test: 0.9033276	best: 0.9033328 (199)	total: 20.2s	remaining: 5.94s
+9338.7s 1057 259:	test: 0.9042758	best: 0.9042758 (259)	total: 26.2s	remaining: 0us
+9338.7s 1058 bestTest = 0.904275775
+9338.7s 1059 bestIteration = 259
+9371.5s 1060 fold aucs: xgb=0.907636, cat=0.904276, xgb_aux=0.907246
+9371.5s 1061 
+9371.5s 1062 --- fold 4/5 ---
+9447.8s 1063 Default metric period is 5 because AUC is/are not implemented for GPU
+9447.8s 1064 
+9447.8s 1065 Default metric period is 5 because AUC is/are not implemented for GPU
+9451.1s 1066 0:	test: 0.8783070	best: 0.8783070 (0)	total: 99.9ms	remaining: 25.9s
+9460.8s 1067 100:	test: 0.8992740	best: 0.8992740 (100)	total: 9.74s	remaining: 15.3s
+9470.3s 1068 200:	test: 0.9018997	best: 0.9018997 (200)	total: 19.3s	remaining: 5.66s
+9475.9s 1069 259:	test: 0.9024837	best: 0.9024837 (259)	total: 24.9s	remaining: 0us
+9475.9s 1070 bestTest = 0.9024836719
+9475.9s 1071 bestIteration = 259
+9509.8s 1072 fold aucs: xgb=0.905816, cat=0.902484, xgb_aux=0.905541
+9509.8s 1073 
+9509.8s 1074 --- fold 5/5 ---
+9586.9s 1075 Default metric period is 5 because AUC is/are not implemented for GPU
+9586.9s 1076 
+9586.9s 1077 Default metric period is 5 because AUC is/are not implemented for GPU
+9590.9s 1078 0:	test: 0.8811760	best: 0.8811760 (0)	total: 101ms	remaining: 26.1s
+9602.3s 1079 100:	test: 0.9027907	best: 0.9027907 (100)	total: 11.4s	remaining: 18s
+9613.6s 1080 200:	test: 0.9053260	best: 0.9053260 (200)	total: 22.8s	remaining: 6.68s
+9620.2s 1081 259:	test: 0.9061870	best: 0.9061870 (259)	total: 29.3s	remaining: 0us
+9620.2s 1082 bestTest = 0.9061869979
+9620.2s 1083 bestIteration = 259
+9653.7s 1084 fold aucs: xgb=0.909555, cat=0.906187, xgb_aux=0.908893
+9655.2s 1085 
+9655.2s 1086 OOF AUCs:
+9655.2s 1087 XGB base   : 0.907621
+9655.2s 1088 CAT base   : 0.904111
+9655.2s 1089 XGB aux    : 0.907143
+9655.2s 1090 BLEND raw  : 0.907595
+9655.2s 1091 BLEND rank : 0.907472
+9655.2s 1092 Weights    : xgb=0.348, cat=0.310, xgb_aux=0.342
+9655.2s 1093 
+9655.2s 1094 ==========================================================================================
+9655.2s 1095 [TARGET] target_3_3
+9655.2s 1096 ==========================================================================================
+9655.2s 1097 
+9655.2s 1098 --- fold 1/5 ---
+9727.9s 1099 Default metric period is 5 because AUC is/are not implemented for GPU
+9727.9s 1100 
+9727.9s 1101 Default metric period is 5 because AUC is/are not implemented for GPU
+9730.1s 1102 0:	test: 0.6862030	best: 0.6862030 (0)	total: 77.5ms	remaining: 20.1s
+9736.2s 1103 bestTest = 0.7153642178
+9736.2s 1104 bestIteration = 22
+9736.2s 1105 Shrink model to first 23 iterations.
+9768.9s 1106 fold aucs: xgb=0.656333, cat=0.715364, xgb_aux=0.648909
+9768.9s 1107 
+9768.9s 1108 --- fold 2/5 ---
+9839.6s 1109 Default metric period is 5 because AUC is/are not implemented for GPU
+9839.6s 1110 
+9839.6s 1111 Default metric period is 5 because AUC is/are not implemented for GPU
+9841.7s 1112 0:	test: 0.7185394	best: 0.7185394 (0)	total: 69.5ms	remaining: 18s
+9848.8s 1113 100:	test: 0.7756693	best: 0.7817468 (54)	total: 7.16s	remaining: 11.3s
+9849.8s 1114 bestTest = 0.7817468047
+9849.8s 1115 bestIteration = 54
+9849.8s 1116 Shrink model to first 55 iterations.
+9882.9s 1117 fold aucs: xgb=0.654970, cat=0.781747, xgb_aux=0.685469
+9882.9s 1118 
+9882.9s 1119 --- fold 3/5 ---
+9954.0s 1120 Default metric period is 5 because AUC is/are not implemented for GPU
+9954.0s 1121 
+9954.0s 1122 Default metric period is 5 because AUC is/are not implemented for GPU
+9956.3s 1123 0:	test: 0.7187167	best: 0.7187167 (0)	total: 79.3ms	remaining: 20.5s
+9963.8s 1124 100:	test: 0.7378243	best: 0.7430639 (43)	total: 7.58s	remaining: 11.9s
+9964.1s 1125 bestTest = 0.7430638969
+9964.1s 1126 bestIteration = 43
+9964.1s 1127 Shrink model to first 44 iterations.
+9995.7s 1128 fold aucs: xgb=0.667460, cat=0.743064, xgb_aux=0.675562
+9995.7s 1129 
+9995.7s 1130 --- fold 4/5 ---
+10066.4s 1131 Default metric period is 5 because AUC is/are not implemented for GPU
+10066.4s 1132 
+10066.4s 1133 Default metric period is 5 because AUC is/are not implemented for GPU
+10068.3s 1134 0:	test: 0.6892557	best: 0.6892557 (0)	total: 66.8ms	remaining: 17.3s
+10075.0s 1135 100:	test: 0.7305518	best: 0.7308160 (98)	total: 6.85s	remaining: 10.8s
+10079.3s 1136 bestTest = 0.7310424745
+10079.3s 1137 bestIteration = 103
+10079.3s 1138 Shrink model to first 104 iterations.
+10111.7s 1139 fold aucs: xgb=0.646397, cat=0.731042, xgb_aux=0.634199
+10111.7s 1140 
+10111.7s 1141 --- fold 5/5 ---
+10183.2s 1142 Default metric period is 5 because AUC is/are not implemented for GPU
+10183.2s 1143 
+10183.2s 1144 Default metric period is 5 because AUC is/are not implemented for GPU
+10185.5s 1145 0:	test: 0.6902579	best: 0.6902579 (0)	total: 78.7ms	remaining: 20.4s
+10191.7s 1146 bestTest = 0.7347952425
+10191.7s 1147 bestIteration = 19
+10191.7s 1148 Shrink model to first 20 iterations.
+10226.1s 1149 fold aucs: xgb=0.666191, cat=0.734795, xgb_aux=0.658615
+10227.5s 1150 
+10227.5s 1151 OOF AUCs:
+10227.5s 1152 XGB base   : 0.658554
+10227.5s 1153 CAT base   : 0.739083
+10227.5s 1154 XGB aux    : 0.660253
+10227.5s 1155 BLEND raw  : 0.741499
+10227.5s 1156 BLEND rank : 0.741763
+10227.5s 1157 Weights    : xgb=0.060, cat=0.877, xgb_aux=0.063
+10227.5s 1158 
+10227.5s 1159 ==========================================================================================
+10227.5s 1160 [TARGET] target_3_4
+10227.5s 1161 ==========================================================================================
+10227.5s 1162 
+10227.5s 1163 --- fold 1/5 ---
+10299.5s 1164 Default metric period is 5 because AUC is/are not implemented for GPU
+10299.5s 1165 
+10299.5s 1166 Default metric period is 5 because AUC is/are not implemented for GPU
+10301.3s 1167 0:	test: 0.8897102	best: 0.8897102 (0)	total: 69.6ms	remaining: 18s
+10307.9s 1168 100:	test: 0.9292452	best: 0.9292771 (98)	total: 6.67s	remaining: 10.5s
+10312.7s 1169 bestTest = 0.9301502109
+10312.7s 1170 bestIteration = 112
+10312.7s 1171 Shrink model to first 113 iterations.
+10345.0s 1172 fold aucs: xgb=0.915710, cat=0.930150, xgb_aux=0.918669
+10345.0s 1173 
+10345.0s 1174 --- fold 2/5 ---
+10418.1s 1175 Default metric period is 5 because AUC is/are not implemented for GPU
+10418.1s 1176 
+10418.1s 1177 Default metric period is 5 because AUC is/are not implemented for GPU
+10420.4s 1178 0:	test: 0.8876199	best: 0.8876199 (0)	total: 78.2ms	remaining: 20.3s
+10428.1s 1179 100:	test: 0.9287914	best: 0.9299925 (61)	total: 7.8s	remaining: 12.3s
+10429.7s 1180 bestTest = 0.929992497
+10429.7s 1181 bestIteration = 61
+10429.7s 1182 Shrink model to first 62 iterations.
+10463.5s 1183 fold aucs: xgb=0.910093, cat=0.929993, xgb_aux=0.912082
+10463.5s 1184 
+10463.5s 1185 --- fold 3/5 ---
+10534.5s 1186 Default metric period is 5 because AUC is/are not implemented for GPU
+10534.5s 1187 
+10534.5s 1188 Default metric period is 5 because AUC is/are not implemented for GPU
+10536.0s 1189 0:	test: 0.8917347	best: 0.8917347 (0)	total: 65.5ms	remaining: 17s
+10542.0s 1190 100:	test: 0.9333144	best: 0.9358408 (55)	total: 6.08s	remaining: 9.58s
+10543.0s 1191 bestTest = 0.9358407855
+10543.0s 1192 bestIteration = 55
+10543.0s 1193 Shrink model to first 56 iterations.
+10575.1s 1194 fold aucs: xgb=0.928701, cat=0.935841, xgb_aux=0.926314
+10575.1s 1195 
+10575.1s 1196 --- fold 4/5 ---
+10645.1s 1197 Default metric period is 5 because AUC is/are not implemented for GPU
+10645.1s 1198 
+10645.1s 1199 Default metric period is 5 because AUC is/are not implemented for GPU
+10646.5s 1200 0:	test: 0.8918679	best: 0.8918679 (0)	total: 59.2ms	remaining: 15.3s
+10652.4s 1201 100:	test: 0.9352444	best: 0.9361522 (93)	total: 5.95s	remaining: 9.37s
+10658.3s 1202 200:	test: 0.9355041	best: 0.9369988 (168)	total: 11.8s	remaining: 3.47s
+10660.0s 1203 bestTest = 0.9369988441
+10660.0s 1204 bestIteration = 168
+10660.0s 1205 Shrink model to first 169 iterations.
+10692.4s 1206 fold aucs: xgb=0.919537, cat=0.936999, xgb_aux=0.916466
+10692.4s 1207 
+10692.4s 1208 --- fold 5/5 ---
+10763.2s 1209 Default metric period is 5 because AUC is/are not implemented for GPU
+10763.2s 1210 
+10763.2s 1211 Default metric period is 5 because AUC is/are not implemented for GPU
+10765.0s 1212 0:	test: 0.8907992	best: 0.8907992 (0)	total: 71.9ms	remaining: 18.6s
+10771.8s 1213 100:	test: 0.9248002	best: 0.9248496 (97)	total: 6.78s	remaining: 10.7s
+10776.1s 1214 bestTest = 0.9251740575
+10776.1s 1215 bestIteration = 105
+10776.1s 1216 Shrink model to first 106 iterations.
+10809.4s 1217 fold aucs: xgb=0.907752, cat=0.925174, xgb_aux=0.910895
+10810.9s 1218 
+10810.9s 1219 OOF AUCs:
+10810.9s 1220 XGB base   : 0.915758
+10810.9s 1221 CAT base   : 0.930613
+10810.9s 1222 XGB aux    : 0.916221
+10810.9s 1223 BLEND raw  : 0.932368
+10810.9s 1224 BLEND rank : 0.929919
+10810.9s 1225 Weights    : xgb=0.273, cat=0.449, xgb_aux=0.278
+10810.9s 1226 
+10810.9s 1227 ==========================================================================================
+10810.9s 1228 [TARGET] target_3_5
+10810.9s 1229 ==========================================================================================
+10810.9s 1230 
+10810.9s 1231 --- fold 1/5 ---
+10883.2s 1232 Default metric period is 5 because AUC is/are not implemented for GPU
+10883.2s 1233 
+10883.2s 1234 Default metric period is 5 because AUC is/are not implemented for GPU
+10884.9s 1235 0:	test: 0.9641128	best: 0.9641128 (0)	total: 61.7ms	remaining: 16s
+10890.7s 1236 bestTest = 0.9722701907
+10890.7s 1237 bestIteration = 34
+10890.7s 1238 Shrink model to first 35 iterations.
+10922.3s 1239 fold aucs: xgb=0.964858, cat=0.972270, xgb_aux=0.964942
+10922.3s 1240 
+10922.3s 1241 --- fold 2/5 ---
+10995.3s 1242 Default metric period is 5 because AUC is/are not implemented for GPU
+10995.3s 1243 
+10995.3s 1244 Default metric period is 5 because AUC is/are not implemented for GPU
+10997.3s 1245 0:	test: 0.9721384	best: 0.9721384 (0)	total: 73.3ms	remaining: 19s
+11004.4s 1246 100:	test: 0.9753771	best: 0.9754001 (98)	total: 7.09s	remaining: 11.2s
+11011.4s 1247 200:	test: 0.9763851	best: 0.9768997 (141)	total: 14.1s	remaining: 4.14s
+11011.4s 1248 bestTest = 0.9768996835
+11011.4s 1249 bestIteration = 141
+11011.4s 1250 Shrink model to first 142 iterations.
+11043.9s 1251 fold aucs: xgb=0.968329, cat=0.976900, xgb_aux=0.967440
+11043.9s 1252 
+11043.9s 1253 --- fold 3/5 ---
+11117.2s 1254 Default metric period is 5 because AUC is/are not implemented for GPU
+11117.2s 1255 
+11117.2s 1256 Default metric period is 5 because AUC is/are not implemented for GPU
+11118.7s 1257 0:	test: 0.9335693	best: 0.9335693 (0)	total: 60.6ms	remaining: 15.7s
+11124.7s 1258 100:	test: 0.9723331	best: 0.9723636 (98)	total: 6.05s	remaining: 9.52s
+11130.7s 1259 200:	test: 0.9744154	best: 0.9744154 (200)	total: 12s	remaining: 3.53s
+11134.2s 1260 259:	test: 0.9749356	best: 0.9751860 (257)	total: 15.5s	remaining: 0us
+11134.2s 1261 bestTest = 0.9751860499
+11134.2s 1262 bestIteration = 257
+11134.2s 1263 Shrink model to first 258 iterations.
+11166.3s 1264 fold aucs: xgb=0.966689, cat=0.975186, xgb_aux=0.968674
+11166.3s 1265 
+11166.3s 1266 --- fold 4/5 ---
+11239.4s 1267 Default metric period is 5 because AUC is/are not implemented for GPU
+11239.4s 1268 
+11239.4s 1269 Default metric period is 5 because AUC is/are not implemented for GPU
+11241.5s 1270 0:	test: 0.9548709	best: 0.9548709 (0)	total: 74.2ms	remaining: 19.2s
+11248.6s 1271 100:	test: 0.9707469	best: 0.9707971 (93)	total: 7.14s	remaining: 11.2s
+11255.1s 1272 bestTest = 0.9714332819
+11255.1s 1273 bestIteration = 132
+11255.1s 1274 Shrink model to first 133 iterations.
+11287.6s 1275 fold aucs: xgb=0.956231, cat=0.971433, xgb_aux=0.959791
+11287.6s 1276 
+11287.6s 1277 --- fold 5/5 ---
+11359.6s 1278 Default metric period is 5 because AUC is/are not implemented for GPU
+11359.6s 1279 
+11359.6s 1280 Default metric period is 5 because AUC is/are not implemented for GPU
+11361.7s 1281 0:	test: 0.9555700	best: 0.9555700 (0)	total: 72.1ms	remaining: 18.7s
+11367.6s 1282 bestTest = 0.9721710086
+11367.6s 1283 bestIteration = 24
+11367.6s 1284 Shrink model to first 25 iterations.
+11399.6s 1285 fold aucs: xgb=0.966329, cat=0.972171, xgb_aux=0.971401
+11401.1s 1286 
+11401.1s 1287 OOF AUCs:
+11401.1s 1288 XGB base   : 0.963541
+11401.1s 1289 CAT base   : 0.968607
+11401.1s 1290 XGB aux    : 0.965792
+11401.1s 1291 BLEND raw  : 0.969508
+11401.1s 1292 BLEND rank : 0.970655
+11401.1s 1293 Weights    : xgb=0.307, cat=0.363, xgb_aux=0.330
+11401.1s 1294 
+11401.1s 1295 ==========================================================================================
+11401.1s 1296 [TARGET] target_4_1
+11401.1s 1297 ==========================================================================================
+11401.1s 1298 
+11401.1s 1299 --- fold 1/5 ---
+11472.7s 1300 Default metric period is 5 because AUC is/are not implemented for GPU
+11472.7s 1301 
+11472.7s 1302 Default metric period is 5 because AUC is/are not implemented for GPU
+11474.4s 1303 0:	test: 0.8162709	best: 0.8162709 (0)	total: 66.8ms	remaining: 17.3s
+11480.8s 1304 100:	test: 0.8435150	best: 0.8438049 (92)	total: 6.4s	remaining: 10.1s
+11487.0s 1305 200:	test: 0.8446040	best: 0.8448294 (192)	total: 12.7s	remaining: 3.71s
+11490.7s 1306 259:	test: 0.8442747	best: 0.8450243 (218)	total: 16.4s	remaining: 0us
+11490.7s 1307 bestTest = 0.8450242877
+11490.7s 1308 bestIteration = 218
+11490.7s 1309 Shrink model to first 219 iterations.
+11522.8s 1310 fold aucs: xgb=0.839093, cat=0.845024, xgb_aux=0.838253
+11522.8s 1311 
+11522.8s 1312 --- fold 2/5 ---
+11594.2s 1313 Default metric period is 5 because AUC is/are not implemented for GPU
+11594.2s 1314 
+11594.2s 1315 Default metric period is 5 because AUC is/are not implemented for GPU
+11596.0s 1316 0:	test: 0.8247504	best: 0.8247504 (0)	total: 67.1ms	remaining: 17.4s
+11602.7s 1317 100:	test: 0.8564439	best: 0.8565350 (99)	total: 6.78s	remaining: 10.7s
+11609.4s 1318 200:	test: 0.8569487	best: 0.8572676 (142)	total: 13.5s	remaining: 3.95s
+11609.4s 1319 bestTest = 0.8572675586
+11609.4s 1320 bestIteration = 142
+11609.4s 1321 Shrink model to first 143 iterations.
+11642.7s 1322 fold aucs: xgb=0.845555, cat=0.857268, xgb_aux=0.846849
+11642.7s 1323 
+11642.7s 1324 --- fold 3/5 ---
+11715.6s 1325 Default metric period is 5 because AUC is/are not implemented for GPU
+11715.6s 1326 
+11715.6s 1327 Default metric period is 5 because AUC is/are not implemented for GPU
+11717.8s 1328 0:	test: 0.8142490	best: 0.8142490 (0)	total: 79.6ms	remaining: 20.6s
+11725.4s 1329 100:	test: 0.8469518	best: 0.8470074 (99)	total: 7.59s	remaining: 11.9s
+11732.8s 1330 200:	test: 0.8479500	best: 0.8482350 (162)	total: 15s	remaining: 4.42s
+11737.2s 1331 259:	test: 0.8479447	best: 0.8485682 (239)	total: 19.4s	remaining: 0us
+11737.2s 1332 bestTest = 0.8485682011
+11737.2s 1333 bestIteration = 239
+11737.2s 1334 Shrink model to first 240 iterations.
+11769.8s 1335 fold aucs: xgb=0.836492, cat=0.848568, xgb_aux=0.835272
+11769.8s 1336 
+11769.8s 1337 --- fold 4/5 ---
+11839.8s 1338 Default metric period is 5 because AUC is/are not implemented for GPU
+11839.8s 1339 
+11839.8s 1340 Default metric period is 5 because AUC is/are not implemented for GPU
+11841.4s 1341 0:	test: 0.8108574	best: 0.8108574 (0)	total: 61.2ms	remaining: 15.9s
+11847.5s 1342 100:	test: 0.8479413	best: 0.8479413 (100)	total: 6.19s	remaining: 9.75s
+11853.6s 1343 200:	test: 0.8500897	best: 0.8500897 (200)	total: 12.3s	remaining: 3.62s
+11857.2s 1344 259:	test: 0.8503213	best: 0.8503213 (259)	total: 15.9s	remaining: 0us
+11857.2s 1345 bestTest = 0.8503212929
+11857.2s 1346 bestIteration = 259
+11889.6s 1347 fold aucs: xgb=0.840201, cat=0.850321, xgb_aux=0.840716
+11889.6s 1348 
+11889.6s 1349 --- fold 5/5 ---
+11961.3s 1350 Default metric period is 5 because AUC is/are not implemented for GPU
+11961.3s 1351 
+11961.3s 1352 Default metric period is 5 because AUC is/are not implemented for GPU
+11963.7s 1353 0:	test: 0.8229596	best: 0.8229596 (0)	total: 81.1ms	remaining: 21s
+11971.4s 1354 100:	test: 0.8543271	best: 0.8543994 (98)	total: 7.83s	remaining: 12.3s
+11979.2s 1355 200:	test: 0.8560087	best: 0.8560641 (194)	total: 15.6s	remaining: 4.58s
+11983.8s 1356 259:	test: 0.8557735	best: 0.8561487 (243)	total: 20.2s	remaining: 0us
+11983.8s 1357 bestTest = 0.8561486602
+11983.8s 1358 bestIteration = 243
+11983.8s 1359 Shrink model to first 244 iterations.
+12016.2s 1360 fold aucs: xgb=0.838502, cat=0.856149, xgb_aux=0.836790
+12017.7s 1361 
+12017.7s 1362 OOF AUCs:
+12017.7s 1363 XGB base   : 0.839900
+12017.7s 1364 CAT base   : 0.851158
+12017.7s 1365 XGB aux    : 0.839492
+12017.7s 1366 BLEND raw  : 0.850542
+12017.7s 1367 BLEND rank : 0.849522
+12017.7s 1368 Weights    : xgb=0.291, cat=0.423, xgb_aux=0.287
+12017.7s 1369 
+12017.7s 1370 ==========================================================================================
+12017.7s 1371 [TARGET] target_5_1
+12017.7s 1372 ==========================================================================================
+12017.7s 1373 
+12017.7s 1374 --- fold 1/5 ---
+12088.0s 1375 Default metric period is 5 because AUC is/are not implemented for GPU
+12088.0s 1376 
+12088.0s 1377 Default metric period is 5 because AUC is/are not implemented for GPU
+12089.8s 1378 0:	test: 0.7105029	best: 0.7105029 (0)	total: 64.5ms	remaining: 16.7s
+12096.0s 1379 100:	test: 0.7380848	best: 0.7380848 (100)	total: 6.35s	remaining: 9.99s
+12102.2s 1380 200:	test: 0.7417645	best: 0.7417719 (199)	total: 12.5s	remaining: 3.68s
+12105.9s 1381 259:	test: 0.7425842	best: 0.7426990 (258)	total: 16.2s	remaining: 0us
+12105.9s 1382 bestTest = 0.7426990271
+12105.9s 1383 bestIteration = 258
+12105.9s 1384 Shrink model to first 259 iterations.
+12137.9s 1385 fold aucs: xgb=0.717246, cat=0.742699, xgb_aux=0.714508
+12137.9s 1386 
+12137.9s 1387 --- fold 2/5 ---
+12208.3s 1388 Default metric period is 5 because AUC is/are not implemented for GPU
+12208.3s 1389 
+12208.3s 1390 Default metric period is 5 because AUC is/are not implemented for GPU
+12210.5s 1391 0:	test: 0.7183707	best: 0.7183707 (0)	total: 79.2ms	remaining: 20.5s
+12217.9s 1392 100:	test: 0.7460967	best: 0.7460967 (100)	total: 7.55s	remaining: 11.9s
+12225.3s 1393 200:	test: 0.7497769	best: 0.7497769 (200)	total: 14.9s	remaining: 4.39s
+12229.7s 1394 259:	test: 0.7507891	best: 0.7508949 (247)	total: 19.3s	remaining: 0us
+12229.7s 1395 bestTest = 0.7508949041
+12229.7s 1396 bestIteration = 247
+12229.7s 1397 Shrink model to first 248 iterations.
+12262.2s 1398 fold aucs: xgb=0.719922, cat=0.750895, xgb_aux=0.724091
+12262.2s 1399 
+12262.2s 1400 --- fold 3/5 ---
+12334.9s 1401 Default metric period is 5 because AUC is/are not implemented for GPU
+12334.9s 1402 
+12334.9s 1403 Default metric period is 5 because AUC is/are not implemented for GPU
+12337.9s 1404 0:	test: 0.7038609	best: 0.7038609 (0)	total: 93.7ms	remaining: 24.3s
+12347.1s 1405 100:	test: 0.7323930	best: 0.7323930 (100)	total: 9.31s	remaining: 14.7s
+12356.3s 1406 200:	test: 0.7371158	best: 0.7371158 (200)	total: 18.5s	remaining: 5.44s
+12361.7s 1407 259:	test: 0.7378065	best: 0.7378255 (238)	total: 23.9s	remaining: 0us
+12361.7s 1408 bestTest = 0.7378254533
+12361.7s 1409 bestIteration = 238
+12361.7s 1410 Shrink model to first 239 iterations.
+12393.4s 1411 fold aucs: xgb=0.721699, cat=0.737825, xgb_aux=0.718035
+12393.4s 1412 
+12393.4s 1413 --- fold 4/5 ---
+12465.8s 1414 Default metric period is 5 because AUC is/are not implemented for GPU
+12465.8s 1415 
+12465.8s 1416 Default metric period is 5 because AUC is/are not implemented for GPU
+12468.0s 1417 0:	test: 0.7064119	best: 0.7064119 (0)	total: 79.5ms	remaining: 20.6s
+12475.5s 1418 100:	test: 0.7418296	best: 0.7419526 (98)	total: 7.55s	remaining: 11.9s
+12483.0s 1419 200:	test: 0.7478124	best: 0.7479285 (194)	total: 15s	remaining: 4.4s
+12487.4s 1420 259:	test: 0.7485057	best: 0.7488369 (255)	total: 19.4s	remaining: 0us
+12487.4s 1421 bestTest = 0.7488369346
+12487.4s 1422 bestIteration = 255
+12487.4s 1423 Shrink model to first 256 iterations.
+12519.1s 1424 fold aucs: xgb=0.726270, cat=0.748837, xgb_aux=0.726704
+12519.1s 1425 
+12519.1s 1426 --- fold 5/5 ---
+12591.5s 1427 Default metric period is 5 because AUC is/are not implemented for GPU
+12591.5s 1428 
+12591.5s 1429 Default metric period is 5 because AUC is/are not implemented for GPU
+12594.2s 1430 0:	test: 0.7174957	best: 0.7174957 (0)	total: 85.6ms	remaining: 22.2s
+12602.8s 1431 100:	test: 0.7419877	best: 0.7419877 (100)	total: 8.63s	remaining: 13.6s
+12611.3s 1432 200:	test: 0.7433318	best: 0.7433607 (197)	total: 17.1s	remaining: 5.03s
+12616.2s 1433 bestTest = 0.7433606982
+12616.2s 1434 bestIteration = 197
+12616.2s 1435 Shrink model to first 198 iterations.
+12649.8s 1436 fold aucs: xgb=0.711896, cat=0.743361, xgb_aux=0.711674
+12651.2s 1437 
+12651.2s 1438 OOF AUCs:
+12651.2s 1439 XGB base   : 0.719396
+12651.2s 1440 CAT base   : 0.744606
+12651.2s 1441 XGB aux    : 0.719035
+12651.2s 1442 BLEND raw  : 0.743679
+12651.2s 1443 BLEND rank : 0.742006
+12651.2s 1444 Weights    : xgb=0.232, cat=0.538, xgb_aux=0.229
+12651.2s 1445 
+12651.2s 1446 ==========================================================================================
+12651.2s 1447 [TARGET] target_5_2
+12651.2s 1448 ==========================================================================================
+12651.2s 1449 
+12651.2s 1450 --- fold 1/5 ---
+12719.6s 1451 Default metric period is 5 because AUC is/are not implemented for GPU
+12719.6s 1452 
+12719.6s 1453 Default metric period is 5 because AUC is/are not implemented for GPU
+12721.1s 1454 0:	test: 0.6696397	best: 0.6696397 (0)	total: 63.8ms	remaining: 16.5s
+12727.2s 1455 100:	test: 0.7233062	best: 0.7233062 (100)	total: 6.16s	remaining: 9.7s
+12731.2s 1456 bestTest = 0.7234233022
+12731.2s 1457 bestIteration = 105
+12731.2s 1458 Shrink model to first 106 iterations.
+12763.7s 1459 fold aucs: xgb=0.684541, cat=0.723423, xgb_aux=0.687626
+12763.7s 1460 
+12763.7s 1461 --- fold 2/5 ---
+12833.1s 1462 Default metric period is 5 because AUC is/are not implemented for GPU
+12833.1s 1463 
+12833.1s 1464 Default metric period is 5 because AUC is/are not implemented for GPU
+12835.1s 1465 0:	test: 0.6725893	best: 0.6725893 (0)	total: 69ms	remaining: 17.9s
+12842.0s 1466 100:	test: 0.7261377	best: 0.7276607 (84)	total: 7.03s	remaining: 11.1s
+12845.1s 1467 bestTest = 0.7276607156
+12845.1s 1468 bestIteration = 84
+12845.1s 1469 Shrink model to first 85 iterations.
+12876.7s 1470 fold aucs: xgb=0.687991, cat=0.727661, xgb_aux=0.680879
+12876.7s 1471 
+12876.7s 1472 --- fold 3/5 ---
+12945.9s 1473 Default metric period is 5 because AUC is/are not implemented for GPU
+12945.9s 1474 
+12945.9s 1475 Default metric period is 5 because AUC is/are not implemented for GPU
+12947.8s 1476 0:	test: 0.6906451	best: 0.6906451 (0)	total: 71.9ms	remaining: 18.6s
+12954.8s 1477 100:	test: 0.7264476	best: 0.7276027 (44)	total: 7.1s	remaining: 11.2s
+12955.1s 1478 bestTest = 0.7276026905
+12955.1s 1479 bestIteration = 44
+12955.1s 1480 Shrink model to first 45 iterations.
+12986.9s 1481 fold aucs: xgb=0.689006, cat=0.727603, xgb_aux=0.710692
+12986.9s 1482 
+12986.9s 1483 --- fold 4/5 ---
+13055.0s 1484 Default metric period is 5 because AUC is/are not implemented for GPU
+13055.0s 1485 
+13055.0s 1486 Default metric period is 5 because AUC is/are not implemented for GPU
+13056.4s 1487 0:	test: 0.6810866	best: 0.6810866 (0)	total: 62ms	remaining: 16.1s
+13062.2s 1488 100:	test: 0.7314705	best: 0.7324404 (97)	total: 5.86s	remaining: 9.23s
+13068.0s 1489 200:	test: 0.7343907	best: 0.7368697 (190)	total: 11.6s	remaining: 3.41s
+13070.9s 1490 bestTest = 0.7368696928
+13070.9s 1491 bestIteration = 190
+13070.9s 1492 Shrink model to first 191 iterations.
+13102.5s 1493 fold aucs: xgb=0.700942, cat=0.736870, xgb_aux=0.706039
+13102.5s 1494 
+13102.5s 1495 --- fold 5/5 ---
+13170.3s 1496 Default metric period is 5 because AUC is/are not implemented for GPU
+13170.3s 1497 
+13170.3s 1498 Default metric period is 5 because AUC is/are not implemented for GPU
+13171.8s 1499 0:	test: 0.6705872	best: 0.6705872 (0)	total: 58.2ms	remaining: 15.1s
+13177.6s 1500 100:	test: 0.7204822	best: 0.7209599 (99)	total: 5.88s	remaining: 9.26s
+13181.5s 1501 bestTest = 0.7209735811
+13181.5s 1502 bestIteration = 107
+13181.5s 1503 Shrink model to first 108 iterations.
+13213.0s 1504 fold aucs: xgb=0.674483, cat=0.720974, xgb_aux=0.675139
+13214.4s 1505 
+13214.4s 1506 OOF AUCs:
+13214.4s 1507 XGB base   : 0.687259
+13214.4s 1508 CAT base   : 0.726127
+13214.4s 1509 XGB aux    : 0.692004
+13214.4s 1510 BLEND raw  : 0.730464
+13214.4s 1511 BLEND rank : 0.728357
+13214.4s 1512 Weights    : xgb=0.172, cat=0.627, xgb_aux=0.201
+13214.4s 1513 
+13214.4s 1514 ==========================================================================================
+13214.4s 1515 [TARGET] target_6_1
+13214.4s 1516 ==========================================================================================
+13214.4s 1517 
+13214.4s 1518 --- fold 1/5 ---
+13287.0s 1519 Default metric period is 5 because AUC is/are not implemented for GPU
+13287.0s 1520 
+13287.0s 1521 Default metric period is 5 because AUC is/are not implemented for GPU
+13289.8s 1522 0:	test: 0.6636749	best: 0.6636749 (0)	total: 89.1ms	remaining: 23.1s
+13298.7s 1523 100:	test: 0.7132634	best: 0.7140507 (83)	total: 8.96s	remaining: 14.1s
+13307.5s 1524 200:	test: 0.7171984	best: 0.7174864 (198)	total: 17.8s	remaining: 5.24s
+13312.8s 1525 259:	test: 0.7182411	best: 0.7182411 (259)	total: 23.1s	remaining: 0us
+13312.8s 1526 bestTest = 0.7182411253
+13312.8s 1527 bestIteration = 259
+13345.9s 1528 fold aucs: xgb=0.692531, cat=0.718241, xgb_aux=0.689007
+13345.9s 1529 
+13345.9s 1530 --- fold 2/5 ---
+13417.3s 1531 Default metric period is 5 because AUC is/are not implemented for GPU
+13417.3s 1532 
+13417.3s 1533 Default metric period is 5 because AUC is/are not implemented for GPU
+13419.9s 1534 0:	test: 0.6710659	best: 0.6710659 (0)	total: 86.4ms	remaining: 22.4s
+13428.1s 1535 100:	test: 0.7268809	best: 0.7269928 (99)	total: 8.35s	remaining: 13.2s
+13436.4s 1536 200:	test: 0.7302005	best: 0.7303482 (145)	total: 16.6s	remaining: 4.88s
+13441.3s 1537 259:	test: 0.7306508	best: 0.7311676 (233)	total: 21.5s	remaining: 0us
+13441.3s 1538 bestTest = 0.7311676443
+13441.3s 1539 bestIteration = 233
+13441.3s 1540 Shrink model to first 234 iterations.
+13473.7s 1541 fold aucs: xgb=0.698496, cat=0.731168, xgb_aux=0.702582
+13473.7s 1542 
+13473.7s 1543 --- fold 3/5 ---
+13545.2s 1544 Default metric period is 5 because AUC is/are not implemented for GPU
+13545.2s 1545 
+13545.2s 1546 Default metric period is 5 because AUC is/are not implemented for GPU
+13547.5s 1547 0:	test: 0.6633586	best: 0.6633586 (0)	total: 79.7ms	remaining: 20.7s
+13555.4s 1548 100:	test: 0.7235962	best: 0.7235962 (100)	total: 7.91s	remaining: 12.4s
+13563.2s 1549 200:	test: 0.7285113	best: 0.7286142 (179)	total: 15.7s	remaining: 4.62s
+13567.8s 1550 259:	test: 0.7292759	best: 0.7296848 (252)	total: 20.3s	remaining: 0us
+13567.8s 1551 bestTest = 0.7296847701
+13567.8s 1552 bestIteration = 252
+13567.8s 1553 Shrink model to first 253 iterations.
+13600.5s 1554 fold aucs: xgb=0.695144, cat=0.729685, xgb_aux=0.700748
+13600.5s 1555 
+13600.5s 1556 --- fold 4/5 ---
+13672.4s 1557 Default metric period is 5 because AUC is/are not implemented for GPU
+13672.4s 1558 
+13672.4s 1559 Default metric period is 5 because AUC is/are not implemented for GPU
+13675.1s 1560 0:	test: 0.6503693	best: 0.6503693 (0)	total: 87.1ms	remaining: 22.6s
+13683.4s 1561 100:	test: 0.7157538	best: 0.7157538 (100)	total: 8.45s	remaining: 13.3s
+13691.7s 1562 200:	test: 0.7192233	best: 0.7192430 (199)	total: 16.7s	remaining: 4.91s
+13696.6s 1563 259:	test: 0.7197655	best: 0.7207146 (247)	total: 21.6s	remaining: 0us
+13696.6s 1564 bestTest = 0.7207145691
+13696.6s 1565 bestIteration = 247
+13696.6s 1566 Shrink model to first 248 iterations.
+13728.6s 1567 fold aucs: xgb=0.685103, cat=0.720715, xgb_aux=0.685463
+13728.6s 1568 
+13728.6s 1569 --- fold 5/5 ---
+13800.9s 1570 Default metric period is 5 because AUC is/are not implemented for GPU
+13800.9s 1571 
+13800.9s 1572 Default metric period is 5 because AUC is/are not implemented for GPU
+13803.5s 1573 0:	test: 0.6726765	best: 0.6726765 (0)	total: 80.9ms	remaining: 21s
+13811.7s 1574 100:	test: 0.7214414	best: 0.7214414 (100)	total: 8.22s	remaining: 12.9s
+13819.8s 1575 200:	test: 0.7273273	best: 0.7274560 (199)	total: 16.4s	remaining: 4.8s
+13824.6s 1576 259:	test: 0.7282412	best: 0.7286129 (251)	total: 21.1s	remaining: 0us
+13824.6s 1577 bestTest = 0.7286128998
+13824.6s 1578 bestIteration = 251
+13824.6s 1579 Shrink model to first 252 iterations.
+13856.0s 1580 fold aucs: xgb=0.703343, cat=0.728613, xgb_aux=0.700275
+13857.5s 1581 
+13857.5s 1582 OOF AUCs:
+13857.5s 1583 XGB base   : 0.694841
+13857.5s 1584 CAT base   : 0.725678
+13857.5s 1585 XGB aux    : 0.695567
+13857.5s 1586 BLEND raw  : 0.727254
+13857.5s 1587 BLEND rank : 0.725111
+13857.5s 1588 Weights    : xgb=0.207, cat=0.580, xgb_aux=0.213
+13857.5s 1589 
+13857.5s 1590 ==========================================================================================
+13857.5s 1591 [TARGET] target_6_2
+13857.5s 1592 ==========================================================================================
+13857.5s 1593 
+13857.5s 1594 --- fold 1/5 ---
+13928.0s 1595 Default metric period is 5 because AUC is/are not implemented for GPU
+13928.0s 1596 
+13928.0s 1597 Default metric period is 5 because AUC is/are not implemented for GPU
+13929.6s 1598 0:	test: 0.6662239	best: 0.6662239 (0)	total: 65.9ms	remaining: 17.1s
+13935.7s 1599 100:	test: 0.7153420	best: 0.7153420 (100)	total: 6.16s	remaining: 9.7s
+13941.8s 1600 200:	test: 0.7211111	best: 0.7211111 (200)	total: 12.3s	remaining: 3.6s
+13945.4s 1601 259:	test: 0.7217530	best: 0.7217530 (259)	total: 15.9s	remaining: 0us
+13945.4s 1602 bestTest = 0.721753031
+13945.4s 1603 bestIteration = 259
+13977.4s 1604 fold aucs: xgb=0.697355, cat=0.721753, xgb_aux=0.699694
+13977.4s 1605 
+13977.4s 1606 --- fold 2/5 ---
+14047.2s 1607 Default metric period is 5 because AUC is/are not implemented for GPU
+14047.2s 1608 
+14047.2s 1609 Default metric period is 5 because AUC is/are not implemented for GPU
+14049.1s 1610 0:	test: 0.6783101	best: 0.6783101 (0)	total: 70.5ms	remaining: 18.3s
+14056.0s 1611 100:	test: 0.7228608	best: 0.7228608 (100)	total: 6.99s	remaining: 11s
+14063.0s 1612 200:	test: 0.7253807	best: 0.7255030 (193)	total: 13.9s	remaining: 4.09s
+14067.1s 1613 259:	test: 0.7268396	best: 0.7273117 (254)	total: 18.1s	remaining: 0us
+14067.1s 1614 bestTest = 0.7273117006
+14067.1s 1615 bestIteration = 254
+14067.1s 1616 Shrink model to first 255 iterations.
+14099.5s 1617 fold aucs: xgb=0.690560, cat=0.727312, xgb_aux=0.693570
+14099.5s 1618 
+14099.5s 1619 --- fold 3/5 ---
+14170.8s 1620 Default metric period is 5 because AUC is/are not implemented for GPU
+14170.8s 1621 
+14170.8s 1622 Default metric period is 5 because AUC is/are not implemented for GPU
+14172.9s 1623 0:	test: 0.6870939	best: 0.6870939 (0)	total: 75.9ms	remaining: 19.6s
+14179.9s 1624 100:	test: 0.7322486	best: 0.7322486 (100)	total: 7.06s	remaining: 11.1s
+14186.8s 1625 200:	test: 0.7357980	best: 0.7358865 (179)	total: 14s	remaining: 4.11s
+14189.5s 1626 bestTest = 0.7358864844
+14189.5s 1627 bestIteration = 179
+14189.5s 1628 Shrink model to first 180 iterations.
+14221.6s 1629 fold aucs: xgb=0.708290, cat=0.735886, xgb_aux=0.708399
+14221.6s 1630 
+14221.6s 1631 --- fold 4/5 ---
+14293.2s 1632 Default metric period is 5 because AUC is/are not implemented for GPU
+14293.2s 1633 
+14293.2s 1634 Default metric period is 5 because AUC is/are not implemented for GPU
+14295.3s 1635 0:	test: 0.6841649	best: 0.6841649 (0)	total: 73.8ms	remaining: 19.1s
+14302.5s 1636 100:	test: 0.7292334	best: 0.7292334 (100)	total: 7.3s	remaining: 11.5s
+14309.7s 1637 200:	test: 0.7341693	best: 0.7344564 (196)	total: 14.5s	remaining: 4.26s
+14314.0s 1638 259:	test: 0.7344950	best: 0.7349226 (232)	total: 18.8s	remaining: 0us
+14314.0s 1639 bestTest = 0.7349226177
+14314.0s 1640 bestIteration = 232
+14314.0s 1641 Shrink model to first 233 iterations.
+14345.8s 1642 fold aucs: xgb=0.702387, cat=0.734923, xgb_aux=0.699781
+14345.8s 1643 
+14345.8s 1644 --- fold 5/5 ---
+14416.8s 1645 Default metric period is 5 because AUC is/are not implemented for GPU
+14416.8s 1646 
+14416.8s 1647 Default metric period is 5 because AUC is/are not implemented for GPU
+14418.7s 1648 0:	test: 0.6854824	best: 0.6854824 (0)	total: 73.6ms	remaining: 19.1s
+14425.6s 1649 100:	test: 0.7196775	best: 0.7196775 (100)	total: 6.96s	remaining: 11s
+14432.5s 1650 200:	test: 0.7234822	best: 0.7234822 (200)	total: 13.9s	remaining: 4.07s
+14436.6s 1651 259:	test: 0.7222514	best: 0.7236654 (214)	total: 17.9s	remaining: 0us
+14436.6s 1652 bestTest = 0.7236653864
+14436.6s 1653 bestIteration = 214
+14436.6s 1654 Shrink model to first 215 iterations.
+14467.7s 1655 fold aucs: xgb=0.700707, cat=0.723665, xgb_aux=0.705121
+14469.1s 1656 
+14469.1s 1657 OOF AUCs:
+14469.1s 1658 XGB base   : 0.699888
+14469.1s 1659 CAT base   : 0.728573
+14469.1s 1660 XGB aux    : 0.701292
+14469.1s 1661 BLEND raw  : 0.729246
+14469.1s 1662 BLEND rank : 0.727706
+14469.1s 1663 Weights    : xgb=0.215, cat=0.560, xgb_aux=0.225
+14469.1s 1664 
+14469.1s 1665 ==========================================================================================
+14469.1s 1666 [TARGET] target_6_3
+14469.1s 1667 ==========================================================================================
+14469.1s 1668 
+14469.1s 1669 --- fold 1/5 ---
+14541.8s 1670 Default metric period is 5 because AUC is/are not implemented for GPU
+14541.8s 1671 
+14541.8s 1672 Default metric period is 5 because AUC is/are not implemented for GPU
+14544.3s 1673 0:	test: 0.7165190	best: 0.7165190 (0)	total: 81.3ms	remaining: 21.1s
+14552.4s 1674 100:	test: 0.7644188	best: 0.7644994 (76)	total: 8.19s	remaining: 12.9s
+14560.4s 1675 200:	test: 0.7667953	best: 0.7672794 (198)	total: 16.2s	remaining: 4.77s
+14565.2s 1676 259:	test: 0.7678540	best: 0.7684531 (239)	total: 21s	remaining: 0us
+14565.2s 1677 bestTest = 0.7684530616
+14565.2s 1678 bestIteration = 239
+14565.2s 1679 Shrink model to first 240 iterations.
+14596.5s 1680 fold aucs: xgb=0.739633, cat=0.768453, xgb_aux=0.739793
+14596.5s 1681 
+14596.5s 1682 --- fold 2/5 ---
+14667.1s 1683 Default metric period is 5 because AUC is/are not implemented for GPU
+14667.1s 1684 
+14667.1s 1685 Default metric period is 5 because AUC is/are not implemented for GPU
+14669.0s 1686 0:	test: 0.7079598	best: 0.7079598 (0)	total: 73.4ms	remaining: 19s
+14676.0s 1687 100:	test: 0.7642583	best: 0.7642583 (100)	total: 7.05s	remaining: 11.1s
+14683.0s 1688 200:	test: 0.7685598	best: 0.7686360 (166)	total: 14s	remaining: 4.11s
+14687.1s 1689 259:	test: 0.7696934	best: 0.7698348 (256)	total: 18.1s	remaining: 0us
+14687.1s 1690 bestTest = 0.7698347569
+14687.1s 1691 bestIteration = 256
+14687.1s 1692 Shrink model to first 257 iterations.
+14719.3s 1693 fold aucs: xgb=0.744301, cat=0.769835, xgb_aux=0.742640
+14719.3s 1694 
+14719.3s 1695 --- fold 3/5 ---
+14791.9s 1696 Default metric period is 5 because AUC is/are not implemented for GPU
+14791.9s 1697 
+14791.9s 1698 Default metric period is 5 because AUC is/are not implemented for GPU
+14794.0s 1699 0:	test: 0.6896955	best: 0.6896955 (0)	total: 70.7ms	remaining: 18.3s
+14801.1s 1700 100:	test: 0.7527729	best: 0.7527729 (100)	total: 7.12s	remaining: 11.2s
+14808.1s 1701 200:	test: 0.7580651	best: 0.7580903 (199)	total: 14.2s	remaining: 4.16s
+14812.3s 1702 259:	test: 0.7593814	best: 0.7598612 (254)	total: 18.3s	remaining: 0us
+14812.3s 1703 bestTest = 0.7598612309
+14812.3s 1704 bestIteration = 254
+14812.3s 1705 Shrink model to first 255 iterations.
+14844.5s 1706 fold aucs: xgb=0.732347, cat=0.759861, xgb_aux=0.734385
+14844.5s 1707 
+14844.5s 1708 --- fold 4/5 ---
+14915.1s 1709 Default metric period is 5 because AUC is/are not implemented for GPU
+14915.1s 1710 
+14915.1s 1711 Default metric period is 5 because AUC is/are not implemented for GPU
+14917.5s 1712 0:	test: 0.6860441	best: 0.6860441 (0)	total: 83.5ms	remaining: 21.6s
+14925.4s 1713 100:	test: 0.7399714	best: 0.7403183 (99)	total: 7.97s	remaining: 12.6s
+14933.2s 1714 200:	test: 0.7421116	best: 0.7435592 (174)	total: 15.8s	remaining: 4.63s
+14935.9s 1715 bestTest = 0.7435592115
+14935.9s 1716 bestIteration = 174
+14935.9s 1717 Shrink model to first 175 iterations.
+14967.7s 1718 fold aucs: xgb=0.724672, cat=0.743559, xgb_aux=0.722030
+14967.7s 1719 
+14967.7s 1720 --- fold 5/5 ---
+15038.0s 1721 Default metric period is 5 because AUC is/are not implemented for GPU
+15038.0s 1722 
+15038.0s 1723 Default metric period is 5 because AUC is/are not implemented for GPU
+15040.1s 1724 0:	test: 0.6845675	best: 0.6845675 (0)	total: 73ms	remaining: 18.9s
+15047.4s 1725 100:	test: 0.7372575	best: 0.7373262 (99)	total: 7.37s	remaining: 11.6s
+15054.5s 1726 200:	test: 0.7389902	best: 0.7401894 (183)	total: 14.5s	remaining: 4.26s
+15058.8s 1727 259:	test: 0.7402628	best: 0.7404078 (256)	total: 18.8s	remaining: 0us
+15058.8s 1728 bestTest = 0.7404077947
+15058.8s 1729 bestIteration = 256
+15058.8s 1730 Shrink model to first 257 iterations.
+15090.6s 1731 fold aucs: xgb=0.723792, cat=0.740408, xgb_aux=0.727649
+15092.1s 1732 
+15092.1s 1733 OOF AUCs:
+15092.1s 1734 XGB base   : 0.733060
+15092.1s 1735 CAT base   : 0.756433
+15092.1s 1736 XGB aux    : 0.733351
+15092.1s 1737 BLEND raw  : 0.757589
+15092.1s 1738 BLEND rank : 0.756019
+15092.1s 1739 Weights    : xgb=0.239, cat=0.520, xgb_aux=0.241
+15092.1s 1740 
+15092.1s 1741 ==========================================================================================
+15092.1s 1742 [TARGET] target_6_4
+15092.1s 1743 ==========================================================================================
+15092.1s 1744 
+15092.1s 1745 --- fold 1/5 ---
+15161.9s 1746 Default metric period is 5 because AUC is/are not implemented for GPU
+15161.9s 1747 
+15161.9s 1748 Default metric period is 5 because AUC is/are not implemented for GPU
+15163.7s 1749 0:	test: 0.8218386	best: 0.8218386 (0)	total: 65.8ms	remaining: 17s
+15170.0s 1750 100:	test: 0.8551129	best: 0.8551519 (99)	total: 6.38s	remaining: 10s
+15176.3s 1751 200:	test: 0.8571695	best: 0.8571695 (200)	total: 12.7s	remaining: 3.71s
+15180.0s 1752 259:	test: 0.8577260	best: 0.8577646 (249)	total: 16.4s	remaining: 0us
+15180.0s 1753 bestTest = 0.8577645719
+15180.0s 1754 bestIteration = 249
+15180.0s 1755 Shrink model to first 250 iterations.
+15212.9s 1756 fold aucs: xgb=0.845644, cat=0.857765, xgb_aux=0.845814
+15212.9s 1757 
+15212.9s 1758 --- fold 2/5 ---
+15284.9s 1759 Default metric period is 5 because AUC is/are not implemented for GPU
+15284.9s 1760 
+15284.9s 1761 Default metric period is 5 because AUC is/are not implemented for GPU
+15287.9s 1762 0:	test: 0.8186092	best: 0.8186092 (0)	total: 85ms	remaining: 22s
+15296.5s 1763 100:	test: 0.8555002	best: 0.8556297 (99)	total: 8.69s	remaining: 13.7s
+15305.1s 1764 200:	test: 0.8591004	best: 0.8592082 (197)	total: 17.3s	remaining: 5.07s
+15310.2s 1765 259:	test: 0.8594150	best: 0.8596612 (243)	total: 22.4s	remaining: 0us
+15310.2s 1766 bestTest = 0.8596611619
+15310.2s 1767 bestIteration = 243
+15310.2s 1768 Shrink model to first 244 iterations.
+15343.5s 1769 fold aucs: xgb=0.842725, cat=0.859661, xgb_aux=0.844956
+15343.5s 1770 
+15343.5s 1771 --- fold 3/5 ---
+15417.3s 1772 Default metric period is 5 because AUC is/are not implemented for GPU
+15417.3s 1773 
+15417.3s 1774 Default metric period is 5 because AUC is/are not implemented for GPU
+15419.9s 1775 0:	test: 0.8078190	best: 0.8078190 (0)	total: 88.9ms	remaining: 23s
+15428.4s 1776 100:	test: 0.8436935	best: 0.8436935 (100)	total: 8.6s	remaining: 13.5s
+15437.1s 1777 200:	test: 0.8462686	best: 0.8464090 (198)	total: 17.3s	remaining: 5.07s
+15442.2s 1778 259:	test: 0.8471227	best: 0.8471657 (257)	total: 22.4s	remaining: 0us
+15442.2s 1779 bestTest = 0.8471657038
+15442.2s 1780 bestIteration = 257
+15442.2s 1781 Shrink model to first 258 iterations.
+15474.7s 1782 fold aucs: xgb=0.828490, cat=0.847166, xgb_aux=0.831478
+15474.7s 1783 
+15474.7s 1784 --- fold 4/5 ---
+15547.0s 1785 Default metric period is 5 because AUC is/are not implemented for GPU
+15547.0s 1786 
+15547.0s 1787 Default metric period is 5 because AUC is/are not implemented for GPU
+15549.6s 1788 0:	test: 0.8128375	best: 0.8128375 (0)	total: 85ms	remaining: 22s
+15558.2s 1789 100:	test: 0.8460895	best: 0.8464834 (97)	total: 8.63s	remaining: 13.6s
+15566.7s 1790 200:	test: 0.8473718	best: 0.8477544 (187)	total: 17.2s	remaining: 5.05s
+15570.8s 1791 bestTest = 0.8477544188
+15570.8s 1792 bestIteration = 187
+15570.8s 1793 Shrink model to first 188 iterations.
+15604.0s 1794 fold aucs: xgb=0.836610, cat=0.847754, xgb_aux=0.837269
+15604.0s 1795 
+15604.0s 1796 --- fold 5/5 ---
+15679.4s 1797 Default metric period is 5 because AUC is/are not implemented for GPU
+15679.4s 1798 
+15679.4s 1799 Default metric period is 5 because AUC is/are not implemented for GPU
+15682.2s 1800 0:	test: 0.8049908	best: 0.8049908 (0)	total: 92.1ms	remaining: 23.9s
+15691.1s 1801 100:	test: 0.8446406	best: 0.8446406 (100)	total: 8.96s	remaining: 14.1s
+15699.9s 1802 200:	test: 0.8475596	best: 0.8475596 (200)	total: 17.8s	remaining: 5.22s
+15705.2s 1803 259:	test: 0.8483611	best: 0.8484618 (257)	total: 23s	remaining: 0us
+15705.2s 1804 bestTest = 0.8484618068
+15705.2s 1805 bestIteration = 257
+15705.2s 1806 Shrink model to first 258 iterations.
+15737.8s 1807 fold aucs: xgb=0.834339, cat=0.848462, xgb_aux=0.834251
+15739.2s 1808 
+15739.2s 1809 OOF AUCs:
+15739.2s 1810 XGB base   : 0.837589
+15739.2s 1811 CAT base   : 0.852184
+15739.2s 1812 XGB aux    : 0.838756
+15739.2s 1813 BLEND raw  : 0.851530
+15739.2s 1814 BLEND rank : 0.850640
+15739.2s 1815 Weights    : xgb=0.273, cat=0.444, xgb_aux=0.284
+15739.2s 1816 
+15739.2s 1817 ==========================================================================================
+15739.2s 1818 [TARGET] target_6_5
+15739.2s 1819 ==========================================================================================
+15739.2s 1820 
+15739.2s 1821 --- fold 1/5 ---
+15813.2s 1822 Default metric period is 5 because AUC is/are not implemented for GPU
+15813.2s 1823 
+15813.2s 1824 Default metric period is 5 because AUC is/are not implemented for GPU
+15815.7s 1825 0:	test: 0.9197041	best: 0.9197041 (0)	total: 80.8ms	remaining: 20.9s
+15823.5s 1826 100:	test: 0.9429832	best: 0.9432151 (99)	total: 7.84s	remaining: 12.3s
+15830.6s 1827 bestTest = 0.9450008869
+15830.6s 1828 bestIteration = 132
+15830.6s 1829 Shrink model to first 133 iterations.
+15864.1s 1830 fold aucs: xgb=0.903854, cat=0.945001, xgb_aux=0.911370
+15864.1s 1831 
+15864.1s 1832 --- fold 2/5 ---
+15937.0s 1833 Default metric period is 5 because AUC is/are not implemented for GPU
+15937.0s 1834 
+15937.0s 1835 Default metric period is 5 because AUC is/are not implemented for GPU
+15939.4s 1836 0:	test: 0.8661627	best: 0.8661627 (0)	total: 78.9ms	remaining: 20.4s
+15947.2s 1837 100:	test: 0.9283296	best: 0.9296111 (66)	total: 7.89s	remaining: 12.4s
+15955.0s 1838 200:	test: 0.9271284	best: 0.9326219 (141)	total: 15.7s	remaining: 4.6s
+15955.0s 1839 bestTest = 0.9326218963
+15955.0s 1840 bestIteration = 141
+15955.0s 1841 Shrink model to first 142 iterations.
+15988.1s 1842 fold aucs: xgb=0.887111, cat=0.932622, xgb_aux=0.888103
+15988.1s 1843 
+15988.1s 1844 --- fold 3/5 ---
+16065.6s 1845 Default metric period is 5 because AUC is/are not implemented for GPU
+16065.6s 1846 
+16065.6s 1847 Default metric period is 5 because AUC is/are not implemented for GPU
+16068.9s 1848 0:	test: 0.8760464	best: 0.8760464 (0)	total: 101ms	remaining: 26.1s
+16078.5s 1849 100:	test: 0.9427850	best: 0.9445431 (77)	total: 9.72s	remaining: 15.3s
+16082.0s 1850 bestTest = 0.9445431232
+16082.0s 1851 bestIteration = 77
+16082.0s 1852 Shrink model to first 78 iterations.
+16117.8s 1853 fold aucs: xgb=0.907013, cat=0.944543, xgb_aux=0.900986
+16117.8s 1854 
+16117.8s 1855 --- fold 4/5 ---
+16190.8s 1856 Default metric period is 5 because AUC is/are not implemented for GPU
+16190.8s 1857 
+16190.8s 1858 Default metric period is 5 because AUC is/are not implemented for GPU
+16192.8s 1859 0:	test: 0.8754002	best: 0.8754002 (0)	total: 69.1ms	remaining: 17.9s
+16198.8s 1860 bestTest = 0.933940798
+16198.8s 1861 bestIteration = 26
+16198.8s 1862 Shrink model to first 27 iterations.
+16231.6s 1863 fold aucs: xgb=0.916191, cat=0.933941, xgb_aux=0.914503
+16231.6s 1864 
+16231.6s 1865 --- fold 5/5 ---
+16303.6s 1866 Default metric period is 5 because AUC is/are not implemented for GPU
+16303.6s 1867 
+16303.6s 1868 Default metric period is 5 because AUC is/are not implemented for GPU
+16305.6s 1869 0:	test: 0.8099907	best: 0.8099907 (0)	total: 71.9ms	remaining: 18.6s
+16312.5s 1870 100:	test: 0.8870639	best: 0.8903186 (78)	total: 6.99s	remaining: 11s
+16319.4s 1871 200:	test: 0.8891509	best: 0.8915766 (162)	total: 13.9s	remaining: 4.08s
+16320.9s 1872 bestTest = 0.8915765882
+16320.9s 1873 bestIteration = 162
+16320.9s 1874 Shrink model to first 163 iterations.
+16353.9s 1875 fold aucs: xgb=0.860723, cat=0.891577, xgb_aux=0.859669
+16355.4s 1876 
+16355.4s 1877 OOF AUCs:
+16355.4s 1878 XGB base   : 0.894525
+16355.4s 1879 CAT base   : 0.914677
+16355.4s 1880 XGB aux    : 0.894216
+16355.4s 1881 BLEND raw  : 0.917202
+16355.4s 1882 BLEND rank : 0.919738
+16355.4s 1883 Weights    : xgb=0.253, cat=0.496, xgb_aux=0.251
+16355.4s 1884 
+16355.4s 1885 ==========================================================================================
+16355.4s 1886 [TARGET] target_7_1
+16355.4s 1887 ==========================================================================================
+16355.4s 1888 
+16355.4s 1889 --- fold 1/5 ---
+16431.5s 1890 Default metric period is 5 because AUC is/are not implemented for GPU
+16431.5s 1891 
+16431.5s 1892 Default metric period is 5 because AUC is/are not implemented for GPU
+16434.5s 1893 0:	test: 0.7343101	best: 0.7343101 (0)	total: 92.4ms	remaining: 23.9s
+16443.7s 1894 100:	test: 0.7871531	best: 0.7871531 (100)	total: 9.27s	remaining: 14.6s
+16452.8s 1895 200:	test: 0.7936486	best: 0.7936486 (200)	total: 18.4s	remaining: 5.39s
+16458.3s 1896 259:	test: 0.7956493	best: 0.7956493 (259)	total: 23.8s	remaining: 0us
+16458.3s 1897 bestTest = 0.7956492901
+16458.3s 1898 bestIteration = 259
+16491.2s 1899 fold aucs: xgb=0.801682, cat=0.795649, xgb_aux=0.800317
+16491.2s 1900 
+16491.2s 1901 --- fold 2/5 ---
+16567.3s 1902 Default metric period is 5 because AUC is/are not implemented for GPU
+16567.3s 1903 
+16567.3s 1904 Default metric period is 5 because AUC is/are not implemented for GPU
+16570.4s 1905 0:	test: 0.7372113	best: 0.7372113 (0)	total: 101ms	remaining: 26.1s
+16580.0s 1906 100:	test: 0.7883879	best: 0.7883879 (100)	total: 9.71s	remaining: 15.3s
+16589.6s 1907 200:	test: 0.7945720	best: 0.7945720 (200)	total: 19.3s	remaining: 5.66s
+16595.2s 1908 259:	test: 0.7967128	best: 0.7967128 (259)	total: 24.9s	remaining: 0us
+16595.2s 1909 bestTest = 0.7967128158
+16595.2s 1910 bestIteration = 259
+16629.5s 1911 fold aucs: xgb=0.802910, cat=0.796713, xgb_aux=0.801973
+16629.5s 1912 
+16629.5s 1913 --- fold 3/5 ---
+16705.5s 1914 Default metric period is 5 because AUC is/are not implemented for GPU
+16705.5s 1915 
+16705.5s 1916 Default metric period is 5 because AUC is/are not implemented for GPU
+16708.4s 1917 0:	test: 0.7344757	best: 0.7344757 (0)	total: 97.6ms	remaining: 25.3s
+16717.6s 1918 100:	test: 0.7872070	best: 0.7872070 (100)	total: 9.24s	remaining: 14.5s
+16726.7s 1919 200:	test: 0.7929883	best: 0.7929883 (200)	total: 18.3s	remaining: 5.38s
+16732.0s 1920 259:	test: 0.7950365	best: 0.7950365 (259)	total: 23.7s	remaining: 0us
+16732.0s 1921 bestTest = 0.7950365245
+16732.0s 1922 bestIteration = 259
+16765.5s 1923 fold aucs: xgb=0.799585, cat=0.795037, xgb_aux=0.798487
+16765.5s 1924 
+16765.5s 1925 --- fold 4/5 ---
+16841.9s 1926 Default metric period is 5 because AUC is/are not implemented for GPU
+16841.9s 1927 
+16841.9s 1928 Default metric period is 5 because AUC is/are not implemented for GPU
+16845.2s 1929 0:	test: 0.7359373	best: 0.7359373 (0)	total: 109ms	remaining: 28.2s
+16855.3s 1930 100:	test: 0.7856986	best: 0.7856986 (100)	total: 10.2s	remaining: 16.1s
+16865.4s 1931 200:	test: 0.7918460	best: 0.7918460 (200)	total: 20.3s	remaining: 5.94s
+16871.3s 1932 259:	test: 0.7936897	best: 0.7936897 (259)	total: 26.1s	remaining: 0us
+16871.3s 1933 bestTest = 0.7936897278
+16871.3s 1934 bestIteration = 259
+16906.5s 1935 fold aucs: xgb=0.800177, cat=0.793690, xgb_aux=0.799160
+16906.5s 1936 
+16906.5s 1937 --- fold 5/5 ---
+16982.0s 1938 Default metric period is 5 because AUC is/are not implemented for GPU
+16982.0s 1939 
+16982.0s 1940 Default metric period is 5 because AUC is/are not implemented for GPU
+16985.1s 1941 0:	test: 0.7391667	best: 0.7391667 (0)	total: 96.9ms	remaining: 25.1s
+16994.4s 1942 100:	test: 0.7895712	best: 0.7895712 (100)	total: 9.37s	remaining: 14.8s
+17003.5s 1943 200:	test: 0.7962492	best: 0.7962492 (200)	total: 18.5s	remaining: 5.42s
+17008.9s 1944 259:	test: 0.7986117	best: 0.7986228 (258)	total: 23.8s	remaining: 0us
+17008.9s 1945 bestTest = 0.7986227572
+17008.9s 1946 bestIteration = 258
+17008.9s 1947 Shrink model to first 259 iterations.
+17042.7s 1948 fold aucs: xgb=0.804434, cat=0.798623, xgb_aux=0.803457
+17044.2s 1949 
+17044.2s 1950 OOF AUCs:
+17044.2s 1951 XGB base   : 0.801756
+17044.2s 1952 CAT base   : 0.795936
+17044.2s 1953 XGB aux    : 0.800677
+17044.2s 1954 BLEND raw  : 0.802429
+17044.2s 1955 BLEND rank : 0.802295
+17044.2s 1956 Weights    : xgb=0.359, cat=0.295, xgb_aux=0.346
+17044.2s 1957 
+17044.2s 1958 ==========================================================================================
+17044.2s 1959 [TARGET] target_7_2
+17044.2s 1960 ==========================================================================================
+17044.2s 1961 
+17044.2s 1962 --- fold 1/5 ---
+17119.8s 1963 Default metric period is 5 because AUC is/are not implemented for GPU
+17119.8s 1964 
+17119.8s 1965 Default metric period is 5 because AUC is/are not implemented for GPU
+17123.4s 1966 0:	test: 0.7332412	best: 0.7332412 (0)	total: 107ms	remaining: 27.8s
+17133.6s 1967 100:	test: 0.8171634	best: 0.8171634 (100)	total: 10.4s	remaining: 16.3s
+17143.8s 1968 200:	test: 0.8279521	best: 0.8279521 (200)	total: 20.6s	remaining: 6.04s
+17149.9s 1969 259:	test: 0.8309780	best: 0.8309780 (259)	total: 26.5s	remaining: 0us
+17149.9s 1970 bestTest = 0.8309780359
+17149.9s 1971 bestIteration = 259
+17182.5s 1972 fold aucs: xgb=0.839044, cat=0.830978, xgb_aux=0.836045
+17182.5s 1973 
+17182.5s 1974 --- fold 2/5 ---
+17257.8s 1975 Default metric period is 5 because AUC is/are not implemented for GPU
+17257.8s 1976 
+17257.8s 1977 Default metric period is 5 because AUC is/are not implemented for GPU
+17261.4s 1978 0:	test: 0.7481526	best: 0.7481526 (0)	total: 110ms	remaining: 28.6s
+17271.9s 1979 100:	test: 0.8237775	best: 0.8237775 (100)	total: 10.6s	remaining: 16.8s
+17282.4s 1980 200:	test: 0.8338898	best: 0.8338898 (200)	total: 21.1s	remaining: 6.2s
+17288.7s 1981 259:	test: 0.8366592	best: 0.8366592 (259)	total: 27.3s	remaining: 0us
+17288.7s 1982 bestTest = 0.8366592228
+17288.7s 1983 bestIteration = 259
+17321.0s 1984 fold aucs: xgb=0.845507, cat=0.836659, xgb_aux=0.844242
+17321.0s 1985 
+17321.0s 1986 --- fold 3/5 ---
+17397.1s 1987 Default metric period is 5 because AUC is/are not implemented for GPU
+17397.1s 1988 
+17397.1s 1989 Default metric period is 5 because AUC is/are not implemented for GPU
+17400.5s 1990 0:	test: 0.7382613	best: 0.7382613 (0)	total: 108ms	remaining: 28s
+17410.9s 1991 100:	test: 0.8247728	best: 0.8247728 (100)	total: 10.5s	remaining: 16.5s
+17421.2s 1992 200:	test: 0.8364444	best: 0.8364574 (198)	total: 20.7s	remaining: 6.08s
+17427.3s 1993 259:	test: 0.8398641	best: 0.8398641 (259)	total: 26.8s	remaining: 0us
+17427.3s 1994 bestTest = 0.8398640752
+17427.3s 1995 bestIteration = 259
+17460.8s 1996 fold aucs: xgb=0.848271, cat=0.839864, xgb_aux=0.847352
+17460.8s 1997 
+17460.8s 1998 --- fold 4/5 ---
+17535.0s 1999 Default metric period is 5 because AUC is/are not implemented for GPU
+17535.0s 2000 
+17535.0s 2001 Default metric period is 5 because AUC is/are not implemented for GPU
+17538.0s 2002 0:	test: 0.7428997	best: 0.7428997 (0)	total: 97.5ms	remaining: 25.3s
+17547.3s 2003 100:	test: 0.8249578	best: 0.8249578 (100)	total: 9.34s	remaining: 14.7s
+17556.5s 2004 200:	test: 0.8362147	best: 0.8362147 (200)	total: 18.6s	remaining: 5.45s
+17561.9s 2005 259:	test: 0.8399431	best: 0.8399431 (259)	total: 24s	remaining: 0us
+17561.9s 2006 bestTest = 0.8399430513
+17561.9s 2007 bestIteration = 259
+17595.2s 2008 fold aucs: xgb=0.851032, cat=0.839943, xgb_aux=0.850410
+17595.2s 2009 
+17595.2s 2010 --- fold 5/5 ---
+17669.8s 2011 Default metric period is 5 because AUC is/are not implemented for GPU
+17669.8s 2012 
+17669.8s 2013 Default metric period is 5 because AUC is/are not implemented for GPU
+17673.0s 2014 0:	test: 0.7361998	best: 0.7361998 (0)	total: 98.2ms	remaining: 25.4s
+17682.3s 2015 100:	test: 0.8221240	best: 0.8221240 (100)	total: 9.48s	remaining: 14.9s
+17691.7s 2016 200:	test: 0.8337814	best: 0.8337814 (200)	total: 18.8s	remaining: 5.51s
+17697.1s 2017 259:	test: 0.8368481	best: 0.8368481 (259)	total: 24.2s	remaining: 0us
+17697.1s 2018 bestTest = 0.8368480504
+17697.1s 2019 bestIteration = 259
+17729.0s 2020 fold aucs: xgb=0.846010, cat=0.836848, xgb_aux=0.845192
+17730.5s 2021 
+17730.5s 2022 OOF AUCs:
+17730.5s 2023 XGB base   : 0.845931
+17730.5s 2024 CAT base   : 0.836824
+17730.5s 2025 XGB aux    : 0.844583
+17730.5s 2026 BLEND raw  : 0.847504
+17730.5s 2027 BLEND rank : 0.847059
+17730.5s 2028 Weights    : xgb=0.371, cat=0.274, xgb_aux=0.355
+17730.5s 2029 
+17730.5s 2030 ==========================================================================================
+17730.5s 2031 [TARGET] target_7_3
+17730.5s 2032 ==========================================================================================
+17730.5s 2033 
+17730.5s 2034 --- fold 1/5 ---
+17803.6s 2035 Default metric period is 5 because AUC is/are not implemented for GPU
+17803.6s 2036 
+17803.6s 2037 Default metric period is 5 because AUC is/are not implemented for GPU
+17805.9s 2038 0:	test: 0.7028413	best: 0.7028413 (0)	total: 76.1ms	remaining: 19.7s
+17813.4s 2039 100:	test: 0.7757338	best: 0.7758971 (98)	total: 7.56s	remaining: 11.9s
+17820.8s 2040 200:	test: 0.7807083	best: 0.7807137 (197)	total: 15s	remaining: 4.4s
+17825.3s 2041 259:	test: 0.7825812	best: 0.7826615 (254)	total: 19.4s	remaining: 0us
+17825.3s 2042 bestTest = 0.7826614678
+17825.3s 2043 bestIteration = 254
+17825.3s 2044 Shrink model to first 255 iterations.
+17857.7s 2045 fold aucs: xgb=0.766279, cat=0.782661, xgb_aux=0.768420
+17857.7s 2046 
+17857.7s 2047 --- fold 2/5 ---
+17930.4s 2048 Default metric period is 5 because AUC is/are not implemented for GPU
+17930.4s 2049 
+17930.4s 2050 Default metric period is 5 because AUC is/are not implemented for GPU
+17932.5s 2051 0:	test: 0.7029500	best: 0.7029500 (0)	total: 74.7ms	remaining: 19.3s
+17939.8s 2052 100:	test: 0.7794153	best: 0.7795239 (96)	total: 7.32s	remaining: 11.5s
+17947.0s 2053 200:	test: 0.7841355	best: 0.7844346 (187)	total: 14.5s	remaining: 4.26s
+17951.2s 2054 259:	test: 0.7851554	best: 0.7854419 (241)	total: 18.7s	remaining: 0us
+17951.2s 2055 bestTest = 0.7854419351
+17951.2s 2056 bestIteration = 241
+17951.2s 2057 Shrink model to first 242 iterations.
+17983.8s 2058 fold aucs: xgb=0.774151, cat=0.785442, xgb_aux=0.776292
+17983.8s 2059 
+17983.8s 2060 --- fold 3/5 ---
+18056.0s 2061 Default metric period is 5 because AUC is/are not implemented for GPU
+18056.0s 2062 
+18056.0s 2063 Default metric period is 5 because AUC is/are not implemented for GPU
+18057.9s 2064 0:	test: 0.7086243	best: 0.7086243 (0)	total: 69.9ms	remaining: 18.1s
+18064.9s 2065 100:	test: 0.7826012	best: 0.7826012 (100)	total: 7.04s	remaining: 11.1s
+18071.9s 2066 200:	test: 0.7873340	best: 0.7873340 (200)	total: 14s	remaining: 4.12s
+18076.0s 2067 259:	test: 0.7857540	best: 0.7873340 (200)	total: 18.2s	remaining: 0us
+18076.0s 2068 bestTest = 0.7873340249
+18076.0s 2069 bestIteration = 200
+18076.0s 2070 Shrink model to first 201 iterations.
+18108.5s 2071 fold aucs: xgb=0.753216, cat=0.787334, xgb_aux=0.752524
+18108.5s 2072 
+18108.5s 2073 --- fold 4/5 ---
+18181.5s 2074 Default metric period is 5 because AUC is/are not implemented for GPU
+18181.5s 2075 
+18181.5s 2076 Default metric period is 5 because AUC is/are not implemented for GPU
+18184.2s 2077 0:	test: 0.7088010	best: 0.7088010 (0)	total: 88.4ms	remaining: 22.9s
+18192.7s 2078 100:	test: 0.7712595	best: 0.7716022 (98)	total: 8.54s	remaining: 13.4s
+18201.1s 2079 200:	test: 0.7731975	best: 0.7760251 (178)	total: 16.9s	remaining: 4.97s
+18204.3s 2080 bestTest = 0.7760251164
+18204.3s 2081 bestIteration = 178
+18204.3s 2082 Shrink model to first 179 iterations.
+18236.5s 2083 fold aucs: xgb=0.753577, cat=0.776025, xgb_aux=0.757492
+18236.5s 2084 
+18236.5s 2085 --- fold 5/5 ---
+18307.7s 2086 Default metric period is 5 because AUC is/are not implemented for GPU
+18307.7s 2087 
+18307.7s 2088 Default metric period is 5 because AUC is/are not implemented for GPU
+18309.9s 2089 0:	test: 0.7028809	best: 0.7028809 (0)	total: 74.8ms	remaining: 19.4s
+18317.3s 2090 100:	test: 0.7694003	best: 0.7695648 (99)	total: 7.49s	remaining: 11.8s
+18324.7s 2091 200:	test: 0.7737327	best: 0.7737327 (200)	total: 14.8s	remaining: 4.36s
+18329.1s 2092 259:	test: 0.7731701	best: 0.7747384 (226)	total: 19.2s	remaining: 0us
+18329.1s 2093 bestTest = 0.774738431
+18329.1s 2094 bestIteration = 226
+18329.1s 2095 Shrink model to first 227 iterations.
+18362.2s 2096 fold aucs: xgb=0.759426, cat=0.774738, xgb_aux=0.755186
+18363.7s 2097 
+18363.7s 2098 OOF AUCs:
+18363.7s 2099 XGB base   : 0.761415
+18363.7s 2100 CAT base   : 0.781046
+18363.7s 2101 XGB aux    : 0.762064
+18363.7s 2102 BLEND raw  : 0.786164
+18363.7s 2103 BLEND rank : 0.783133
+18363.7s 2104 Weights    : xgb=0.253, cat=0.488, xgb_aux=0.259
+18363.7s 2105 
+18363.7s 2106 ==========================================================================================
+18363.7s 2107 [TARGET] target_8_1
+18363.7s 2108 ==========================================================================================
+18363.7s 2109 
+18363.7s 2110 --- fold 1/5 ---
+18437.4s 2111 Default metric period is 5 because AUC is/are not implemented for GPU
+18437.4s 2112 
+18437.4s 2113 Default metric period is 5 because AUC is/are not implemented for GPU
+18440.4s 2114 0:	test: 0.9443184	best: 0.9443184 (0)	total: 94.9ms	remaining: 24.6s
+18449.6s 2115 100:	test: 0.9746194	best: 0.9746194 (100)	total: 9.24s	remaining: 14.5s
+18458.7s 2116 200:	test: 0.9767343	best: 0.9767353 (199)	total: 18.4s	remaining: 5.39s
+18464.1s 2117 259:	test: 0.9773490	best: 0.9773490 (259)	total: 23.8s	remaining: 0us
+18464.1s 2118 bestTest = 0.9773490131
+18464.1s 2119 bestIteration = 259
+18496.8s 2120 fold aucs: xgb=0.979378, cat=0.977349, xgb_aux=0.979267
+18496.8s 2121 
+18496.8s 2122 --- fold 2/5 ---
+18570.1s 2123 Default metric period is 5 because AUC is/are not implemented for GPU
+18570.1s 2124 
+18570.1s 2125 Default metric period is 5 because AUC is/are not implemented for GPU
+18572.7s 2126 0:	test: 0.9422589	best: 0.9422589 (0)	total: 84ms	remaining: 21.8s
+18580.7s 2127 100:	test: 0.9715451	best: 0.9715451 (100)	total: 8.13s	remaining: 12.8s
+18588.8s 2128 200:	test: 0.9739793	best: 0.9739793 (200)	total: 16.2s	remaining: 4.77s
+18593.6s 2129 259:	test: 0.9748112	best: 0.9748112 (259)	total: 21s	remaining: 0us
+18593.6s 2130 bestTest = 0.9748111665
+18593.6s 2131 bestIteration = 259
+18626.9s 2132 fold aucs: xgb=0.977917, cat=0.974811, xgb_aux=0.977863
+18626.9s 2133 
+18626.9s 2134 --- fold 3/5 ---
+18702.0s 2135 Default metric period is 5 because AUC is/are not implemented for GPU
+18702.0s 2136 
+18702.0s 2137 Default metric period is 5 because AUC is/are not implemented for GPU
+18705.0s 2138 0:	test: 0.9407706	best: 0.9407706 (0)	total: 90.3ms	remaining: 23.4s
+18714.2s 2139 100:	test: 0.9720967	best: 0.9720967 (100)	total: 9.22s	remaining: 14.5s
+18723.3s 2140 200:	test: 0.9745132	best: 0.9745132 (200)	total: 18.3s	remaining: 5.38s
+18728.7s 2141 259:	test: 0.9752467	best: 0.9752467 (259)	total: 23.7s	remaining: 0us
+18728.7s 2142 bestTest = 0.9752467275
+18728.7s 2143 bestIteration = 259
+18761.8s 2144 fold aucs: xgb=0.978433, cat=0.975247, xgb_aux=0.978274
+18761.8s 2145 
+18761.8s 2146 --- fold 4/5 ---
+18836.2s 2147 Default metric period is 5 because AUC is/are not implemented for GPU
+18836.2s 2148 
+18836.2s 2149 Default metric period is 5 because AUC is/are not implemented for GPU
+18839.5s 2150 0:	test: 0.9423033	best: 0.9423033 (0)	total: 103ms	remaining: 26.6s
+18849.5s 2151 100:	test: 0.9732556	best: 0.9732556 (100)	total: 10.1s	remaining: 15.9s
+18859.5s 2152 200:	test: 0.9755028	best: 0.9755028 (200)	total: 20.1s	remaining: 5.9s
+18865.4s 2153 259:	test: 0.9762318	best: 0.9762318 (259)	total: 26.1s	remaining: 0us
+18865.4s 2154 bestTest = 0.9762317538
+18865.4s 2155 bestIteration = 259
+18899.7s 2156 fold aucs: xgb=0.978719, cat=0.976232, xgb_aux=0.978618
+18899.7s 2157 
+18899.7s 2158 --- fold 5/5 ---
+18974.6s 2159 Default metric period is 5 because AUC is/are not implemented for GPU
+18974.6s 2160 
+18974.6s 2161 Default metric period is 5 because AUC is/are not implemented for GPU
+18978.0s 2162 0:	test: 0.9414316	best: 0.9414316 (0)	total: 104ms	remaining: 26.8s
+18987.9s 2163 100:	test: 0.9724207	best: 0.9724207 (100)	total: 10s	remaining: 15.8s
+18997.9s 2164 200:	test: 0.9748689	best: 0.9748689 (200)	total: 19.9s	remaining: 5.86s
+19003.7s 2165 259:	test: 0.9754792	best: 0.9754792 (259)	total: 25.8s	remaining: 0us
+19003.7s 2166 bestTest = 0.9754792154
+19003.7s 2167 bestIteration = 259
+19037.5s 2168 fold aucs: xgb=0.978299, cat=0.975479, xgb_aux=0.977922
+19038.9s 2169 
+19038.9s 2170 OOF AUCs:
+19038.9s 2171 XGB base   : 0.978541
+19038.9s 2172 CAT base   : 0.975811
+19038.9s 2173 XGB aux    : 0.978382
+19038.9s 2174 BLEND raw  : 0.978361
+19038.9s 2175 BLEND rank : 0.978301
+19038.9s 2176 Weights    : xgb=0.344, cat=0.314, xgb_aux=0.342
+19038.9s 2177 
+19038.9s 2178 ==========================================================================================
+19038.9s 2179 [TARGET] target_8_2
+19038.9s 2180 ==========================================================================================
+19038.9s 2181 
+19038.9s 2182 --- fold 1/5 ---
+19114.1s 2183 Default metric period is 5 because AUC is/are not implemented for GPU
+19114.1s 2184 
+19114.1s 2185 Default metric period is 5 because AUC is/are not implemented for GPU
+19116.8s 2186 0:	test: 0.7193586	best: 0.7193586 (0)	total: 90.3ms	remaining: 23.4s
+19125.4s 2187 100:	test: 0.8233015	best: 0.8233015 (100)	total: 8.71s	remaining: 13.7s
+19134.0s 2188 200:	test: 0.8339191	best: 0.8339467 (199)	total: 17.3s	remaining: 5.08s
+19139.0s 2189 259:	test: 0.8374250	best: 0.8374250 (259)	total: 22.4s	remaining: 0us
+19139.0s 2190 bestTest = 0.8374250233
+19139.0s 2191 bestIteration = 259
+19172.3s 2192 fold aucs: xgb=0.846863, cat=0.837425, xgb_aux=0.845440
+19172.3s 2193 
+19172.3s 2194 --- fold 2/5 ---
+19249.1s 2195 Default metric period is 5 because AUC is/are not implemented for GPU
+19249.1s 2196 
+19249.1s 2197 Default metric period is 5 because AUC is/are not implemented for GPU
+19252.4s 2198 0:	test: 0.7346966	best: 0.7346966 (0)	total: 106ms	remaining: 27.4s
+19262.4s 2199 100:	test: 0.8285798	best: 0.8285798 (100)	total: 10.1s	remaining: 16s
+19272.4s 2200 200:	test: 0.8399151	best: 0.8399151 (200)	total: 20.1s	remaining: 5.91s
+19278.3s 2201 259:	test: 0.8429279	best: 0.8429279 (259)	total: 26s	remaining: 0us
+19278.3s 2202 bestTest = 0.8429278731
+19278.3s 2203 bestIteration = 259
+19311.6s 2204 fold aucs: xgb=0.851446, cat=0.842928, xgb_aux=0.849615
+19311.6s 2205 
+19311.6s 2206 --- fold 3/5 ---
+19387.3s 2207 Default metric period is 5 because AUC is/are not implemented for GPU
+19387.3s 2208 
+19387.3s 2209 Default metric period is 5 because AUC is/are not implemented for GPU
+19390.0s 2210 0:	test: 0.7091289	best: 0.7091289 (0)	total: 92.9ms	remaining: 24.1s
+19399.0s 2211 100:	test: 0.8251506	best: 0.8251506 (100)	total: 9s	remaining: 14.2s
+19407.8s 2212 200:	test: 0.8367814	best: 0.8367814 (200)	total: 17.9s	remaining: 5.25s
+19413.1s 2213 259:	test: 0.8398913	best: 0.8398913 (259)	total: 23.1s	remaining: 0us
+19413.1s 2214 bestTest = 0.8398912847
+19413.1s 2215 bestIteration = 259
+19445.9s 2216 fold aucs: xgb=0.850121, cat=0.839891, xgb_aux=0.848393
+19445.9s 2217 
+19445.9s 2218 --- fold 4/5 ---
+19521.8s 2219 Default metric period is 5 because AUC is/are not implemented for GPU
+19521.8s 2220 
+19521.8s 2221 Default metric period is 5 because AUC is/are not implemented for GPU
+19525.4s 2222 0:	test: 0.7252277	best: 0.7252277 (0)	total: 110ms	remaining: 28.5s
+19535.7s 2223 100:	test: 0.8181341	best: 0.8181341 (100)	total: 10.5s	remaining: 16.5s
+19546.0s 2224 200:	test: 0.8297112	best: 0.8297112 (200)	total: 20.8s	remaining: 6.1s
+19552.1s 2225 259:	test: 0.8330925	best: 0.8330925 (259)	total: 26.8s	remaining: 0us
+19552.1s 2226 bestTest = 0.8330925405
+19552.1s 2227 bestIteration = 259
+19585.4s 2228 fold aucs: xgb=0.844450, cat=0.833092, xgb_aux=0.843024
+19585.4s 2229 
+19585.4s 2230 --- fold 5/5 ---
+19659.1s 2231 Default metric period is 5 because AUC is/are not implemented for GPU
+19659.1s 2232 
+19659.1s 2233 Default metric period is 5 because AUC is/are not implemented for GPU
+19661.8s 2234 0:	test: 0.7185968	best: 0.7185968 (0)	total: 95.1ms	remaining: 24.6s
+19670.5s 2235 100:	test: 0.8255973	best: 0.8255973 (100)	total: 8.74s	remaining: 13.8s
+19679.0s 2236 200:	test: 0.8367387	best: 0.8367387 (200)	total: 17.3s	remaining: 5.08s
+19684.1s 2237 259:	test: 0.8395332	best: 0.8395332 (259)	total: 22.4s	remaining: 0us
+19684.1s 2238 bestTest = 0.8395332098
+19684.1s 2239 bestIteration = 259
+19718.6s 2240 fold aucs: xgb=0.853505, cat=0.839533, xgb_aux=0.851160
+19720.0s 2241 
+19720.0s 2242 OOF AUCs:
+19720.0s 2243 XGB base   : 0.849237
+19720.0s 2244 CAT base   : 0.838526
+19720.0s 2245 XGB aux    : 0.847496
+19720.0s 2246 BLEND raw  : 0.849990
+19720.0s 2247 BLEND rank : 0.849646
+19720.0s 2248 Weights    : xgb=0.378, cat=0.265, xgb_aux=0.357
+19720.0s 2249 
+19720.0s 2250 ==========================================================================================
+19720.0s 2251 [TARGET] target_8_3
+19720.0s 2252 ==========================================================================================
+19720.0s 2253 
+19720.0s 2254 --- fold 1/5 ---
+19793.5s 2255 Default metric period is 5 because AUC is/are not implemented for GPU
+19793.5s 2256 
+19793.5s 2257 Default metric period is 5 because AUC is/are not implemented for GPU
+19795.3s 2258 0:	test: 0.8072501	best: 0.8072501 (0)	total: 72.7ms	remaining: 18.8s
+19802.0s 2259 100:	test: 0.8663539	best: 0.8663539 (100)	total: 6.78s	remaining: 10.7s
+19808.7s 2260 200:	test: 0.8706113	best: 0.8706113 (200)	total: 13.4s	remaining: 3.94s
+19812.6s 2261 259:	test: 0.8723663	best: 0.8723663 (259)	total: 17.3s	remaining: 0us
+19812.6s 2262 bestTest = 0.872366339
+19812.6s 2263 bestIteration = 259
+19846.2s 2264 fold aucs: xgb=0.876993, cat=0.872366, xgb_aux=0.875001
+19846.2s 2265 
+19846.2s 2266 --- fold 2/5 ---
+19918.2s 2267 Default metric period is 5 because AUC is/are not implemented for GPU
+19918.2s 2268 
+19918.2s 2269 Default metric period is 5 because AUC is/are not implemented for GPU
+19920.3s 2270 0:	test: 0.7945847	best: 0.7945847 (0)	total: 75.8ms	remaining: 19.6s
+19927.5s 2271 100:	test: 0.8580549	best: 0.8580549 (100)	total: 7.32s	remaining: 11.5s
+19934.7s 2272 200:	test: 0.8626828	best: 0.8626828 (200)	total: 14.5s	remaining: 4.26s
+19938.9s 2273 259:	test: 0.8639613	best: 0.8639613 (259)	total: 18.7s	remaining: 0us
+19938.9s 2274 bestTest = 0.8639613092
+19938.9s 2275 bestIteration = 259
+19971.3s 2276 fold aucs: xgb=0.867735, cat=0.863961, xgb_aux=0.866210
+19971.3s 2277 
+19971.3s 2278 --- fold 3/5 ---
+20044.7s 2279 Default metric period is 5 because AUC is/are not implemented for GPU
+20044.7s 2280 
+20044.7s 2281 Default metric period is 5 because AUC is/are not implemented for GPU
+20047.4s 2282 0:	test: 0.8112870	best: 0.8112870 (0)	total: 90ms	remaining: 23.3s
+20056.0s 2283 100:	test: 0.8603004	best: 0.8603004 (100)	total: 8.7s	remaining: 13.7s
+20064.6s 2284 200:	test: 0.8650425	best: 0.8650425 (200)	total: 17.2s	remaining: 5.06s
+20069.6s 2285 259:	test: 0.8662940	best: 0.8662989 (257)	total: 22.2s	remaining: 0us
+20069.6s 2286 bestTest = 0.8662988544
+20069.6s 2287 bestIteration = 257
+20069.6s 2288 Shrink model to first 258 iterations.
+20102.3s 2289 fold aucs: xgb=0.869386, cat=0.866299, xgb_aux=0.871146
+20102.3s 2290 
+20102.3s 2291 --- fold 4/5 ---
+20175.4s 2292 Default metric period is 5 because AUC is/are not implemented for GPU
+20175.4s 2293 
+20175.4s 2294 Default metric period is 5 because AUC is/are not implemented for GPU
+20178.0s 2295 0:	test: 0.8132310	best: 0.8132310 (0)	total: 88.3ms	remaining: 22.9s
+20186.3s 2296 100:	test: 0.8676772	best: 0.8676772 (100)	total: 8.44s	remaining: 13.3s
+20194.6s 2297 200:	test: 0.8715373	best: 0.8715373 (200)	total: 16.7s	remaining: 4.91s
+20199.5s 2298 259:	test: 0.8729148	best: 0.8729148 (259)	total: 21.6s	remaining: 0us
+20199.5s 2299 bestTest = 0.8729147613
+20199.5s 2300 bestIteration = 259
+20232.7s 2301 fold aucs: xgb=0.876790, cat=0.872915, xgb_aux=0.874547
+20232.7s 2302 
+20232.7s 2303 --- fold 5/5 ---
+20306.5s 2304 Default metric period is 5 because AUC is/are not implemented for GPU
+20306.5s 2305 
+20306.5s 2306 Default metric period is 5 because AUC is/are not implemented for GPU
+20309.6s 2307 0:	test: 0.8109756	best: 0.8109756 (0)	total: 96.9ms	remaining: 25.1s
+20318.8s 2308 100:	test: 0.8705482	best: 0.8705784 (99)	total: 9.29s	remaining: 14.6s
+20328.0s 2309 200:	test: 0.8758368	best: 0.8758752 (199)	total: 18.5s	remaining: 5.42s
+20333.4s 2310 259:	test: 0.8766663	best: 0.8766831 (249)	total: 23.9s	remaining: 0us
+20333.4s 2311 bestTest = 0.876683116
+20333.4s 2312 bestIteration = 249
+20333.4s 2313 Shrink model to first 250 iterations.
+20367.9s 2314 fold aucs: xgb=0.878034, cat=0.876683, xgb_aux=0.879103
+20369.3s 2315 
+20369.3s 2316 OOF AUCs:
+20369.3s 2317 XGB base   : 0.873730
+20369.3s 2318 CAT base   : 0.870373
+20369.3s 2319 XGB aux    : 0.873129
+20369.3s 2320 BLEND raw  : 0.876588
+20369.3s 2321 BLEND rank : 0.876010
+20369.3s 2322 Weights    : xgb=0.348, cat=0.311, xgb_aux=0.341
+20369.3s 2323 
+20369.3s 2324 ==========================================================================================
+20369.3s 2325 [TARGET] target_9_1
+20369.3s 2326 ==========================================================================================
+20369.3s 2327 
+20369.3s 2328 --- fold 1/5 ---
+20442.0s 2329 Default metric period is 5 because AUC is/are not implemented for GPU
+20442.0s 2330 
+20442.0s 2331 Default metric period is 5 because AUC is/are not implemented for GPU
+20444.3s 2332 0:	test: 0.7320662	best: 0.7320662 (0)	total: 77.6ms	remaining: 20.1s
+20451.8s 2333 100:	test: 0.7719665	best: 0.7735613 (91)	total: 7.63s	remaining: 12s
+20455.6s 2334 bestTest = 0.7735612988
+20455.6s 2335 bestIteration = 91
+20455.6s 2336 Shrink model to first 92 iterations.
+20488.0s 2337 fold aucs: xgb=0.731699, cat=0.773561, xgb_aux=0.735235
+20488.0s 2338 
+20488.0s 2339 --- fold 2/5 ---
+20558.9s 2340 Default metric period is 5 because AUC is/are not implemented for GPU
+20558.9s 2341 
+20558.9s 2342 Default metric period is 5 because AUC is/are not implemented for GPU
+20561.0s 2343 0:	test: 0.7453748	best: 0.7453748 (0)	total: 79.6ms	remaining: 20.6s
+20568.3s 2344 100:	test: 0.7833964	best: 0.7837982 (98)	total: 7.38s	remaining: 11.6s
+20575.5s 2345 200:	test: 0.7833466	best: 0.7868397 (163)	total: 14.6s	remaining: 4.3s
+20577.2s 2346 bestTest = 0.7868397236
+20577.2s 2347 bestIteration = 163
+20577.2s 2348 Shrink model to first 164 iterations.
+20610.1s 2349 fold aucs: xgb=0.758445, cat=0.786840, xgb_aux=0.759465
+20610.1s 2350 
+20610.1s 2351 --- fold 3/5 ---
+20681.4s 2352 Default metric period is 5 because AUC is/are not implemented for GPU
+20681.4s 2353 
+20681.4s 2354 Default metric period is 5 because AUC is/are not implemented for GPU
+20683.5s 2355 0:	test: 0.7209688	best: 0.7209688 (0)	total: 75.2ms	remaining: 19.5s
+20690.5s 2356 100:	test: 0.7646319	best: 0.7649387 (92)	total: 7.08s	remaining: 11.1s
+20697.4s 2357 200:	test: 0.7653158	best: 0.7660345 (147)	total: 14s	remaining: 4.12s
+20697.9s 2358 bestTest = 0.7660344541
+20697.9s 2359 bestIteration = 147
+20697.9s 2360 Shrink model to first 148 iterations.
+20732.1s 2361 fold aucs: xgb=0.730371, cat=0.766034, xgb_aux=0.731668
+20732.1s 2362 
+20732.1s 2363 --- fold 4/5 ---
+20803.5s 2364 Default metric period is 5 because AUC is/are not implemented for GPU
+20803.5s 2365 
+20803.5s 2366 Default metric period is 5 because AUC is/are not implemented for GPU
+20805.4s 2367 0:	test: 0.7415840	best: 0.7415840 (0)	total: 75.4ms	remaining: 19.5s
+20812.5s 2368 100:	test: 0.7887151	best: 0.7887151 (100)	total: 7.1s	remaining: 11.2s
+20819.1s 2369 bestTest = 0.7914721966
+20819.1s 2370 bestIteration = 135
+20819.1s 2371 Shrink model to first 136 iterations.
+20851.1s 2372 fold aucs: xgb=0.764136, cat=0.791472, xgb_aux=0.770567
+20851.1s 2373 
+20851.1s 2374 --- fold 5/5 ---
+20921.1s 2375 Default metric period is 5 because AUC is/are not implemented for GPU
+20921.1s 2376 
+20921.1s 2377 Default metric period is 5 because AUC is/are not implemented for GPU
+20923.0s 2378 0:	test: 0.7447670	best: 0.7447670 (0)	total: 68.8ms	remaining: 17.8s
+20929.7s 2379 100:	test: 0.7858346	best: 0.7858346 (100)	total: 6.76s	remaining: 10.7s
+20936.3s 2380 200:	test: 0.7900428	best: 0.7900428 (200)	total: 13.4s	remaining: 3.93s
+20940.2s 2381 259:	test: 0.7893185	best: 0.7902323 (202)	total: 17.3s	remaining: 0us
+20940.2s 2382 bestTest = 0.7902323008
+20940.2s 2383 bestIteration = 202
+20940.2s 2384 Shrink model to first 203 iterations.
+20972.8s 2385 fold aucs: xgb=0.763561, cat=0.790232, xgb_aux=0.760327
+20974.2s 2386 
+20974.2s 2387 OOF AUCs:
+20974.2s 2388 XGB base   : 0.749379
+20974.2s 2389 CAT base   : 0.781413
+20974.2s 2390 XGB aux    : 0.751115
+20974.2s 2391 BLEND raw  : 0.782215
+20974.2s 2392 BLEND rank : 0.779927
+20974.2s 2393 Weights    : xgb=0.201, cat=0.585, xgb_aux=0.213
+20974.2s 2394 
+20974.2s 2395 ==========================================================================================
+20974.2s 2396 [TARGET] target_9_2
+20974.2s 2397 ==========================================================================================
+20974.2s 2398 
+20974.2s 2399 --- fold 1/5 ---
+21050.1s 2400 Default metric period is 5 because AUC is/are not implemented for GPU
+21050.1s 2401 
+21050.1s 2402 Default metric period is 5 because AUC is/are not implemented for GPU
+21053.0s 2403 0:	test: 0.8019416	best: 0.8019416 (0)	total: 95.8ms	remaining: 24.8s
+21062.0s 2404 100:	test: 0.8234549	best: 0.8234549 (100)	total: 9.05s	remaining: 14.2s
+21070.9s 2405 200:	test: 0.8264900	best: 0.8264900 (200)	total: 17.9s	remaining: 5.27s
+21076.2s 2406 259:	test: 0.8273029	best: 0.8273029 (259)	total: 23.2s	remaining: 0us
+21076.2s 2407 bestTest = 0.8273029327
+21076.2s 2408 bestIteration = 259
+21110.1s 2409 fold aucs: xgb=0.826772, cat=0.827303, xgb_aux=0.826906
+21110.1s 2410 
+21110.1s 2411 --- fold 2/5 ---
+21186.4s 2412 Default metric period is 5 because AUC is/are not implemented for GPU
+21186.4s 2413 
+21186.4s 2414 Default metric period is 5 because AUC is/are not implemented for GPU
+21189.1s 2415 0:	test: 0.8043955	best: 0.8043955 (0)	total: 91.1ms	remaining: 23.6s
+21197.9s 2416 100:	test: 0.8266128	best: 0.8266128 (100)	total: 8.81s	remaining: 13.9s
+21206.5s 2417 200:	test: 0.8295231	best: 0.8295231 (200)	total: 17.4s	remaining: 5.12s
+21211.6s 2418 259:	test: 0.8303028	best: 0.8303028 (259)	total: 22.5s	remaining: 0us
+21211.6s 2419 bestTest = 0.8303028345
+21211.6s 2420 bestIteration = 259
+21245.3s 2421 fold aucs: xgb=0.829380, cat=0.830303, xgb_aux=0.829818
+21245.3s 2422 
+21245.3s 2423 --- fold 3/5 ---
+21320.7s 2424 Default metric period is 5 because AUC is/are not implemented for GPU
+21320.7s 2425 
+21320.7s 2426 Default metric period is 5 because AUC is/are not implemented for GPU
+21323.5s 2427 0:	test: 0.7962388	best: 0.7962388 (0)	total: 89.3ms	remaining: 23.1s
+21332.1s 2428 100:	test: 0.8216887	best: 0.8216887 (100)	total: 8.68s	remaining: 13.7s
+21340.7s 2429 200:	test: 0.8250538	best: 0.8250538 (200)	total: 17.3s	remaining: 5.08s
+21345.8s 2430 259:	test: 0.8260576	best: 0.8260576 (259)	total: 22.4s	remaining: 0us
+21345.8s 2431 bestTest = 0.8260576129
+21345.8s 2432 bestIteration = 259
+21380.9s 2433 fold aucs: xgb=0.825968, cat=0.826058, xgb_aux=0.826187
+21380.9s 2434 
+21380.9s 2435 --- fold 4/5 ---
+21457.5s 2436 Default metric period is 5 because AUC is/are not implemented for GPU
+21457.5s 2437 
+21457.5s 2438 Default metric period is 5 because AUC is/are not implemented for GPU
+21460.8s 2439 0:	test: 0.8032745	best: 0.8032745 (0)	total: 98.7ms	remaining: 25.6s
+21470.5s 2440 100:	test: 0.8272207	best: 0.8272207 (100)	total: 9.86s	remaining: 15.5s
+21480.3s 2441 200:	test: 0.8307120	best: 0.8307120 (200)	total: 19.6s	remaining: 5.75s
+21486.0s 2442 259:	test: 0.8317271	best: 0.8317386 (257)	total: 25.3s	remaining: 0us
+21486.0s 2443 bestTest = 0.8317385912
+21486.0s 2444 bestIteration = 257
+21486.0s 2445 Shrink model to first 258 iterations.
+21521.3s 2446 fold aucs: xgb=0.832339, cat=0.831739, xgb_aux=0.830837
+21521.3s 2447 
+21521.3s 2448 --- fold 5/5 ---
+21598.5s 2449 Default metric period is 5 because AUC is/are not implemented for GPU
+21598.5s 2450 
+21598.5s 2451 Default metric period is 5 because AUC is/are not implemented for GPU
+21601.5s 2452 0:	test: 0.7950628	best: 0.7950628 (0)	total: 96.3ms	remaining: 24.9s
+21610.8s 2453 100:	test: 0.8210969	best: 0.8210969 (100)	total: 9.35s	remaining: 14.7s
+21619.9s 2454 200:	test: 0.8244951	best: 0.8244951 (200)	total: 18.5s	remaining: 5.43s
+21625.3s 2455 259:	test: 0.8253487	best: 0.8253487 (259)	total: 23.9s	remaining: 0us
+21625.3s 2456 bestTest = 0.8253486753
+21625.3s 2457 bestIteration = 259
+21659.8s 2458 fold aucs: xgb=0.824296, cat=0.825349, xgb_aux=0.824572
+21661.2s 2459 
+21661.2s 2460 OOF AUCs:
+21661.2s 2461 XGB base   : 0.827713
+21661.2s 2462 CAT base   : 0.828122
+21661.2s 2463 XGB aux    : 0.827636
+21661.2s 2464 BLEND raw  : 0.830729
+21661.2s 2465 BLEND rank : 0.830666
+21661.2s 2466 Weights    : xgb=0.332, cat=0.337, xgb_aux=0.331
+21661.2s 2467 
+21661.2s 2468 ==========================================================================================
+21661.2s 2469 [TARGET] target_9_3
+21661.2s 2470 ==========================================================================================
+21661.2s 2471 
+21661.2s 2472 --- fold 1/5 ---
+21734.5s 2473 Default metric period is 5 because AUC is/are not implemented for GPU
+21734.5s 2474 
+21734.5s 2475 Default metric period is 5 because AUC is/are not implemented for GPU
+21737.1s 2476 0:	test: 0.6349465	best: 0.6349465 (0)	total: 84.4ms	remaining: 21.9s
+21745.2s 2477 100:	test: 0.6767362	best: 0.6767362 (100)	total: 8.21s	remaining: 12.9s
+21753.4s 2478 200:	test: 0.6805147	best: 0.6805147 (200)	total: 16.3s	remaining: 4.8s
+21758.2s 2479 259:	test: 0.6816885	best: 0.6818122 (253)	total: 21.2s	remaining: 0us
+21758.2s 2480 bestTest = 0.681812197
+21758.2s 2481 bestIteration = 253
+21758.2s 2482 Shrink model to first 254 iterations.
+21790.7s 2483 fold aucs: xgb=0.671126, cat=0.681812, xgb_aux=0.668681
+21790.7s 2484 
+21790.7s 2485 --- fold 2/5 ---
+21861.4s 2486 Default metric period is 5 because AUC is/are not implemented for GPU
+21861.4s 2487 
+21861.4s 2488 Default metric period is 5 because AUC is/are not implemented for GPU
+21863.5s 2489 0:	test: 0.6284849	best: 0.6284849 (0)	total: 73.9ms	remaining: 19.1s
+21870.7s 2490 100:	test: 0.6761245	best: 0.6761245 (100)	total: 7.29s	remaining: 11.5s
+21877.8s 2491 200:	test: 0.6814909	best: 0.6814909 (200)	total: 14.4s	remaining: 4.22s
+21882.1s 2492 259:	test: 0.6827661	best: 0.6828244 (255)	total: 18.6s	remaining: 0us
+21882.1s 2493 bestTest = 0.6828243732
+21882.1s 2494 bestIteration = 255
+21882.1s 2495 Shrink model to first 256 iterations.
+21913.3s 2496 fold aucs: xgb=0.671810, cat=0.682824, xgb_aux=0.673763
+21913.3s 2497 
+21913.3s 2498 --- fold 3/5 ---
+21985.5s 2499 Default metric period is 5 because AUC is/are not implemented for GPU
+21985.5s 2500 
+21985.5s 2501 Default metric period is 5 because AUC is/are not implemented for GPU
+21987.7s 2502 0:	test: 0.6428511	best: 0.6428511 (0)	total: 78.1ms	remaining: 20.2s
+21995.2s 2503 100:	test: 0.6850078	best: 0.6850078 (100)	total: 7.55s	remaining: 11.9s
+22002.6s 2504 200:	test: 0.6892384	best: 0.6892489 (199)	total: 15s	remaining: 4.4s
+22007.0s 2505 259:	test: 0.6894427	best: 0.6896323 (225)	total: 19.3s	remaining: 0us
+22007.0s 2506 bestTest = 0.6896322668
+22007.0s 2507 bestIteration = 225
+22007.0s 2508 Shrink model to first 226 iterations.
+22038.8s 2509 fold aucs: xgb=0.678163, cat=0.689632, xgb_aux=0.676632
+22038.8s 2510 
+22038.8s 2511 --- fold 4/5 ---
+22110.9s 2512 Default metric period is 5 because AUC is/are not implemented for GPU
+22110.9s 2513 
+22110.9s 2514 Default metric period is 5 because AUC is/are not implemented for GPU
+22113.5s 2515 0:	test: 0.6353485	best: 0.6353485 (0)	total: 84.6ms	remaining: 21.9s
+22121.8s 2516 100:	test: 0.6768826	best: 0.6769148 (99)	total: 8.41s	remaining: 13.2s
+22130.1s 2517 200:	test: 0.6802309	best: 0.6804039 (195)	total: 16.7s	remaining: 4.89s
+22134.9s 2518 259:	test: 0.6814504	best: 0.6814504 (259)	total: 21.5s	remaining: 0us
+22134.9s 2519 bestTest = 0.6814504266
+22134.9s 2520 bestIteration = 259
+22167.2s 2521 fold aucs: xgb=0.670571, cat=0.681450, xgb_aux=0.669348
+22167.2s 2522 
+22167.2s 2523 --- fold 5/5 ---
+22236.8s 2524 Default metric period is 5 because AUC is/are not implemented for GPU
+22236.8s 2525 
+22236.8s 2526 Default metric period is 5 because AUC is/are not implemented for GPU
+22238.5s 2527 0:	test: 0.6288892	best: 0.6288892 (0)	total: 65.6ms	remaining: 17s
+22244.8s 2528 100:	test: 0.6789725	best: 0.6789725 (100)	total: 6.37s	remaining: 10s
+22251.0s 2529 200:	test: 0.6837864	best: 0.6837864 (200)	total: 12.6s	remaining: 3.69s
+22254.6s 2530 259:	test: 0.6847820	best: 0.6847914 (240)	total: 16.2s	remaining: 0us
+22254.6s 2531 bestTest = 0.6847914159
+22254.6s 2532 bestIteration = 240
+22254.6s 2533 Shrink model to first 241 iterations.
+22286.5s 2534 fold aucs: xgb=0.672892, cat=0.684791, xgb_aux=0.671162
+22287.9s 2535 
+22287.9s 2536 OOF AUCs:
+22287.9s 2537 XGB base   : 0.672842
+22287.9s 2538 CAT base   : 0.684040
+22287.9s 2539 XGB aux    : 0.671793
+22287.9s 2540 BLEND raw  : 0.684880
+22287.9s 2541 BLEND rank : 0.684692
+22287.9s 2542 Weights    : xgb=0.293, cat=0.425, xgb_aux=0.283
+22287.9s 2543 
+22287.9s 2544 ==========================================================================================
+22287.9s 2545 [TARGET] target_9_4
+22287.9s 2546 ==========================================================================================
+22287.9s 2547 
+22287.9s 2548 --- fold 1/5 ---
+22361.1s 2549 Default metric period is 5 because AUC is/are not implemented for GPU
+22361.1s 2550 
+22361.1s 2551 Default metric period is 5 because AUC is/are not implemented for GPU
+22363.1s 2552 0:	test: 0.8866219	best: 0.8866219 (0)	total: 72.5ms	remaining: 18.8s
+22370.3s 2553 100:	test: 0.9152463	best: 0.9161588 (53)	total: 7.24s	remaining: 11.4s
+22371.3s 2554 bestTest = 0.9161587656
+22371.3s 2555 bestIteration = 53
+22371.3s 2556 Shrink model to first 54 iterations.
+22404.3s 2557 fold aucs: xgb=0.899417, cat=0.916159, xgb_aux=0.899178
+22404.3s 2558 
+22404.3s 2559 --- fold 2/5 ---
+22478.8s 2560 Default metric period is 5 because AUC is/are not implemented for GPU
+22478.8s 2561 
+22478.8s 2562 Default metric period is 5 because AUC is/are not implemented for GPU
+22481.5s 2563 0:	test: 0.8583796	best: 0.8583796 (0)	total: 90.6ms	remaining: 23.5s
+22490.0s 2564 100:	test: 0.8947509	best: 0.8948076 (93)	total: 8.62s	remaining: 13.6s
+22498.6s 2565 200:	test: 0.8976885	best: 0.8976885 (200)	total: 17.2s	remaining: 5.04s
+22503.6s 2566 259:	test: 0.8981373	best: 0.8982659 (206)	total: 22.2s	remaining: 0us
+22503.6s 2567 bestTest = 0.8982658684
+22503.6s 2568 bestIteration = 206
+22503.6s 2569 Shrink model to first 207 iterations.
+22536.8s 2570 fold aucs: xgb=0.879026, cat=0.898266, xgb_aux=0.886527
+22536.8s 2571 
+22536.8s 2572 --- fold 3/5 ---
+22611.8s 2573 Default metric period is 5 because AUC is/are not implemented for GPU
+22611.8s 2574 
+22611.8s 2575 Default metric period is 5 because AUC is/are not implemented for GPU
+22614.0s 2576 0:	test: 0.8581909	best: 0.8581909 (0)	total: 76ms	remaining: 19.7s
+22621.1s 2577 100:	test: 0.8924805	best: 0.8924805 (100)	total: 7.2s	remaining: 11.3s
+22628.2s 2578 200:	test: 0.8940859	best: 0.8950372 (184)	total: 14.3s	remaining: 4.21s
+22632.4s 2579 259:	test: 0.8950770	best: 0.8959410 (246)	total: 18.5s	remaining: 0us
+22632.4s 2580 bestTest = 0.8959409893
+22632.4s 2581 bestIteration = 246
+22632.4s 2582 Shrink model to first 247 iterations.
+22665.4s 2583 fold aucs: xgb=0.876468, cat=0.895941, xgb_aux=0.874013
+22665.4s 2584 
+22665.4s 2585 --- fold 4/5 ---
+22738.7s 2586 Default metric period is 5 because AUC is/are not implemented for GPU
+22738.7s 2587 
+22738.7s 2588 Default metric period is 5 because AUC is/are not implemented for GPU
+22740.8s 2589 0:	test: 0.8913142	best: 0.8913142 (0)	total: 74.6ms	remaining: 19.3s
+22748.3s 2590 100:	test: 0.9231971	best: 0.9231971 (100)	total: 7.55s	remaining: 11.9s
+22755.8s 2591 200:	test: 0.9237875	best: 0.9241479 (164)	total: 15s	remaining: 4.4s
+22760.1s 2592 259:	test: 0.9243730	best: 0.9248338 (218)	total: 19.3s	remaining: 0us
+22760.1s 2593 bestTest = 0.9248337746
+22760.1s 2594 bestIteration = 218
+22760.1s 2595 Shrink model to first 219 iterations.
+22793.6s 2596 fold aucs: xgb=0.898044, cat=0.924834, xgb_aux=0.897862
+22793.6s 2597 
+22793.6s 2598 --- fold 5/5 ---
+22866.8s 2599 Default metric period is 5 because AUC is/are not implemented for GPU
+22866.8s 2600 
+22866.8s 2601 Default metric period is 5 because AUC is/are not implemented for GPU
+22869.2s 2602 0:	test: 0.8825891	best: 0.8825891 (0)	total: 83.3ms	remaining: 21.6s
+22877.1s 2603 100:	test: 0.9102911	best: 0.9104692 (71)	total: 7.97s	remaining: 12.5s
+22884.9s 2604 200:	test: 0.9116926	best: 0.9121142 (193)	total: 15.8s	remaining: 4.64s
+22889.6s 2605 259:	test: 0.9126116	best: 0.9126711 (258)	total: 20.5s	remaining: 0us
+22889.6s 2606 bestTest = 0.9126711488
+22889.6s 2607 bestIteration = 258
+22889.6s 2608 Shrink model to first 259 iterations.
+22923.2s 2609 fold aucs: xgb=0.888706, cat=0.912671, xgb_aux=0.884531
+22924.6s 2610 
+22924.6s 2611 OOF AUCs:
+22924.6s 2612 XGB base   : 0.887264
+22924.6s 2613 CAT base   : 0.906660
+22924.6s 2614 XGB aux    : 0.887680
+22924.6s 2615 BLEND raw  : 0.906073
+22924.6s 2616 BLEND rank : 0.905531
+22924.6s 2617 Weights    : xgb=0.255, cat=0.487, xgb_aux=0.258
+22924.6s 2618 
+22924.6s 2619 ==========================================================================================
+22924.6s 2620 [TARGET] target_9_5
+22924.6s 2621 ==========================================================================================
+22924.6s 2622 
+22924.6s 2623 --- fold 1/5 ---
+22997.5s 2624 Default metric period is 5 because AUC is/are not implemented for GPU
+22997.5s 2625 
+22997.5s 2626 Default metric period is 5 because AUC is/are not implemented for GPU
+22999.7s 2627 0:	test: 0.7850640	best: 0.7850640 (0)	total: 76.7ms	remaining: 19.9s
+23007.2s 2628 100:	test: 0.8260298	best: 0.8260298 (100)	total: 7.55s	remaining: 11.9s
+23014.6s 2629 200:	test: 0.8284329	best: 0.8285351 (198)	total: 14.9s	remaining: 4.39s
+23019.0s 2630 259:	test: 0.8293165	best: 0.8294164 (257)	total: 19.3s	remaining: 0us
+23019.0s 2631 bestTest = 0.8294163942
+23019.0s 2632 bestIteration = 257
+23019.0s 2633 Shrink model to first 258 iterations.
+23051.6s 2634 fold aucs: xgb=0.817821, cat=0.829416, xgb_aux=0.815533
+23051.6s 2635 
+23051.6s 2636 --- fold 2/5 ---
+23126.9s 2637 Default metric period is 5 because AUC is/are not implemented for GPU
+23126.9s 2638 
+23126.9s 2639 Default metric period is 5 because AUC is/are not implemented for GPU
+23130.2s 2640 0:	test: 0.7919049	best: 0.7919049 (0)	total: 105ms	remaining: 27.1s
+23139.9s 2641 100:	test: 0.8379145	best: 0.8379584 (99)	total: 9.82s	remaining: 15.5s
+23149.5s 2642 200:	test: 0.8390950	best: 0.8393417 (164)	total: 19.5s	remaining: 5.72s
+23155.2s 2643 259:	test: 0.8400799	best: 0.8400799 (259)	total: 25.2s	remaining: 0us
+23155.2s 2644 bestTest = 0.8400799036
+23155.2s 2645 bestIteration = 259
+23189.0s 2646 fold aucs: xgb=0.821319, cat=0.840080, xgb_aux=0.822776
+23189.0s 2647 
+23189.0s 2648 --- fold 3/5 ---
+23261.6s 2649 Default metric period is 5 because AUC is/are not implemented for GPU
+23261.6s 2650 
+23261.6s 2651 Default metric period is 5 because AUC is/are not implemented for GPU
+23263.8s 2652 0:	test: 0.7841763	best: 0.7841763 (0)	total: 77.6ms	remaining: 20.1s
+23271.0s 2653 100:	test: 0.8228327	best: 0.8228327 (100)	total: 7.31s	remaining: 11.5s
+23278.2s 2654 200:	test: 0.8265005	best: 0.8267564 (198)	total: 14.5s	remaining: 4.25s
+23282.4s 2655 259:	test: 0.8275750	best: 0.8275750 (259)	total: 18.7s	remaining: 0us
+23282.4s 2656 bestTest = 0.8275749981
+23282.4s 2657 bestIteration = 259
+23315.2s 2658 fold aucs: xgb=0.810329, cat=0.827575, xgb_aux=0.809247
+23315.2s 2659 
+23315.2s 2660 --- fold 4/5 ---
+23388.2s 2661 Default metric period is 5 because AUC is/are not implemented for GPU
+23388.2s 2662 
+23388.2s 2663 Default metric period is 5 because AUC is/are not implemented for GPU
+23391.2s 2664 0:	test: 0.7898481	best: 0.7898481 (0)	total: 94.1ms	remaining: 24.4s
+23400.4s 2665 100:	test: 0.8280841	best: 0.8281965 (95)	total: 9.31s	remaining: 14.7s
+23409.5s 2666 200:	test: 0.8323392	best: 0.8323392 (200)	total: 18.4s	remaining: 5.41s
+23415.0s 2667 259:	test: 0.8325074	best: 0.8327348 (221)	total: 23.8s	remaining: 0us
+23415.0s 2668 bestTest = 0.8327347934
+23415.0s 2669 bestIteration = 221
+23415.0s 2670 Shrink model to first 222 iterations.
+23448.3s 2671 fold aucs: xgb=0.821206, cat=0.832735, xgb_aux=0.821870
+23448.3s 2672 
+23448.3s 2673 --- fold 5/5 ---
+23522.4s 2674 Default metric period is 5 because AUC is/are not implemented for GPU
+23522.4s 2675 
+23522.4s 2676 Default metric period is 5 because AUC is/are not implemented for GPU
+23525.2s 2677 0:	test: 0.7893453	best: 0.7893453 (0)	total: 91.2ms	remaining: 23.6s
+23533.8s 2678 100:	test: 0.8266515	best: 0.8266515 (100)	total: 8.72s	remaining: 13.7s
+23542.3s 2679 200:	test: 0.8287712	best: 0.8294469 (173)	total: 17.2s	remaining: 5.04s
+23545.1s 2680 bestTest = 0.8294469118
+23545.1s 2681 bestIteration = 173
+23545.1s 2682 Shrink model to first 174 iterations.
+23579.0s 2683 fold aucs: xgb=0.808616, cat=0.829447, xgb_aux=0.811747
+23580.4s 2684 
+23580.4s 2685 OOF AUCs:
+23580.4s 2686 XGB base   : 0.815893
+23580.4s 2687 CAT base   : 0.831864
+23580.4s 2688 XGB aux    : 0.816280
+23580.4s 2689 BLEND raw  : 0.831764
+23580.4s 2690 BLEND rank : 0.830802
+23580.4s 2691 Weights    : xgb=0.269, cat=0.458, xgb_aux=0.273
+23580.4s 2692 
+23580.4s 2693 ==========================================================================================
+23580.4s 2694 [TARGET] target_9_6
+23580.4s 2695 ==========================================================================================
+23580.4s 2696 
+23580.4s 2697 --- fold 1/5 ---
+23657.0s 2698 Default metric period is 5 because AUC is/are not implemented for GPU
+23657.0s 2699 
+23657.0s 2700 Default metric period is 5 because AUC is/are not implemented for GPU
+23659.6s 2701 0:	test: 0.6357761	best: 0.6357761 (0)	total: 89.1ms	remaining: 23.1s
+23668.0s 2702 100:	test: 0.6733840	best: 0.6733840 (100)	total: 8.45s	remaining: 13.3s
+23676.2s 2703 200:	test: 0.6792459	best: 0.6792459 (200)	total: 16.7s	remaining: 4.9s
+23681.1s 2704 259:	test: 0.6810375	best: 0.6810375 (259)	total: 21.6s	remaining: 0us
+23681.1s 2705 bestTest = 0.6810374558
+23681.1s 2706 bestIteration = 259
+23714.6s 2707 fold aucs: xgb=0.687631, cat=0.681037, xgb_aux=0.687182
+23714.6s 2708 
+23714.6s 2709 --- fold 2/5 ---
+23791.9s 2710 Default metric period is 5 because AUC is/are not implemented for GPU
+23791.9s 2711 
+23791.9s 2712 Default metric period is 5 because AUC is/are not implemented for GPU
+23794.7s 2713 0:	test: 0.6374389	best: 0.6374389 (0)	total: 90.4ms	remaining: 23.4s
+23803.7s 2714 100:	test: 0.6733792	best: 0.6733792 (100)	total: 9.1s	remaining: 14.3s
+23812.6s 2715 200:	test: 0.6790404	best: 0.6790404 (200)	total: 18s	remaining: 5.28s
+23817.9s 2716 259:	test: 0.6809852	best: 0.6809852 (259)	total: 23.3s	remaining: 0us
+23817.9s 2717 bestTest = 0.6809852421
+23817.9s 2718 bestIteration = 259
+23851.3s 2719 fold aucs: xgb=0.688143, cat=0.680985, xgb_aux=0.688018
+23851.3s 2720 
+23851.3s 2721 --- fold 3/5 ---
+23927.6s 2722 Default metric period is 5 because AUC is/are not implemented for GPU
+23927.6s 2723 
+23927.6s 2724 Default metric period is 5 because AUC is/are not implemented for GPU
+23930.1s 2725 0:	test: 0.6358460	best: 0.6358460 (0)	total: 89.4ms	remaining: 23.1s
+23938.5s 2726 100:	test: 0.6742653	best: 0.6742653 (100)	total: 8.45s	remaining: 13.3s
+23946.8s 2727 200:	test: 0.6799416	best: 0.6799416 (200)	total: 16.8s	remaining: 4.92s
+23951.7s 2728 259:	test: 0.6817296	best: 0.6817296 (259)	total: 21.6s	remaining: 0us
+23951.7s 2729 bestTest = 0.6817296147
+23951.7s 2730 bestIteration = 259
+23983.7s 2731 fold aucs: xgb=0.688050, cat=0.681730, xgb_aux=0.687971
+23983.7s 2732 
+23983.7s 2733 --- fold 4/5 ---
+24059.1s 2734 Default metric period is 5 because AUC is/are not implemented for GPU
+24059.1s 2735 
+24059.1s 2736 Default metric period is 5 because AUC is/are not implemented for GPU
+24061.7s 2737 0:	test: 0.6396708	best: 0.6396708 (0)	total: 89.4ms	remaining: 23.1s
+24070.1s 2738 100:	test: 0.6778320	best: 0.6778320 (100)	total: 8.47s	remaining: 13.3s
+24078.4s 2739 200:	test: 0.6837653	best: 0.6837653 (200)	total: 16.8s	remaining: 4.93s
+24083.3s 2740 259:	test: 0.6855515	best: 0.6855515 (259)	total: 21.7s	remaining: 0us
+24083.3s 2741 bestTest = 0.6855515242
+24083.3s 2742 bestIteration = 259
+24116.3s 2743 fold aucs: xgb=0.692493, cat=0.685552, xgb_aux=0.692257
+24116.3s 2744 
+24116.3s 2745 --- fold 5/5 ---
+24189.5s 2746 Default metric period is 5 because AUC is/are not implemented for GPU
+24189.5s 2747 
+24189.5s 2748 Default metric period is 5 because AUC is/are not implemented for GPU
+24191.6s 2749 0:	test: 0.6402478	best: 0.6402478 (0)	total: 77.4ms	remaining: 20s
+24199.1s 2750 100:	test: 0.6757778	best: 0.6757778 (100)	total: 7.5s	remaining: 11.8s
+24206.4s 2751 200:	test: 0.6815593	best: 0.6815593 (200)	total: 14.8s	remaining: 4.35s
+24210.7s 2752 259:	test: 0.6833226	best: 0.6833226 (259)	total: 19.2s	remaining: 0us
+24210.7s 2753 bestTest = 0.6833225787
+24210.7s 2754 bestIteration = 259
+24243.7s 2755 fold aucs: xgb=0.690166, cat=0.683323, xgb_aux=0.690012
+24245.2s 2756 
+24245.2s 2757 OOF AUCs:
+24245.2s 2758 XGB base   : 0.689286
+24245.2s 2759 CAT base   : 0.682515
+24245.2s 2760 XGB aux    : 0.689079
+24245.2s 2761 BLEND raw  : 0.689498
+24245.2s 2762 BLEND rank : 0.689417
+24245.2s 2763 Weights    : xgb=0.358, cat=0.286, xgb_aux=0.356
+24245.2s 2764 
+24245.2s 2765 ==========================================================================================
+24245.2s 2766 [TARGET] target_9_7
+24245.2s 2767 ==========================================================================================
+24245.2s 2768 
+24245.2s 2769 --- fold 1/5 ---
+24319.7s 2770 Default metric period is 5 because AUC is/are not implemented for GPU
+24319.7s 2771 
+24319.7s 2772 Default metric period is 5 because AUC is/are not implemented for GPU
+24322.5s 2773 0:	test: 0.7060987	best: 0.7060987 (0)	total: 94.6ms	remaining: 24.5s
+24331.4s 2774 100:	test: 0.7418151	best: 0.7418151 (100)	total: 9.07s	remaining: 14.3s
+24340.3s 2775 200:	test: 0.7480537	best: 0.7480537 (200)	total: 17.9s	remaining: 5.26s
+24345.5s 2776 259:	test: 0.7500530	best: 0.7500530 (259)	total: 23.2s	remaining: 0us
+24345.5s 2777 bestTest = 0.7500529885
+24345.5s 2778 bestIteration = 259
+24378.1s 2779 fold aucs: xgb=0.754750, cat=0.750053, xgb_aux=0.753686
+24378.1s 2780 
+24378.1s 2781 --- fold 2/5 ---
+24454.2s 2782 Default metric period is 5 because AUC is/are not implemented for GPU
+24454.2s 2783 
+24454.2s 2784 Default metric period is 5 because AUC is/are not implemented for GPU
+24456.9s 2785 0:	test: 0.7085854	best: 0.7085854 (0)	total: 90.8ms	remaining: 23.5s
+24465.5s 2786 100:	test: 0.7425976	best: 0.7425976 (100)	total: 8.65s	remaining: 13.6s
+24474.0s 2787 200:	test: 0.7484543	best: 0.7484543 (200)	total: 17.1s	remaining: 5.03s
+24479.0s 2788 259:	test: 0.7501912	best: 0.7501912 (259)	total: 22.1s	remaining: 0us
+24479.0s 2789 bestTest = 0.7501911521
+24479.0s 2790 bestIteration = 259
+24512.9s 2791 fold aucs: xgb=0.754987, cat=0.750191, xgb_aux=0.753748
+24512.9s 2792 
+24512.9s 2793 --- fold 3/5 ---
+24588.0s 2794 Default metric period is 5 because AUC is/are not implemented for GPU
+24588.0s 2795 
+24588.0s 2796 Default metric period is 5 because AUC is/are not implemented for GPU
+24590.3s 2797 0:	test: 0.7103028	best: 0.7103028 (0)	total: 84ms	remaining: 21.8s
+24598.2s 2798 100:	test: 0.7438811	best: 0.7438811 (100)	total: 7.99s	remaining: 12.6s
+24606.0s 2799 200:	test: 0.7491054	best: 0.7491054 (200)	total: 15.8s	remaining: 4.64s
+24610.6s 2800 259:	test: 0.7509324	best: 0.7509324 (259)	total: 20.4s	remaining: 0us
+24610.6s 2801 bestTest = 0.7509324253
+24610.6s 2802 bestIteration = 259
+24643.8s 2803 fold aucs: xgb=0.757750, cat=0.750932, xgb_aux=0.756721
+24643.8s 2804 
+24643.8s 2805 --- fold 4/5 ---
+24718.4s 2806 Default metric period is 5 because AUC is/are not implemented for GPU
+24718.4s 2807 
+24718.4s 2808 Default metric period is 5 because AUC is/are not implemented for GPU
+24721.3s 2809 0:	test: 0.7103284	best: 0.7103284 (0)	total: 92.7ms	remaining: 24s
+24730.5s 2810 100:	test: 0.7449248	best: 0.7449248 (100)	total: 9.34s	remaining: 14.7s
+24739.8s 2811 200:	test: 0.7506671	best: 0.7506671 (200)	total: 18.6s	remaining: 5.45s
+24745.1s 2812 259:	test: 0.7523620	best: 0.7523620 (259)	total: 23.9s	remaining: 0us
+24745.1s 2813 bestTest = 0.7523620129
+24745.1s 2814 bestIteration = 259
+24777.8s 2815 fold aucs: xgb=0.756375, cat=0.752362, xgb_aux=0.756196
+24777.8s 2816 
+24777.8s 2817 --- fold 5/5 ---
+24856.4s 2818 Default metric period is 5 because AUC is/are not implemented for GPU
+24856.4s 2819 
+24856.4s 2820 Default metric period is 5 because AUC is/are not implemented for GPU
+24859.4s 2821 0:	test: 0.7076911	best: 0.7076911 (0)	total: 97ms	remaining: 25.1s
+24868.6s 2822 100:	test: 0.7429599	best: 0.7429599 (100)	total: 9.29s	remaining: 14.6s
+24877.8s 2823 200:	test: 0.7485868	best: 0.7485868 (200)	total: 18.5s	remaining: 5.42s
+24883.2s 2824 259:	test: 0.7504107	best: 0.7504107 (259)	total: 23.8s	remaining: 0us
+24883.2s 2825 bestTest = 0.7504107058
+24883.2s 2826 bestIteration = 259
+24915.9s 2827 fold aucs: xgb=0.754406, cat=0.750411, xgb_aux=0.753695
+24917.4s 2828 
+24917.4s 2829 OOF AUCs:
+24917.4s 2830 XGB base   : 0.755646
+24917.4s 2831 CAT base   : 0.750783
+24917.4s 2832 XGB aux    : 0.754807
+24917.4s 2833 BLEND raw  : 0.756772
+24917.4s 2834 BLEND rank : 0.756687
+24917.4s 2835 Weights    : xgb=0.354, cat=0.301, xgb_aux=0.344
+24917.4s 2836 
+24917.4s 2837 ==========================================================================================
+24917.4s 2838 [TARGET] target_9_8
+24917.4s 2839 ==========================================================================================
+24917.4s 2840 
+24917.4s 2841 --- fold 1/5 ---
+24993.8s 2842 Default metric period is 5 because AUC is/are not implemented for GPU
+24993.8s 2843 
+24993.8s 2844 Default metric period is 5 because AUC is/are not implemented for GPU
+24996.4s 2845 0:	test: 0.8973941	best: 0.8973941 (0)	total: 88.4ms	remaining: 22.9s
+25004.8s 2846 100:	test: 0.9276816	best: 0.9276816 (100)	total: 8.48s	remaining: 13.3s
+25013.0s 2847 200:	test: 0.9294010	best: 0.9294010 (200)	total: 16.7s	remaining: 4.91s
+25017.9s 2848 259:	test: 0.9300930	best: 0.9300930 (259)	total: 21.6s	remaining: 0us
+25017.9s 2849 bestTest = 0.9300929904
+25017.9s 2850 bestIteration = 259
+25050.7s 2851 fold aucs: xgb=0.929424, cat=0.930093, xgb_aux=0.928860
+25050.7s 2852 
+25050.7s 2853 --- fold 2/5 ---
+25126.2s 2854 Default metric period is 5 because AUC is/are not implemented for GPU
+25126.2s 2855 
+25126.2s 2856 Default metric period is 5 because AUC is/are not implemented for GPU
+25129.0s 2857 0:	test: 0.8989102	best: 0.8989102 (0)	total: 94.6ms	remaining: 24.5s
+25138.0s 2858 100:	test: 0.9271142	best: 0.9271142 (100)	total: 9.11s	remaining: 14.3s
+25146.9s 2859 200:	test: 0.9293090	best: 0.9293090 (200)	total: 18s	remaining: 5.29s
+25152.2s 2860 259:	test: 0.9297531	best: 0.9297782 (256)	total: 23.3s	remaining: 0us
+25152.2s 2861 bestTest = 0.9297782183
+25152.2s 2862 bestIteration = 256
+25152.2s 2863 Shrink model to first 257 iterations.
+25185.4s 2864 fold aucs: xgb=0.929133, cat=0.929778, xgb_aux=0.929163
+25185.4s 2865 
+25185.4s 2866 --- fold 3/5 ---
+25260.4s 2867 Default metric period is 5 because AUC is/are not implemented for GPU
+25260.4s 2868 
+25260.4s 2869 Default metric period is 5 because AUC is/are not implemented for GPU
+25262.9s 2870 0:	test: 0.9013790	best: 0.9013790 (0)	total: 83.5ms	remaining: 21.6s
+25271.0s 2871 100:	test: 0.9305762	best: 0.9305762 (100)	total: 8.21s	remaining: 12.9s
+25279.1s 2872 200:	test: 0.9330244	best: 0.9330244 (200)	total: 16.3s	remaining: 4.78s
+25283.9s 2873 259:	test: 0.9333841	best: 0.9333841 (259)	total: 21s	remaining: 0us
+25283.9s 2874 bestTest = 0.9333840609
+25283.9s 2875 bestIteration = 259
+25317.9s 2876 fold aucs: xgb=0.930387, cat=0.933384, xgb_aux=0.930634
+25317.9s 2877 
+25317.9s 2878 --- fold 4/5 ---
+25393.0s 2879 Default metric period is 5 because AUC is/are not implemented for GPU
+25393.0s 2880 
+25393.0s 2881 Default metric period is 5 because AUC is/are not implemented for GPU
+25395.7s 2882 0:	test: 0.8931199	best: 0.8931199 (0)	total: 94.3ms	remaining: 24.4s
+25404.7s 2883 100:	test: 0.9247010	best: 0.9247010 (100)	total: 9.03s	remaining: 14.2s
+25413.5s 2884 200:	test: 0.9259050	best: 0.9259177 (195)	total: 17.8s	remaining: 5.24s
+25418.6s 2885 259:	test: 0.9261167	best: 0.9261597 (248)	total: 23s	remaining: 0us
+25418.6s 2886 bestTest = 0.9261596799
+25418.6s 2887 bestIteration = 248
+25418.6s 2888 Shrink model to first 249 iterations.
+25452.1s 2889 fold aucs: xgb=0.925192, cat=0.926160, xgb_aux=0.924803
+25452.1s 2890 
+25452.1s 2891 --- fold 5/5 ---
+25528.0s 2892 Default metric period is 5 because AUC is/are not implemented for GPU
+25528.0s 2893 
+25528.0s 2894 Default metric period is 5 because AUC is/are not implemented for GPU
+25531.1s 2895 0:	test: 0.9030254	best: 0.9030254 (0)	total: 98.8ms	remaining: 25.6s
+25540.6s 2896 100:	test: 0.9299086	best: 0.9299086 (100)	total: 9.6s	remaining: 15.1s
+25549.9s 2897 200:	test: 0.9316269	best: 0.9316296 (199)	total: 19s	remaining: 5.56s
+25555.4s 2898 259:	test: 0.9322863	best: 0.9322863 (259)	total: 24.4s	remaining: 0us
+25555.4s 2899 bestTest = 0.9322862625
+25555.4s 2900 bestIteration = 259
+25588.6s 2901 fold aucs: xgb=0.928472, cat=0.932286, xgb_aux=0.927589
+25590.0s 2902 
+25590.0s 2903 OOF AUCs:
+25590.0s 2904 XGB base   : 0.928450
+25590.0s 2905 CAT base   : 0.930272
+25590.0s 2906 XGB aux    : 0.928151
+25590.0s 2907 BLEND raw  : 0.931403
+25590.0s 2908 BLEND rank : 0.931753
+25590.0s 2909 Weights    : xgb=0.328, cat=0.348, xgb_aux=0.324
+25590.0s 2910 
+25590.0s 2911 ==========================================================================================
+25590.0s 2912 [TARGET] target_10_1
+25590.0s 2913 ==========================================================================================
+25590.0s 2914 
+25590.0s 2915 --- fold 1/5 ---
+25663.2s 2916 Default metric period is 5 because AUC is/are not implemented for GPU
+25663.2s 2917 
+25663.2s 2918 Default metric period is 5 because AUC is/are not implemented for GPU
+25665.4s 2919 0:	test: 0.7091139	best: 0.7091139 (0)	total: 82.7ms	remaining: 21.4s
+25673.3s 2920 100:	test: 0.7377633	best: 0.7377633 (100)	total: 7.91s	remaining: 12.4s
+25681.0s 2921 200:	test: 0.7423316	best: 0.7423316 (200)	total: 15.7s	remaining: 4.6s
+25685.6s 2922 259:	test: 0.7442191	best: 0.7442191 (259)	total: 20.3s	remaining: 0us
+25685.6s 2923 bestTest = 0.7442190945
+25685.6s 2924 bestIteration = 259
+25719.9s 2925 fold aucs: xgb=0.752644, cat=0.744219, xgb_aux=0.752042
+25719.9s 2926 
+25719.9s 2927 --- fold 2/5 ---
+25796.2s 2928 Default metric period is 5 because AUC is/are not implemented for GPU
+25796.2s 2929 
+25796.2s 2930 Default metric period is 5 because AUC is/are not implemented for GPU
+25799.3s 2931 0:	test: 0.7100361	best: 0.7100361 (0)	total: 98.2ms	remaining: 25.4s
+25809.0s 2932 100:	test: 0.7399169	best: 0.7399169 (100)	total: 9.76s	remaining: 15.4s
+25818.5s 2933 200:	test: 0.7446285	best: 0.7446285 (200)	total: 19.3s	remaining: 5.66s
+25824.2s 2934 259:	test: 0.7461964	best: 0.7461964 (259)	total: 25s	remaining: 0us
+25824.2s 2935 bestTest = 0.7461963892
+25824.2s 2936 bestIteration = 259
+25857.3s 2937 fold aucs: xgb=0.754513, cat=0.746196, xgb_aux=0.754101
+25857.3s 2938 
+25857.3s 2939 --- fold 3/5 ---
+25932.5s 2940 Default metric period is 5 because AUC is/are not implemented for GPU
+25932.5s 2941 
+25932.5s 2942 Default metric period is 5 because AUC is/are not implemented for GPU
+25935.7s 2943 0:	test: 0.7081062	best: 0.7081062 (0)	total: 105ms	remaining: 27.1s
+25945.4s 2944 100:	test: 0.7356786	best: 0.7356786 (100)	total: 9.79s	remaining: 15.4s
+25955.0s 2945 200:	test: 0.7403673	best: 0.7403673 (200)	total: 19.4s	remaining: 5.68s
+25960.6s 2946 259:	test: 0.7420147	best: 0.7420147 (259)	total: 25s	remaining: 0us
+25960.6s 2947 bestTest = 0.7420146763
+25960.6s 2948 bestIteration = 259
+25993.8s 2949 fold aucs: xgb=0.749991, cat=0.742015, xgb_aux=0.749549
+25993.8s 2950 
+25993.8s 2951 --- fold 4/5 ---
+26068.3s 2952 Default metric period is 5 because AUC is/are not implemented for GPU
+26068.3s 2953 
+26068.3s 2954 Default metric period is 5 because AUC is/are not implemented for GPU
+26071.5s 2955 0:	test: 0.7070422	best: 0.7070422 (0)	total: 105ms	remaining: 27.2s
+26081.4s 2956 100:	test: 0.7355492	best: 0.7355492 (100)	total: 10s	remaining: 15.8s
+26091.2s 2957 200:	test: 0.7402229	best: 0.7402229 (200)	total: 19.8s	remaining: 5.82s
+26097.1s 2958 259:	test: 0.7421570	best: 0.7421570 (259)	total: 25.7s	remaining: 0us
+26097.1s 2959 bestTest = 0.7421569824
+26097.1s 2960 bestIteration = 259
+26130.0s 2961 fold aucs: xgb=0.750218, cat=0.742157, xgb_aux=0.749475
+26130.0s 2962 
+26130.0s 2963 --- fold 5/5 ---
+26204.5s 2964 Default metric period is 5 because AUC is/are not implemented for GPU
+26204.5s 2965 
+26204.5s 2966 Default metric period is 5 because AUC is/are not implemented for GPU
+26207.5s 2967 0:	test: 0.7123879	best: 0.7123879 (0)	total: 101ms	remaining: 26.2s
+26217.1s 2968 100:	test: 0.7419128	best: 0.7419128 (100)	total: 9.69s	remaining: 15.3s
+26226.7s 2969 200:	test: 0.7463848	best: 0.7463848 (200)	total: 19.3s	remaining: 5.65s
+26232.4s 2970 259:	test: 0.7480473	best: 0.7480473 (259)	total: 24.9s	remaining: 0us
+26232.4s 2971 bestTest = 0.748047322
+26232.4s 2972 bestIteration = 259
+26265.8s 2973 fold aucs: xgb=0.755783, cat=0.748047, xgb_aux=0.755566
+26267.3s 2974 
+26267.3s 2975 OOF AUCs:
+26267.3s 2976 XGB base   : 0.752625
+26267.3s 2977 CAT base   : 0.744519
+26267.3s 2978 XGB aux    : 0.752140
+26267.3s 2979 BLEND raw  : 0.751665
+26267.3s 2980 BLEND rank : 0.751592
+26267.3s 2981 Weights    : xgb=0.364, cat=0.278, xgb_aux=0.358
+26282.3s 2982 
+26282.3s 2983 ==========================================================================================
+26282.3s 2984 DONE
+26282.3s 2985 OUT_DIR: /kaggle/working/df26_compact_kfold5_rankblend
+26282.3s 2986 Mean OOF AUC XGB base   : 0.8059841644069281
+26282.3s 2987 Mean OOF AUC CAT base   : 0.8195452203811676
+26282.3s 2988 Mean OOF AUC XGB aux    : 0.8062697280141896
+26282.3s 2989 Mean OOF AUC BLEND raw  : 0.8228826654299437
+26282.3s 2990 Mean OOF AUC BLEND rank : 0.8225012917702702
+

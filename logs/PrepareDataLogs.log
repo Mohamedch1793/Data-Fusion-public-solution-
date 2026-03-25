@@ -1,0 +1,51 @@
+
+Top screened extra features:
+             feature  screen_auc  train_missing  test_missing  missing_gap  train_std  mean_gap      score
+0    num_feature_766    0.686302       0.978750      0.978650     0.000100   0.999406  0.031298  23.228949
+1   num_feature_1045    0.642008       0.974700      0.975600     0.000900   0.992676  0.040013  17.860081
+2   num_feature_1210    0.637367       0.964825      0.966200     0.001375   0.641140  0.012775  17.053499
+3   num_feature_2269    0.626563       0.601150      0.597000     0.004150   0.774134  0.000392  15.897914
+4   num_feature_1429    0.626684       0.601150      0.597000     0.004150   0.726043  0.001250  15.860931
+5   num_feature_1775    0.625942       0.825300      0.824675     0.000625   0.630271  0.003699  15.719129
+6   num_feature_2026    0.623959       0.977375      0.977175     0.000200   0.638048  0.001930  15.502363
+7   num_feature_1377    0.623054       0.815250      0.813575     0.001675   0.700669  0.005421  15.420379
+8   num_feature_1851    0.624632       0.815000      0.816500     0.001500   0.602516  0.067041  15.267738
+9    num_feature_138    0.616927       0.970225      0.969875     0.000350   1.143653  0.024716  15.070788
+10   num_feature_546    0.618695       0.979275      0.978800     0.000475   0.959442  0.034779  15.056651
+11   num_feature_879    0.620232       0.025300      0.024675     0.000625   0.576437  0.001617  14.988417
+12  num_feature_1821    0.612267       0.979375      0.981125     0.001750   1.007098  0.016032  14.388773
+13  num_feature_1955    0.609123       0.978575      0.977125     0.001450   0.942332  0.046590  13.828939
+14   num_feature_151    0.607009       0.974675      0.974125     0.000550   1.117234  0.040716  13.787230
+15   num_feature_395    0.608355       0.772075      0.772100     0.000025   0.691098  0.006828  13.666019
+16  num_feature_1365    0.602327       0.975975      0.976675     0.000700   1.059700  0.029075  13.212135
+17  num_feature_2018    0.600683       0.943175      0.943025     0.000150   1.064623  0.026763  13.037257
+18  num_feature_1608    0.604784       0.890825      0.887650     0.003175   0.644747  0.049306  12.973921
+19   num_feature_813    0.599746       0.975400      0.975550     0.000150   1.077948  0.018910  12.969520
+
+Selected extra: 128
+
+[STEP] Load selected extra columns only
+train_extra_sel: (750000, 129) 369.07 MB
+test_extra_sel: (250000, 129) 123.02 MB
+
+[STEP] Merge compact datasets
+train_compact(before row): (750000, 369) 1055.72 MB
+test_compact(before row): (250000, 328) 312.81 MB
+
+[STEP] Add row features
+train_compact(final): (750000, 377) 932.69 MB
+test_compact(final): (250000, 336) 271.8 MB
+
+[STEP] Save compact dataset
+
+Saved:
+/kaggle/working/cybershelf_compact/train_compact.parquet | 191.41 MB
+/kaggle/working/cybershelf_compact/test_compact.parquet | 67.74 MB
+/kaggle/working/cybershelf_compact/screen_report.csv | 0.26 MB
+/kaggle/working/cybershelf_compact/target_cols.json | 0.0 MB
+/kaggle/working/cybershelf_compact/selected_extra_cols.json | 0.0 MB
+/kaggle/working/cybershelf_compact/dataset_meta.json | 0.0 MB
+ZIP: /kaggle/working/compact_dataset.zip | 224.4 MB
+
+DONE
+
